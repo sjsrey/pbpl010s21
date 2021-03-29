@@ -1,0 +1,1166 @@
+
+
+
+# 
+
+Welcome to PBPL273 Introduction to GIS for Public Policy
+
+![img](./images/00/qgispysal.png)
+
+
+# Course Introduction
+Welcome to PBPL273 Introduction to GIS for Public Policy
+
+!\[img\](./images/00/qgispysal.png)
+
+\#\# Description
+
+This course introduces the fundamental concepts of geographic
+information systems (GIS), geographic information science (GIScience),
+spatial data, and applications of spatial analysis in the social
+sciences and public policy.
+
+In the scope of a 10-week quarter course we can only introduce a handful
+of the key concepts and methods relevant to GIS for Public Policy. As
+such, the course is not intended as an exhaustive treatment. Instead,
+the goal is that students will acquire an understanding of the more
+common and useful methods and practices, and use the course as an entry
+point for further engagement with the field.
+
+\#\# Course Objectives
+
+At the end of this course students will:
+
+-   possess a sound understanding of fundamental spatial concepts and
+    theory;
+-   know how to locate, import, manipulate, display, and analyze
+    geographical data in open source computational tools;
+-   have the ability to apply GIScience concepts and methods in public
+    policy and social science research.
+
+\#\# Computational Learning
+
+-   We will using \[open
+    source\](<https://en.wikipedia.org/wiki/Open-source_software>)
+    geospatial software throughout the course, primarily
+    \[QGIS\](<https://qgis.org/en/site/>)
+-   No prior programming experience is assumed and all computational
+    concepts are presented in a self-contained manner
+-   All software for the course will be made available through lab
+    computers. Students are strongly encouraged to install these
+    packages on their personal computers to facilitate working outside
+    of meeting times.
+
+\#\# Course Structure
+
+-   We will meet Mondays and Wednesdays.
+-   First part of the meeting will be in lecture format where we cover
+    core GIS concepts and theory.
+-   Second part of the meeting will be more hands on where we explore
+    GIS software to engage with the core concepts introduced in part
+    one.
+
+\#\# Grading
+
+\<table border=\"2\" cellspacing=\"0\" cellpadding=\"6\"
+rules=\"groups\" frame=\"hsides\"\>
+
+\<colgroup\> \<col class=\"org-left\" /\>
+
+\<col class=\"org-right\" /\> \</colgroup\> \<thead\> \<tr\> \<th
+scope=\"col\" class=\"org-left\"\>Component\</th\> \<th scope=\"col\"
+class=\"org-right\"\>Points\</th\> \</tr\> \</thead\>
+
+\<tbody\> \<tr\> \<td class=\"org-left\"\>Exercise 1\</td\> \<td
+class=\"org-right\"\>15\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-left\"\>Exercise 2\</td\> \<td
+class=\"org-right\"\>15\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-left\"\>Exercise 3\</td\> \<td
+class=\"org-right\"\>15\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-left\"\>Exercise 4\</td\> \<td
+class=\"org-right\"\>15\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-left\"\>Midterm exam\</td\> \<td
+class=\"org-right\"\>10\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-left\"\>Final exam\</td\> \<td
+class=\"org-right\"\>20\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-left\"\>Collaboration\</td\> \<td
+class=\"org-right\"\>10\</td\> \</tr\> \</tbody\> \</table\>
+
+\#\#\# Exercises
+
+Four exercises will be introduced in class and are to be completed
+outside of meeting times. Collaboration on exercises is encouraged with
+the understanding that you alone are responsible for mastering the
+material. Collaboration is not allowed on the examinations, and material
+from the exercises will form the bases of some examination questions.
+
+\#\#\# Exams
+
+-   Exams will be given in-class and are closed-book
+-   Reviews will be held during the meeting prior to the exam
+-   The final exam will be cumulative
+-   Makeups for exams will be given in cases of unforeseen emergencies
+-   Makeups will consist of a 1-hour oral examination
+
+\#\#\# Collaboration
+
+You have the opportunity to earn a total of 10 collaboration points.
+Collaboration here means you make a contribution that improves the
+course experience for all.
+
+Points can be earned for the following contributions:
+
+-   An approved review question (1 pt)
+-   An approved answer to a review question (1 pt)
+
+\#\#\# Review Questions
+
+-   Can be submitted anytime up to 2 weeks before the midterm or final
+
+-   Must be submitted through piazza
+
+-   Have to be approved by the professor for credit
+
+\#\# Schedule
+
+\#\#
+
+\<table border=\"2\" cellspacing=\"0\" cellpadding=\"6\"
+rules=\"groups\" frame=\"hsides\"\>
+
+\<colgroup\> \<col class=\"org-right\" /\>
+
+\<col class=\"org-right\" /\>
+
+\<col class=\"org-left\" /\>
+
+\<col class=\"org-left\" /\>
+
+\<col class=\"org-left\" /\> \</colgroup\> \<thead\> \<tr\> \<th
+scope=\"col\" class=\"org-right\"\>Week\</th\> \<th scope=\"col\"
+class=\"org-right\"\>Date\</th\> \<th scope=\"col\"
+class=\"org-left\"\>Topic\</th\> \<th scope=\"col\"
+class=\"org-left\"\>Reading\</th\> \<th scope=\"col\"
+class=\"org-left\"\>Exercises\</th\> \</tr\> \</thead\>
+
+\<tbody\> \<tr\> \<td class=\"org-right\"\>1\</td\> \<td
+class=\"org-right\"\>1-06\</td\> \<td class=\"org-left\"\>Introduction
+to GIScience\</td\> \<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>1-08\</td\> \<td class=\"org-left\"\>Introduction
+to QGIS\</td\> \<td class=\"org-left\"\>Sutton 1\</td\> \<td
+class=\"org-left\"\>Exercise 1 Out\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>2\</td\> \<td
+class=\"org-right\"\>1-13\</td\> \<td class=\"org-left\"\>Vector
+Data\</td\> \<td class=\"org-left\"\>Sutton 2\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>1-15\</td\> \<td class=\"org-left\"\>Vector
+Attributes and Tables\</td\> \<td class=\"org-left\"\>Sutton 3\</td\>
+\<td class=\"org-left\"\>Exercise 1 Due, Exercise 2 Out\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>3\</td\> \<td
+class=\"org-right\"\>1-20\</td\> \<td class=\"org-left\"\>Data Input and
+Capture\</td\> \<td class=\"org-left\"\>Sutton 4\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>1-22\</td\> \<td class=\"org-left\"\>Raster
+Data\</td\> \<td class=\"org-left\"\>Sutton 5\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\> \</tbody\> \</table\>
+
+\<table border=\"2\" cellspacing=\"0\" cellpadding=\"6\"
+rules=\"groups\" frame=\"hsides\"\>
+
+\<colgroup\> \<col class=\"org-right\" /\>
+
+\<col class=\"org-right\" /\>
+
+\<col class=\"org-left\" /\>
+
+\<col class=\"org-left\" /\>
+
+\<col class=\"org-left\" /\> \</colgroup\> \<thead\> \<tr\> \<th
+scope=\"col\" class=\"org-right\"\>Week\</th\> \<th scope=\"col\"
+class=\"org-right\"\>Date\</th\> \<th scope=\"col\"
+class=\"org-left\"\>Topic\</th\> \<th scope=\"col\"
+class=\"org-left\"\>Reading\</th\> \<th scope=\"col\"
+class=\"org-left\"\>Exercises\</th\> \</tr\> \</thead\>
+
+\<tbody\> \<tr\> \<td class=\"org-right\"\>4\</td\> \<td
+class=\"org-right\"\>1-27\</td\> \<td class=\"org-left\"\>Coordinate
+Reference Systems\</td\> \<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>1-29\</td\> \<td class=\"org-left\"\>Map
+Production\</td\> \<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>Exercise 2 Due\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>5\</td\> \<td
+class=\"org-right\"\>2-03\</td\> \<td class=\"org-left\"\>Review\</td\>
+\<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>2-05\</td\> \<td class=\"org-left\"\>Exam 1\</td\>
+\<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>6\</td\> \<td
+class=\"org-right\"\>2-10\</td\> \<td
+class=\"org-left\"\>Buffering\</td\> \<td class=\"org-left\"\>Sutton
+9\</td\> \<td class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>2-12\</td\> \<td
+class=\"org-left\"\>Interpolation\</td\> \<td class=\"org-left\"\>Sutton
+10\</td\> \<td class=\"org-left\"\>Exercise 3 Out\</td\> \</tr\>
+\</tbody\> \</table\>
+
+\<table border=\"2\" cellspacing=\"0\" cellpadding=\"6\"
+rules=\"groups\" frame=\"hsides\"\>
+
+\<colgroup\> \<col class=\"org-right\" /\>
+
+\<col class=\"org-right\" /\>
+
+\<col class=\"org-left\" /\>
+
+\<col class=\"org-left\" /\>
+
+\<col class=\"org-left\" /\> \</colgroup\> \<thead\> \<tr\> \<th
+scope=\"col\" class=\"org-right\"\>Week\</th\> \<th scope=\"col\"
+class=\"org-right\"\>Date\</th\> \<th scope=\"col\"
+class=\"org-left\"\>Topic\</th\> \<th scope=\"col\"
+class=\"org-left\"\>Reading\</th\> \<th scope=\"col\"
+class=\"org-left\"\>Exercises\</th\> \</tr\> \</thead\>
+
+\<tbody\> \<tr\> \<td class=\"org-right\"\>7\</td\> \<td
+class=\"org-right\"\>2-17\</td\> \<td class=\"org-left\"\>Spatial
+Joins\</td\> \<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>2-19\</td\> \<td class=\"org-left\"\>Dissolve and
+Merge\</td\> \<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>8\</td\> \<td
+class=\"org-right\"\>2-24\</td\> \<td
+class=\"org-left\"\>Clipping\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>2-26\</td\> \<td
+class=\"org-left\"\>Tesselations\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \<td class=\"org-left\"\>Exercise 3
+Due, Exercise 4 Out\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>9\</td\> \<td
+class=\"org-right\"\>3-02\</td\> \<td
+class=\"org-left\"\>Georeferencing\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>3-04\</td\> \<td class=\"org-left\"\>Web GIS\</td\>
+\<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>10\</td\> \<td
+class=\"org-right\"\>3-09\</td\> \<td class=\"org-left\"\>Next
+Steps\</td\> \<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>3-11\</td\> \<td class=\"org-left\"\>Review\</td\>
+\<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>Exercise 4 Due\</td\> \</tr\>
+
+\<tr\> \<td class=\"org-right\"\>&\#xa0;\</td\> \<td
+class=\"org-right\"\>TBA\</td\> \<td class=\"org-left\"\>Final
+Exam\</td\> \<td class=\"org-left\"\>&\#xa0;\</td\> \<td
+class=\"org-left\"\>&\#xa0;\</td\> \</tr\> \</tbody\> \</table\>
+
+Readings are to be done prior to the date listed.
+
+\#\# Code of Conduct
+
+As course instructor, I am dedicated to providing a harassment-free
+learning experience for all students, regardless of gender, sexual
+orientation, disability, physical appearance, body size, race, religion,
+or choice of operating system. All course participants are expected to
+show respect and courtesy to other students throughout the semester. As
+a learning community we do not tolerate harassment of participants in
+any form.
+
+All communication should be appropriate for a professional audience
+including people of many different backgrounds. Sexual language and
+imagery are not appropriate in this course.
+
+Be kind to others. Do not insult or put down other students. Behave
+professionally. Remember that harassment and sexist, racist, or
+exclusionary jokes are not appropriate for PBPL273.
+
+Students violating these rules may be asked to leave the course, and
+their violations will be reported to the UCR administration.
+
+This code of conduct is an adaptation of the \[SciPy 2018 Code of
+Conduct\](<https://scipy2018.scipy.org/ehome/299527/648147/index9a04.html>).
+
+\#\# Schedule
+
+  Date    Topic                       Reading   Note
+  ------- --------------------------- --------- ---------
+  03/29   Introduction to GIScience             Lecture
+  03/31                                         Lab
+  04/05                                         
+  04/07                                         
+  04/12                                         
+  04/14                                         
+  04/19                                         
+  04/21                                         
+  04/26                                         
+  04/28                                         
+  05/03                                         
+  05/05                                         
+  05/10                                         
+  05/12                                         
+  05/17                                         
+  05/19                                         
+  05/24                                         
+  05/26                                         
+  05/31   UCR Holiday Memorial Day              
+  06/02                                         
+
+\#\# Introduce Yourself
+
+-   Name
+-   Program
+-   Why you are here
+
+\#\# Me
+
+\#\#\# My Program
+
+!\[img\](./images/00/cgs.png)
+
+\#\#\# Why am I here?
+
+!\[img\](./images/00/john~sinton~.png)
+
+\#\#\#
+
+!\[img\](./images/00/atlantic~city~.png)
+
+\#\#\#
+
+!\[img\](./images/00/ac~hotel~.png)
+
+\#\#\#
+
+!\[img\](./images/00/ac~stockton~.png)
+
+\#\#\#
+
+\<div class=\"NOTES\"\> Point about restructuring happening in real time
+with casino workers and seniors moving into our campground.
+
+\</div\>
+
+!\[img\](./images/00/camp0.png)
+
+\#\#\#
+
+\<div class=\"NOTES\"\> Point about restructuring happening in real time
+with casino workers and seniors moving into our campground.
+
+\</div\>
+
+!\[img\](./images/00/camp1.png)
+
+\#\#\#
+
+\<div class=\"NOTES\"\> Point about restructuring happening in real time
+with casino workers and seniors moving into our campground.
+
+\</div\>
+
+!\[img\](./images/00/camp2.png)
+
+\#\#\#
+
+\<div class=\"NOTES\"\> Point about restructuring happening in real time
+with casino workers and seniors moving into our campground.
+
+\</div\>
+
+!\[img\](./images/00/camp3.png)
+
+\#\# GIS
+
+\#\#\# Geographic Information Systems
+
+-   ****Geographic****: relates to a specific place on or in relation to
+    the Earth\'s surface
+-   ****Information****: data to which some value or interpretation has
+    been added
+-   ****Systems****: a system designed to perform a wide range of
+    function on and with GI
+
+\#\#\# Geographic Information Science
+
+-   The **science behind gis**
+-   Coined in 1992 by Michael Goodchild
+
+\<iframe width=\"560\" height=\"315\"
+src=\"<https://www.youtube.com/embed/tbZ_QB6wuZs>\" frameborder=\"0\"
+allow=\"accelerometer; autoplay; encrypted-media; gyroscope;
+picture-in-picture\" allowfullscreen\>\</iframe\>
+
+\#\#\# Geographic Information Services
+
+-   industry
+
+\#\# GIS History
+
+\#\#\# Lineage
+
+\#\#\# Snow Maps
+
+\#\#\# Ian McHarg
+
+\#\# GIS Today
+
+\#\#\# GIS Industry
+
+\#\#\# GIS in Academia
+
+\#\# GIS and Public Policy
+
+\#\#\# Positive (Descriptive) Applications
+
+-   applications of GIS to examine a phenomena
+-   provide scientific evidence and knowledge
+-   describe the world
+
+\#\#\# Environmental Equity
+
+!\[img\](./images/00/latimes.png)
+
+\#\#\# Food Deserts
+
+!\[img\](./images/00/fooddesert.png)
+
+\#\#\# Land Use Change
+
+!\[img\](./images/00/loudoun2012.png)
+
+!\[img\](./images/00/loudoun2018.png)
+
+\#\#\# Economic Growth
+
+\#\#\# Poverty
+
+\#\#\# Socioeconomic Mobility
+
+\#\#\# Health
+
+\#\#\# Normative (Prescriptive) Applications
+
+-   applications of GIS to design and implement policy
+-   change the world
+
+\#\#\# Transportation Planning
+
+\#\#\# Planning
+
+!\[img\](./images/00/philly3d.png)
+
+\#\#\# Disaster Response
+
+!\[img\](./images/00/tsunami.png)
+
+-   Introduction to QGIS
+
+
+## Description
+
+This course introduces the fundamental concepts of geographic information
+systems (GIS), geographic information science (GIScience), spatial data, and
+applications of spatial analysis in the social sciences and public policy.
+
+In the scope of a 10-week quarter course we can only introduce a handful of the
+key concepts and methods relevant to GIS for Public Policy. As such, the
+course is not intended as an exhaustive treatment. Instead, the goal is that
+students will acquire an understanding of the more common and useful methods
+and practices, and use the course as an entry point for further engagement with the
+field.
+
+
+## Course Objectives
+
+At the end of this course students will:
+
+-   possess a sound understanding of fundamental spatial concepts and theory;
+-   know how to locate, import, manipulate, display, and analyze
+    geographical data in open source computational tools;
+-   have the ability to apply GIScience concepts and methods in public policy and
+    social science research.
+
+
+## Computational Learning
+
+-   We will using [open source](https://en.wikipedia.org/wiki/Open-source_software) geospatial software throughout the course, primarily [QGIS](https://qgis.org/en/site/)
+-   No prior programming experience is assumed and all computational concepts are presented in a self-contained manner
+-   All software for the course will be made available through lab computers. Students are strongly encouraged to install these packages on their personal computers to facilitate working outside of meeting times.
+
+
+## Course Structure
+
+-   We will meet Mondays and Wednesdays.
+-   First part of the meeting will be in  lecture  format where we cover core GIS concepts and theory.
+-   Second part of the meeting will be more hands on where we explore GIS software to engage with the core concepts introduced in part one.
+
+
+## Grading
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-right" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-left">Component</th>
+<th scope="col" class="org-right">Points</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-left">Exercise 1</td>
+<td class="org-right">15</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Exercise 2</td>
+<td class="org-right">15</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Exercise 3</td>
+<td class="org-right">15</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Exercise 4</td>
+<td class="org-right">15</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Midterm exam</td>
+<td class="org-right">10</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Final exam</td>
+<td class="org-right">20</td>
+</tr>
+
+
+<tr>
+<td class="org-left">Collaboration</td>
+<td class="org-right">10</td>
+</tr>
+</tbody>
+</table>
+
+
+### Exercises
+
+Four exercises will be introduced in class and are to be completed outside of
+meeting times. Collaboration on exercises is encouraged with the understanding that you
+alone are responsible for mastering the material. Collaboration is not allowed on the examinations,
+and material from the exercises will form the bases of some examination questions.
+
+
+### Exams
+
+-   Exams will be given in-class and are closed-book
+-   Reviews will be held during the meeting prior to the exam
+-   The final exam will be cumulative
+-   Makeups for exams will be given in cases of unforeseen emergencies
+-   Makeups will consist of a 1-hour oral examination
+
+
+### Collaboration
+
+You have the opportunity to earn a total of 10 collaboration points.
+Collaboration here means you make a contribution that improves the course
+experience for all.
+
+Points can be earned for the following contributions:
+
+-   An approved review question (1 pt)
+-   An approved answer to a review question (1 pt)
+
+
+### Review Questions
+
+
+-   Can be submitted anytime up to 2 weeks before the midterm or final
+
+-   Must be submitted through piazza
+
+-   Have to be approved by the professor for credit
+
+
+## Schedule
+
+
+## 
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Week</th>
+<th scope="col" class="org-right">Date</th>
+<th scope="col" class="org-left">Topic</th>
+<th scope="col" class="org-left">Reading</th>
+<th scope="col" class="org-left">Exercises</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-right">1</td>
+<td class="org-right">1-06</td>
+<td class="org-left">Introduction to GIScience</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">1-08</td>
+<td class="org-left">Introduction to QGIS</td>
+<td class="org-left">Sutton 1</td>
+<td class="org-left">Exercise 1 Out</td>
+</tr>
+
+
+<tr>
+<td class="org-right">2</td>
+<td class="org-right">1-13</td>
+<td class="org-left">Vector Data</td>
+<td class="org-left">Sutton 2</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">1-15</td>
+<td class="org-left">Vector Attributes and Tables</td>
+<td class="org-left">Sutton 3</td>
+<td class="org-left">Exercise 1 Due, Exercise 2 Out</td>
+</tr>
+
+
+<tr>
+<td class="org-right">3</td>
+<td class="org-right">1-20</td>
+<td class="org-left">Data Input and Capture</td>
+<td class="org-left">Sutton 4</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">1-22</td>
+<td class="org-left">Raster Data</td>
+<td class="org-left">Sutton 5</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Week</th>
+<th scope="col" class="org-right">Date</th>
+<th scope="col" class="org-left">Topic</th>
+<th scope="col" class="org-left">Reading</th>
+<th scope="col" class="org-left">Exercises</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-right">4</td>
+<td class="org-right">1-27</td>
+<td class="org-left">Coordinate Reference Systems</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">1-29</td>
+<td class="org-left">Map Production</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Exercise 2 Due</td>
+</tr>
+
+
+<tr>
+<td class="org-right">5</td>
+<td class="org-right">2-03</td>
+<td class="org-left">Review</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">2-05</td>
+<td class="org-left">Exam 1</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">6</td>
+<td class="org-right">2-10</td>
+<td class="org-left">Buffering</td>
+<td class="org-left">Sutton 9</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">2-12</td>
+<td class="org-left">Interpolation</td>
+<td class="org-left">Sutton 10</td>
+<td class="org-left">Exercise 3 Out</td>
+</tr>
+</tbody>
+</table>
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides">
+
+
+<colgroup>
+<col  class="org-right" />
+
+<col  class="org-right" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<thead>
+<tr>
+<th scope="col" class="org-right">Week</th>
+<th scope="col" class="org-right">Date</th>
+<th scope="col" class="org-left">Topic</th>
+<th scope="col" class="org-left">Reading</th>
+<th scope="col" class="org-left">Exercises</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td class="org-right">7</td>
+<td class="org-right">2-17</td>
+<td class="org-left">Spatial Joins</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">2-19</td>
+<td class="org-left">Dissolve and Merge</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">8</td>
+<td class="org-right">2-24</td>
+<td class="org-left">Clipping</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">2-26</td>
+<td class="org-left">Tesselations</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Exercise 3 Due, Exercise 4 Out</td>
+</tr>
+
+
+<tr>
+<td class="org-right">9</td>
+<td class="org-right">3-02</td>
+<td class="org-left">Georeferencing</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">3-04</td>
+<td class="org-left">Web GIS</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">10</td>
+<td class="org-right">3-09</td>
+<td class="org-left">Next Steps</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">3-11</td>
+<td class="org-left">Review</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">Exercise 4 Due</td>
+</tr>
+
+
+<tr>
+<td class="org-right">&#xa0;</td>
+<td class="org-right">TBA</td>
+<td class="org-left">Final Exam</td>
+<td class="org-left">&#xa0;</td>
+<td class="org-left">&#xa0;</td>
+</tr>
+</tbody>
+</table>
+
+Readings are to be done prior to the date listed. 
+
+
+## Code of Conduct
+
+As course instructor, I am dedicated to providing a harassment-free
+learning experience for all students, regardless of gender, sexual
+orientation, disability, physical appearance, body size, race, religion,
+or choice of operating system. All course participants are expected to
+show respect and courtesy to other students throughout the semester. As
+a learning community we do not tolerate harassment of participants in
+any form.
+
+All communication should be appropriate for a professional audience
+including people of many different backgrounds. Sexual language and
+imagery are not appropriate in this course.
+
+Be kind to others. Do not insult or put down other students. Behave
+professionally. Remember that harassment and sexist, racist, or
+exclusionary jokes are not appropriate for PBPL273.
+
+Students violating these rules may be asked to leave the course, and
+their violations will be reported to the UCR administration.
+
+This code of conduct is an adaptation of the [SciPy 2018 Code of Conduct](https://scipy2018.scipy.org/ehome/299527/648147/index9a04.html).
+
+
+## Schedule
+
+| Date  | Topic                     | Reading | Note    |
+|-------|---------------------------|---------|---------|
+| 03/29 | Introduction to GIScience |         | Lecture |
+| 03/31 |                           |         | Lab     |
+|-------|---------------------------|---------|---------|
+| 04/05 |                           |         |         |
+| 04/07 |                           |         |         |
+|-------|---------------------------|---------|---------|
+| 04/12 |                           |         |         |
+| 04/14 |                           |         |         |
+|-------|---------------------------|---------|---------|
+| 04/19 |                           |         |         |
+| 04/21 |                           |         |         |
+|-------|---------------------------|---------|---------|
+| 04/26 |                           |         |         |
+| 04/28 |                           |         |         |
+|-------|---------------------------|---------|---------|
+| 05/03 |                           |         |         |
+| 05/05 |                           |         |         |
+|-------|---------------------------|---------|---------|
+| 05/10 |                           |         |         |
+| 05/12 |                           |         |         |
+|-------|---------------------------|---------|---------|
+| 05/17 |                           |         |         |
+| 05/19 |                           |         |         |
+|-------|---------------------------|---------|---------|
+| 05/24 |                           |         |         |
+| 05/26 |                           |         |         |
+|-------|---------------------------|---------|---------|
+| 05/31 | UCR Holiday Memorial Day  |         |         |
+| 06/02 |                           |         |         |
+|-------|---------------------------|---------|---------|
+
+
+
+
+# Introductions
+
+
+## Introduce Yourself
+
+-   Name
+-   Program
+-   Why you are here
+
+
+## Me
+
+
+### My Program
+
+![img](./images/00/cgs.png)
+
+
+### Why am I here?
+
+![img](./images/00/john_sinton.png)
+
+
+### 
+
+![img](./images/00/atlantic_city.png)
+
+
+### 
+
+![img](./images/00/ac_hotel.png)
+
+
+### 
+
+![img](./images/00/ac_stockton.png)
+
+
+### 
+
+<div class="NOTES">
+Point about restructuring happening in real time with casino workers and
+seniors moving into our campground.
+
+</div>
+
+![img](./images/00/camp0.png)
+
+
+### 
+
+<div class="NOTES">
+Point about restructuring happening in real time with casino workers and
+seniors moving into our campground.
+
+</div>
+
+![img](./images/00/camp1.png)
+
+
+### 
+
+<div class="NOTES">
+Point about restructuring happening in real time with casino workers and
+seniors moving into our campground.
+
+</div>
+
+![img](./images/00/camp2.png)
+
+
+### 
+
+<div class="NOTES">
+Point about restructuring happening in real time with casino workers and
+seniors moving into our campground.
+
+</div>
+
+![img](./images/00/camp3.png)
+
+
+# Introduction to GIS
+
+
+## GIS
+
+
+### Geographic Information Systems
+
+-   **Geographic**: relates to a specific place on or in relation to the Earth's
+    surface
+-   **Information**: data to which some value or interpretation has been added
+-   **Systems**: a system designed to perform a wide range of function on and with GI
+
+
+### Geographic Information Science
+
+-   The *science behind gis*
+-   Coined in 1992 by Michael Goodchild
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/tbZ_QB6wuZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+
+### Geographic Information Services
+
+-   industry
+
+
+## GIS History
+
+
+### Lineage
+
+
+### Snow Maps
+
+
+### Ian McHarg
+
+
+## GIS Today
+
+
+### GIS Industry
+
+
+### GIS in Academia
+
+
+## GIS and Public Policy
+
+
+### Positive (Descriptive) Applications
+
+-   applications of GIS to examine a phenomena
+-   provide scientific evidence and knowledge
+-   describe the world
+
+
+### Environmental Equity
+
+![img](./images/00/latimes.png)
+
+
+### Food Deserts
+
+![img](./images/00/fooddesert.png)
+
+
+### Land Use Change
+
+![img](./images/00/loudoun2012.png)
+
+![img](./images/00/loudoun2018.png)
+
+
+### Economic Growth
+
+
+### Poverty
+
+
+### Socioeconomic Mobility
+
+
+### Health
+
+
+### Normative (Prescriptive) Applications
+
+-   applications of GIS to design and implement policy
+-   change the world
+
+
+### Transportation Planning
+
+
+### Planning
+
+![img](./images/00/philly3d.png)
+
+
+### Disaster Response
+
+![img](./images/00/tsunami.png)
+
+
+# Next Up
+
+-   Introduction to QGIS
+

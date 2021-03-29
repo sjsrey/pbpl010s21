@@ -3,6 +3,14 @@
 
 ![img](./lectures/images/00/qgispysal.png)
 
+
+Instructor: **Sergio Rey**  
+Office Hours (Zoom): Monday 3:30-4:30 (or by appointment)  
+
+
+Meeting Times: Monday and Wednesday 2:00-3:00  (Zoom)  
+Discussion: Wednesday 1:00-1:50 (Zoom)  
+
 ## Description
 
 This course introduces the fundamental concepts of geographic
@@ -104,28 +112,151 @@ also be required to complete the projects.
 
 ## Schedule (Planned)
 
-| Date  | Week | Topic                                              | Reading | Exercises    |
-|-------|------|----------------------------------------------------|---------|--------------|
-| 03/29 |    1 | [Course Introduction](./lectures/00_introtogis.md) |         |              |
-| 03/31 |      | Open Science                                       |         |              |
-| 04/05 |    2 | Introduction to QGIS                               |         | 1 Out        |
-| 04/07 |      | Geographic  Data                                   |         |              |
-| 04/12 |    3 | Choropleth Mapping                                 |         | 1 Due, 2 Out |
-| 04/14 |      | Coordinate Reference Systems                       |         |              |
-| 04/19 |    4 | Digitizing and geocoding                           |         | 2 Due        |
-| 04/21 |      | GIS Databases and Joins                            |         |              |
-| 04/26 |    5 | Review                                             |         |              |
-| 04/28 |      | **Midterm Exam**                                   |         |              |
-| 05/03 |    6 | Buffering                                          |         | 3 Out        |
-| 05/05 |      | Clipping and Partitions                            |         |              |
-| 05/10 |    7 | Open Street Map                                    |         | 3 Due, 4 Out |
-| 05/12 |      | Spatial analysis and inference                     |         |              |
-| 05/17 |    8 | Spatial analysis in QGIS                           |         | 4 Due        |
-| 05/19 |      | Network Analysis in QGIS                           |         |              |
-| 05/24 |    9 | Decision Support Systems                           |         |              |
-| 05/26 |      | GIS in policy and decision making                  |         |              |
-| 05/31 |   10 | *Memorial Day*                                     |         |              |
-| 06/02 |      | Project Presentation                               |         |              |
+### Week 1 March 29, 31
+
+#### March 29: Course Introduction
+  - [Syllabus](syllabus)
+  
+#### March 31: Introduction to GIS
+  - <a href="https://mgimond.github.io/Spatial/introGIS.html">Reading: Gilmond, M. "Intro to GIS and Spatial Analysis"</a>
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/introducing_gis.html">Reading: Sutton, T. "Introducing GIS" </a>
+  - [Introduction to GIS](./lectures/00_introtogis.md)
+-----
+### Week 2: April 5, 7
+
+#### April 5: Introduction to QGIS
+  - <a href="https://docs.qgis.org/3.16/en/docs/training_manual/index.html">Reading: QGIS Training Manual, Ch. 1-2</a>
+  - Exercise 1 Out
+
+#### April 7: Data Models
+  - <a href="https://mgimond.github.io/Spatial/feature-representation.html">Reading: Gilmond, M. "Feature Representation"</a>
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_data.html">Reading: Sutton, T. "Vector Data" </a>
+-----
+### Week 3 April 12, 14
+
+#### April 12: Attributes and Attribute Tables
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
+
+#### April 14: Rasters
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/raster_data.html">Reading: Sutton, T. "Raster Data" </a>
+  - Exercise 1 Due
+  - Exercise 2 Out
+-----
+  
+### Week 4 April 19, 21
+
+#### April 19: Coordinate Reference Systems
+  - <a href="../slides/lecture_06.html">Slides</a> 
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/coordinate_reference_systems.html">Reading: Sutton, T. "Coordinate Reference Systems" </a>
+ 
+#### April 21: QGIS Studio
+  
+-----
+ 
+### Week 5 April 26, 28
+
+#### April 26: Review
+  - Exercise 2 Due
+#### April 28: Midterm
+
+-----
+  
+### Week 6 May 3, 5
+
+#### May 3: Creating Maps
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
+  - Exercise 3 Uut
+ 
+
+#### May 5: Creating and Fixing Vector Data
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
+ 
+-----
+
+### Week 7 May 10, 12
+
+#### May 10: Vector Analysis: Buffering
+
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html">Reading: Sutton, T. "Vector Spatial Analysis (Buffers)" </a>
+
+#### May 12: Clipping, Dissolve, Spatial Joins
+
+  - <a href="../slides/lecture_11.html">Slides</a> 
+  - [Data](https://stacks.stanford.edu/file/druid:xc453kn9742/data.zip?download=true)
+  - <a href="https://www.e-education.psu.edu/geog585/node/693">Reading: PSU. Walkthrough: Clipping and projecting vector data with QGIS and OGR</a>
+  - Exercise 3 Due
+  - Exercise 4 Out
+-----
+
+
+### Week 8 May 17, 19
+
+#### May 17: Crowd-sourcing and VGI
+  - <a href="https://www.e-education.psu.edu/geog585/node/737">Reading: PSU. VGI and crowdsourced data collection</a>
+  
+#### May 19: OpenStreetMap
+
+ - [Reading: OpenStreetMap](https://www.openstreetmap.org/about)
+-----
+
+### Week 9 May 24, 26
+
+#### March 2: Introduction to scripting QGIS
+
+  - <a href="https://docs.qgis.org/3.16/en/docs/pyqgis_developer_cookbook/index.html">Reading: PyQGIS Developer Cookbook</a>
+
+#### March 4: QGIS Scripting Part II
+
+  - <a href="https://docs.qgis.org/3.16/en/docs/pyqgis_developer_cookbook/index.html">Reading: PyQGIS Developer Cookbook</a>
+-----
+
+### Week 10 May 31, June 2
+
+#### May 31 Memorial Day (No Class)
+
+#### June 2
+  - Class Summary and Next Steps
+  - Exercise 4 Due
+  
+-----
+
+### Final Exam Week
+ - Project Presentation (TBD)
+-----
+
+## Readings
+Readings supporting the lectures are taken from the following sources:
+
+- Sutton,T, O. Dassau, and M. Sutton (2009) [A Gentle Introduction to GIS](https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/preamble.html). Spatial Information Management Unit, Office of the Premier, Eastern Cape, South Africa.
+
+
+Additional readings will be assigned and made available on the course
+learning site.
+
+## Academic Integrity 
+
+The UCR student academic integrity policy lists violations in detail.
+These violations fall into eight broad areas that include but are not
+limited to: cheating, fabrication, plagiarism, facilitating academic
+misconduct, unauthorized collaboration, interference or sabbotage,
+non-compliance with research regulations and retaliation. For more
+information about the UCR student academic integrity policy, please use
+the following web link
+<http://conduct.ucr.edu/policies/academicintegrity.html>
+
+## Disability accommodations
+
+Qualified students with disabilities who will require disability
+accommodations in this class are encouraged to make their requests to me
+at the beginning of the quarter either during office hours or by
+appointment.
+
+
+**Note**: Prior to receiving disability accommodations,
+verification of eligibility from the [Student Disability Resource
+Center](http://sdrc.ucr.edu/) is required. Disability information is
+confidential.
+
 
 
 ## Code of Conduct

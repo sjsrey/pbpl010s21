@@ -126,6 +126,7 @@ also be required to complete the projects.
 
 #### April 5: Introduction to QGIS
   - <a href="https://docs.qgis.org/3.16/en/docs/training_manual/index.html">Reading: QGIS Training Manual, Ch. 1-2</a>
+  - [Introduction to QGIS](lectures/01_opensource)
   - Exercise 1 Out
 
 #### April 7: Data Models
@@ -146,7 +147,6 @@ also be required to complete the projects.
 ### Week 4 April 19, 21
 
 #### April 19: Coordinate Reference Systems
-  - <a href="../slides/lecture_06.html">Slides</a> 
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/coordinate_reference_systems.html">Reading: Sutton, T. "Coordinate Reference Systems" </a>
  
 #### April 21: QGIS Studio
@@ -181,7 +181,6 @@ also be required to complete the projects.
 
 #### May 12: Clipping, Dissolve, Spatial Joins
 
-  - <a href="../slides/lecture_11.html">Slides</a> 
   - [Data](https://stacks.stanford.edu/file/druid:xc453kn9742/data.zip?download=true)
   - <a href="https://www.e-education.psu.edu/geog585/node/693">Reading: PSU. Walkthrough: Clipping and projecting vector data with QGIS and OGR</a>
   - Exercise 3 Due

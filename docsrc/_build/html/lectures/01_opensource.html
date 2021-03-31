@@ -1,27 +1,47 @@
 
-
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Open Source GIS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <link href="../_static/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    
+  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+  <link rel="stylesheet"
+    href="../_static/vendor/open-sans_all/1.44.1/index.css">
+  <link rel="stylesheet"
+    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
+
+    
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
+
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/sphinx-book-theme.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/language_data.js"></script>
-    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="prev" title="Introduction to GIS" href="00_introtogis.html" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="docsearch:language" content="en">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
 
 
 
@@ -42,33 +62,66 @@
   
 </a>
 </div>
-
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form>
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../syllabus.html">
-   Syllabus
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="00_introtogis.html">
-   Introduction to GIS
-  </a>
- </li>
-</ul>
-
-</nav>
-
- <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
 </div>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_introtogis.html">Introduction to GIS</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to QGIS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#gis-software">GIS Software</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#open-source-open-science-open-education">Open Source, Open Science Open Education</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#origins">Origins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#freedom">Freedom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#why-open-source-gis">Why Open Source GIS?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-science-why">Open Science (Why?)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-science-what">Open Science (What?)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-education">Open Education</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#qgis">QGIS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#qgis-community">QGIS Community</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-qgis">Open QGIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#load-a-vector-layer">Load a Vector Layer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#vector-layer-loaded">Vector Layer Loaded</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#interface-components">Interface Components</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#menu-bar">Menu Bar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tool-bar">Tool Bar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#canvas">Canvas</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#browser-panel">Browser Panel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#layer-panel">Layer Panel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#locator-bar">Locator Bar</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#status-bar">Status Bar</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#working-with-projects-files-and-directories">Working with Projects, Files, and Directories</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#projects">Projects</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#what-is-a-qgis-project">What is a QGIS Project?</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#saving-a-project">Saving a project</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-save-dialog">Project Save Dialog</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-saved">Project Saved</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#project-file">Project File</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#quit-qgis">Quit QGIS</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#opening-project-on-a-different-computer-and-operating-system">Opening Project on a different computer (and operating system)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#linux-file-browser">Linux File Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#qgis-on-linux">QGIS on Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#open-project-on-linux">Open Project on Linux</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#our-project-on-linux">Our Project on Linux</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
 
 </div>
 
@@ -93,11 +146,11 @@
             <i class="fas fa-arrow-up"></i>
         </button>
         
-        <div class="dropdown-buttons-trigger">
+        
+<div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -109,14 +162,15 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
-    
 </div>
+
         <!-- Source interaction buttons -->
 
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
@@ -125,19 +179,20 @@
 
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
+        
         <div class="tocsection onthispage pt-5 pb-3">
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
             <ul class="nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#introduction">
-   Introduction
+  <a class="reference internal nav-link" href="#gis-software">
+   GIS Software
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#open-source">
-   Open Source
+  <a class="reference internal nav-link" href="#open-source-open-science-open-education">
+   Open Source, Open Science Open Education
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
@@ -151,42 +206,167 @@
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#examples">
-     Examples
+    <a class="reference internal nav-link" href="#why-open-source-gis">
+     Why Open Source GIS?
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#open-science-why">
+     Open Science (Why?)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#open-science-what">
+     Open Science (What?)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#open-education">
+     Open Education
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#open-science">
-   Open Science
+  <a class="reference internal nav-link" href="#qgis">
+   QGIS
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#history">
-     History
+    <a class="reference internal nav-link" href="#qgis-community">
+     QGIS Community
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#replication-crisis">
-     Replication Crisis
+    <a class="reference internal nav-link" href="#open-qgis">
+     Open QGIS
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#practices">
-     Practices
+    <a class="reference internal nav-link" href="#load-a-vector-layer">
+     Load a Vector Layer
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#vector-layer-loaded">
+     Vector Layer Loaded
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#interface-components">
+     Interface Components
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#menu-bar">
+       Menu Bar
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#tool-bar">
+       Tool Bar
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#canvas">
+       Canvas
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#browser-panel">
+       Browser Panel
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#layer-panel">
+       Layer Panel
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#locator-bar">
+       Locator Bar
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#status-bar">
+       Status Bar
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#working-with-projects-files-and-directories">
+     Working with Projects, Files, and Directories
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#projects">
+       Projects
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#what-is-a-qgis-project">
+       What is a QGIS Project?
+      </a>
+     </li>
+    </ul>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#saving-a-project">
+     Saving a project
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#project-save-dialog">
+     Project Save Dialog
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#project-saved">
+     Project Saved
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#project-file">
+     Project File
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quit-qgis">
+     Quit QGIS
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#opening-project-on-a-different-computer-and-operating-system">
+     Opening Project on a different computer (and operating system)
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#linux-file-browser">
+     Linux File Browser
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#qgis-on-linux">
+     QGIS on Linux
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#open-project-on-linux">
+     Open Project on Linux
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#our-project-on-linux">
+     Our Project on Linux
     </a>
    </li>
   </ul>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#open-source-in-gis">
-   Open Source in GIS
-  </a>
  </li>
 </ul>
 
         </nav>
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -196,13 +376,19 @@
                 
   <div class="section" id="open-source-gis">
 <h1>Open Source GIS<a class="headerlink" href="#open-source-gis" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="introduction">
-<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="gis-software">
+<h2>GIS Software<a class="headerlink" href="#gis-software" title="Permalink to this headline">¶</a></h2>
+<p><img alt="gis software" src="../_images/gissoftware.png" /></p>
 </div>
-<div class="section" id="open-source">
-<h2>Open Source<a class="headerlink" href="#open-source" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="open-source-open-science-open-education">
+<h2>Open Source, Open Science Open Education<a class="headerlink" href="#open-source-open-science-open-education" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="origins">
 <h3>Origins<a class="headerlink" href="#origins" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>Free Software</p></li>
+<li><p>Open Source Software</p></li>
+</ul>
+<p><a class="reference external" href="https://dzone.com/articles/free-software-vs-open-source-vs-freeware-whats-the">They are not the same</a></p>
 </div>
 <div class="section" id="freedom">
 <h3>Freedom<a class="headerlink" href="#freedom" title="Permalink to this headline">¶</a></h3>
@@ -211,26 +397,136 @@
 <li><p>Free as in Speech</p></li>
 </ol>
 </div>
-<div class="section" id="examples">
-<h3>Examples<a class="headerlink" href="#examples" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="why-open-source-gis">
+<h3>Why Open Source GIS?<a class="headerlink" href="#why-open-source-gis" title="Permalink to this headline">¶</a></h3>
+<p><a class="reference external" href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/preamble.html#a-word-from-the-editor">A word from the editor</a></p>
+</div>
+<div class="section" id="open-science-why">
+<h3>Open Science (Why?)<a class="headerlink" href="#open-science-why" title="Permalink to this headline">¶</a></h3>
+<p><img alt="repro" src="../_images/reprocrisis.png" /></p>
+</div>
+<div class="section" id="open-science-what">
+<h3>Open Science (What?)<a class="headerlink" href="#open-science-what" title="Permalink to this headline">¶</a></h3>
+<p><img alt="open science" src="../_images/openscience.png" />
+<a class="reference external" href="https://www.fosteropenscience.eu/content/what-open-science-introduction">(FOSTER)</a></p>
+</div>
+<div class="section" id="open-education">
+<h3>Open Education<a class="headerlink" href="#open-education" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>access to quality education is everyone’s birthright</li></p></li>
+<li><p>human knowledge is a <a class="reference external" href="https://en.wikipedia.org/wiki/Public_good_(economics)">public good</a> that should be available to all</p></li>
+<li><p>human knowledge is a public good that we all can contribute to</li></p></li>
+</ul>
 </div>
 </div>
-<div class="section" id="open-science">
-<h2>Open Science<a class="headerlink" href="#open-science" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="history">
-<h3>History<a class="headerlink" href="#history" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="qgis">
+<h2>QGIS<a class="headerlink" href="#qgis" title="Permalink to this headline">¶</a></h2>
+<p><img alt="qgis" src="../_images/qgis1.png" /></p>
+<div class="section" id="qgis-community">
+<h3>QGIS Community<a class="headerlink" href="#qgis-community" title="Permalink to this headline">¶</a></h3>
+<p><img alt="team" src="../_images/qgisteam.png" /></p>
 </div>
-<div class="section" id="replication-crisis">
-<h3>Replication Crisis<a class="headerlink" href="#replication-crisis" title="Permalink to this headline">¶</a></h3>
-<p>[<img alt="repro" src="lectures/images/01/reprocrisis.png" />
-]</p>
+<div class="section" id="open-qgis">
+<h3>Open QGIS<a class="headerlink" href="#open-qgis" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Opening QGIS" src="../_images/qgisopen.png" /></p>
 </div>
-<div class="section" id="practices">
-<h3>Practices<a class="headerlink" href="#practices" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="load-a-vector-layer">
+<h3>Load a Vector Layer<a class="headerlink" href="#load-a-vector-layer" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Load Vector" src="../_images/addvector.png" /></p>
+</div>
+<div class="section" id="vector-layer-loaded">
+<h3>Vector Layer Loaded<a class="headerlink" href="#vector-layer-loaded" title="Permalink to this headline">¶</a></h3>
+<p><img alt="added" src="../_images/vectoraddresult.png" /></p>
+</div>
+<div class="section" id="interface-components">
+<h3>Interface Components<a class="headerlink" href="#interface-components" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="menu-bar">
+<h4>Menu Bar<a class="headerlink" href="#menu-bar" title="Permalink to this headline">¶</a></h4>
+<p><img alt="menu bar" src="../_images/menubar.png" /></p>
+</div>
+<div class="section" id="tool-bar">
+<h4>Tool Bar<a class="headerlink" href="#tool-bar" title="Permalink to this headline">¶</a></h4>
+<p><img alt="tool bar" src="../_images/toolbar.png" /></p>
+</div>
+<div class="section" id="canvas">
+<h4>Canvas<a class="headerlink" href="#canvas" title="Permalink to this headline">¶</a></h4>
+<p><img alt="Canvas" src="../_images/canvas.png" /></p>
+</div>
+<div class="section" id="browser-panel">
+<h4>Browser Panel<a class="headerlink" href="#browser-panel" title="Permalink to this headline">¶</a></h4>
+<p><img alt="Browser Panel" src="../_images/browserpanel.png" /></p>
+</div>
+<div class="section" id="layer-panel">
+<h4>Layer Panel<a class="headerlink" href="#layer-panel" title="Permalink to this headline">¶</a></h4>
+<p><img alt="Layer Panel" src="../_images/layerpanel.png" /></p>
+</div>
+<div class="section" id="locator-bar">
+<h4>Locator Bar<a class="headerlink" href="#locator-bar" title="Permalink to this headline">¶</a></h4>
+<p><img alt="Locator Bar" src="../_images/locatorbar.png" /></p>
+</div>
+<div class="section" id="status-bar">
+<h4>Status Bar<a class="headerlink" href="#status-bar" title="Permalink to this headline">¶</a></h4>
+<p><img alt="Status Bar" src="../_images/statusbar.png" /></p>
 </div>
 </div>
-<div class="section" id="open-source-in-gis">
-<h2>Open Source in GIS<a class="headerlink" href="#open-source-in-gis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="working-with-projects-files-and-directories">
+<h3>Working with Projects, Files, and Directories<a class="headerlink" href="#working-with-projects-files-and-directories" title="Permalink to this headline">¶</a></h3>
+<p>Load two new layers</p>
+<p><img alt="rivers load" src="../_images/riversload.png" />
+<img alt="rivers loaded" src="../_images/riversloaded.png" /></p>
+<p><img alt="places loaded" src="../_images/placesloaded.png" /></p>
+<div class="section" id="projects">
+<h4>Projects<a class="headerlink" href="#projects" title="Permalink to this headline">¶</a></h4>
+</div>
+<div class="section" id="what-is-a-qgis-project">
+<h4>What is a QGIS Project?<a class="headerlink" href="#what-is-a-qgis-project" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li><p>A <code class="docutils literal notranslate"><span class="pre">meta-file</span></code> that defines the files associated with an analysis</p></li>
+<li><p>A <code class="docutils literal notranslate"><span class="pre">project</span> <span class="pre">file</span></code> records locations of files related to a <code class="docutils literal notranslate"><span class="pre">project</span></code></p></li>
+<li><p>Extension: <code class="docutils literal notranslate"><span class="pre">gqz</span></code></p></li>
+</ul>
+<p><img alt="Untitled Project" src="../_images/untitledproject.png" /></p>
+</div>
+</div>
+<div class="section" id="saving-a-project">
+<h3>Saving a project<a class="headerlink" href="#saving-a-project" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Save Project" src="../_images/projectsave.png" /></p>
+</div>
+<div class="section" id="project-save-dialog">
+<h3>Project Save Dialog<a class="headerlink" href="#project-save-dialog" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Dialog Save Project" src="../_images/projectsavedialog.png" /></p>
+</div>
+<div class="section" id="project-saved">
+<h3>Project Saved<a class="headerlink" href="#project-saved" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Saved Project" src="../_images/projectsaved.png" /></p>
+</div>
+<div class="section" id="project-file">
+<h3>Project File<a class="headerlink" href="#project-file" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Project File" src="../_images/projectfile.png" /></p>
+</div>
+<div class="section" id="quit-qgis">
+<h3>Quit QGIS<a class="headerlink" href="#quit-qgis" title="Permalink to this headline">¶</a></h3>
+<p><img alt="Quit QGIS" src="../_images/qgisquit.png" /></p>
+</div>
+<div class="section" id="opening-project-on-a-different-computer-and-operating-system">
+<h3>Opening Project on a different computer (and operating system)<a class="headerlink" href="#opening-project-on-a-different-computer-and-operating-system" title="Permalink to this headline">¶</a></h3>
+</div>
+<div class="section" id="linux-file-browser">
+<h3>Linux File Browser<a class="headerlink" href="#linux-file-browser" title="Permalink to this headline">¶</a></h3>
+<p><img alt="linuxbrowser" src="../_images/linuxfile.png" /></p>
+</div>
+<div class="section" id="qgis-on-linux">
+<h3>QGIS on Linux<a class="headerlink" href="#qgis-on-linux" title="Permalink to this headline">¶</a></h3>
+<p><img alt="qgislinux" src="../_images/qgislinux.png" /></p>
+</div>
+<div class="section" id="open-project-on-linux">
+<h3>Open Project on Linux<a class="headerlink" href="#open-project-on-linux" title="Permalink to this headline">¶</a></h3>
+<p><img alt="linuxopen" src="../_images/linuxprojectopen.png" /></p>
+</div>
+<div class="section" id="our-project-on-linux">
+<h3>Our Project on Linux<a class="headerlink" href="#our-project-on-linux" title="Permalink to this headline">¶</a></h3>
+<p><img alt="linuxopen" src="../_images/linuxprojectopened.png" /></p>
+</div>
 </div>
 </div>
 
@@ -243,13 +539,12 @@
     
     <div class='prev-next-bottom'>
         
+    <a class='left-prev' id="prev-link" href="00_introtogis.html" title="previous page">Introduction to GIS</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
       <p>
-        
-          By Sergio Rey<br/>
         
             &copy; Copyright 2021, Sergio Rey.<br/>
       </p>
@@ -261,7 +556,10 @@
       </div>
     </div>
 
-    <script src="../_static/js/index.js"></script>
+    
+  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
+
+
     
   </body>
 </html>

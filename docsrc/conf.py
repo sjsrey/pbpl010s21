@@ -17,9 +17,9 @@
 
 # -- Project information -----------------------------------------------------
 
-project = 'PBPL010S20'
+project = 'PBPL010S21'
 copyright = '2021, Sergio Rey'
-author = 'Sergio Rey'
+#author = 'Sergio Rey'
 
 # The full version, including alpha/beta/rc tags
 release = '1.0'

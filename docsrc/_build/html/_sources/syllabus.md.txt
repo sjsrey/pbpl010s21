@@ -121,6 +121,12 @@ also be required to complete the projects.
   - <a href="https://mgimond.github.io/Spatial/introGIS.html">Reading: Gilmond, M. "Intro to GIS and Spatial Analysis"</a>
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/introducing_gis.html">Reading: Sutton, T. "Introducing GIS" </a>
   - [Introduction to GIS](./lectures/00_introtogis.md)
+  - Downloading QGIS 3.16.5 LTR
+    
+    - [Windows](https://qgis.org/downloads/QGIS-OSGeo4W-3.16.5-1-Setup-x86_64.exe)
+    - [Mac](https://qgis.org/downloads/macos/qgis-macos-ltr.dmg)
+    - [Linux](https://qgis.org/en/site/forusers/alldownloads.html#linux)
+    
 -----
 ### Week 2: April 5, 7
 

@@ -54,6 +54,8 @@
 ![team](./images/01/qgisteam.png "QGIS Team")
 
 
+### Data
+For this lecture, download our [example data](https://github.com/sjsrey/pbpl010s21/raw/main/docsrc/data/QGIS-Training-Data-2.0.zip)
 
 
 ### Open QGIS

@@ -1,1 +1,38 @@
-# Exercise 1
+# PBPL010: Exercise 1
+
+
+## Deadlines
+
+- Hand in your work on ilearn by April 14 2 p.m.
+
+## Objectives
+
+- Installing QGIS on your personal computer
+- Familiarizing yourself with QGIS Interface
+- Reading and Creating Data
+- Managing Files and Projects
+
+## Instructions
+
+Download the [exercise data](https://github.com/sjsrey/pbpl010s21/raw/main/docsrc/data/tract_boundary_scag_2010.zip).
+
+Create a project titled `exercise1`
+
+Using QGIS, answer the following questions (posting your answers on ilearn)
+
+1. How many features are in this data set?
+2. How many fields are in this data set?
+4. What unit is area measured in this data set?
+3. How many acres does the largest feature have?
+2. What tract has the largest are in acres?
+1. What is the maximum population of a tract in this database?
+1. What county has the tract with the largest Hispanic population?
+
+Creating a new layer
+
+1. Create a new layer that only includes the tracts from Riverside County
+2. Save your project
+3. Submit a screenshot that shows the layer panel with the new LA layer on top of the original layer
+
+
+

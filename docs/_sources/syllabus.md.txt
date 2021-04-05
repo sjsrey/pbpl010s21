@@ -133,7 +133,7 @@ also be required to complete the projects.
 #### April 5: Introduction to QGIS
   - <a href="https://docs.qgis.org/3.16/en/docs/training_manual/index.html">Reading: QGIS Training Manual, Ch. 1-2</a>
   - [Introduction to QGIS](lectures/01_opensource)
-  - Exercise 1 Out
+  - [Exercise 1 Out](lectures/e1.md)
 
 #### April 7: Data Models
   - <a href="https://mgimond.github.io/Spatial/feature-representation.html">Reading: Gilmond, M. "Feature Representation"</a>

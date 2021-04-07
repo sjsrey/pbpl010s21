@@ -138,6 +138,7 @@ also be required to complete the projects.
 #### April 7: Data Models
   - <a href="https://mgimond.github.io/Spatial/feature-representation.html">Reading: Gilmond, M. "Feature Representation"</a>
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_data.html">Reading: Sutton, T. "Vector Data" </a>
+  - [GIS Data Models](lectures/02_datamodels.md)
 -----
 ### Week 3 April 12, 14
 

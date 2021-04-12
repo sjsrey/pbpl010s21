@@ -144,6 +144,7 @@ also be required to complete the projects.
 
 #### April 12: Attributes and Attribute Tables
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
+  - [Vector Attributes and Tables](lectures/04_vector_attributes.md)
 
 #### April 14: Rasters
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/raster_data.html">Reading: Sutton, T. "Raster Data" </a>

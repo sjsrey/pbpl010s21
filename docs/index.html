@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PBPL010 Introduction to Geographic Information Systems</title>
     
-  <link rel="stylesheet" href="_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
     
   <link rel="stylesheet"
@@ -25,17 +25,17 @@
     href="_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
-    <link rel="stylesheet" href="_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
     
-  <link rel="preload" as="script" href="_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
 
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
-    <script src="_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="PBPL010 Introduction to Geographic Information Systems" href="syllabus.html" />
@@ -79,6 +79,7 @@
 <li class="toctree-l1"><a class="reference internal" href="lectures/01_opensource.html">Introduction to QGIS</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/02_datamodels.html">Data Models</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/02_datamodels.html#id4"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/04_vector_attributes.html">Vector Data</a></li>
 </ul>
 
 </div>
@@ -90,21 +91,21 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        
 <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
@@ -122,23 +123,22 @@
     </div>
 </div>
 
-            <!-- Source interaction buttons -->
+        <!-- Source interaction buttons -->
 
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+                title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
 
-            <!-- Launch buttons -->
+        <!-- Launch buttons -->
 
-        </div>
+    </div>
 
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-        </div>
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -346,6 +346,71 @@
 <li class="toctree-l2"><a class="reference internal" href="lectures/02_datamodels.html#next-up">Next Up</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/04_vector_attributes.html">Vector Data</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#last-time">Last Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#today">Today</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#vector-data-model">Vector Data Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#recap-vector-data-model">Recap: Vector Data Model</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#features-and-attributes">Features and Attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#example-data">Example Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#voting-precincts-riverside-county-2016">Voting Precincts: Riverside County 2016</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#attribute-table">Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#table-joins">Table Joins</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#loading-csv-layer">Loading csv layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id1"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#sort-two-tables-by-their-precinct-attribute">Sort two tables by their precinct attribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id2"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#table-join">Table Join</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#creating-new-attributes">Creating New Attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#create-an-interim-field">Create an Interim Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id3"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#create-the-final-new-field">Create the Final New Field</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id4"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#new-field-in-attribute-table">New Field in Attribute Table</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id5"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id6">Table Join</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id7"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id8">Table Join</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id9"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#save-our-layer-as-a-new-name">Save our layer as a new name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id10"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#munged-field-names">Munged Field Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id11"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#fixing-field-names">Fixing Field Names</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id12"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#turn-on-field-editing-by-clicking-the-pencil-icon">Turn on field editing by clicking the pencil icon</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id13"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#turn-editing-off-by-clicking-the-pencil">Turn editing off by clicking the pencil</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id14"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#id15"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#creating-more-attributes">Creating More Attributes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#create-a-new-variable-that-is-the-total-of-clinton-trump">Create a new variable that is the total of Clinton + Trump</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#new-total">New Total</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#create-a-pctclinton-attribute">Create a pctClinton Attribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#new-pctclinton-attribute">New pctClinton Attribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#create-a-winner-attribute-string">Create a Winner Attribute (String)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#new-winner-attribute-string">New Winner Attribute (String)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#symbology">Symbology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#symbology-default">Symbology Default</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#sybmology-changing-fill-colors">Sybmology Changing Fill Colors</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#virtual-layers">Virtual Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#virtual-layer-menu">Virtual Layer Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#getting-the-path">Getting the path</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#path-set">Path set</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#query">Query</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#test-query">Test Query</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#accessing-virtual-layer-attribute-tables">Accessing Virtual Layer Attribute Tables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#query-result">Query Result</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#rename-virtual-layer">Rename Virtual Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#duplicate-layer">Duplicate Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#rename-duplicate-layer">Rename Duplicate Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#edit-new-virtual-layer">Edit New Virtual Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#query-for-tracts-won-by-candidate">Query for Tracts Won by Candidate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#warning">Warning</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#result-tracts-won-by-candidate">Result: Tracts Won by Candidate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/04_vector_attributes.html#next-up">Next Up</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
@@ -353,14 +418,14 @@
 
               </div>
               
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
         
-        <div class='prev-next-bottom'>
-            
     <a class='right-next' id="next-link" href="syllabus.html" title="next page">PBPL010 Introduction to Geographic Information Systems</a>
 
-        </div>
-        
-        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -377,7 +442,7 @@
     </div>
 
     
-  <script src="_static/js/index.d3f166471bb80abb5163.js"></script>
+  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
 
 
     

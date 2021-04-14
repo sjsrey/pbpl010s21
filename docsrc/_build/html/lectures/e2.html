@@ -5,7 +5,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <title>Exercise 1</title>
+    <title>PBPL010: Exercise 2</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
     <link href="../_static/css/index.css" rel="stylesheet">
     <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
@@ -79,6 +79,23 @@
    Vector Data
   </a>
  </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html">
+   Raster Data Models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html#id5">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html#id6">
+  </a>
+ </li>
 </ul>
 
 </nav>
@@ -148,7 +165,53 @@
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deadline">
+   Deadline
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objectives">
+   Objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup">
+     Setup
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analysis">
+     Analysis
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#joins-and-attribute-creation">
+       Joins and Attribute Creation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#layer-creation">
+       Layer creation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#virtual-layers">
+       Virtual Layers
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
         </nav>
     </div>
 </div>
@@ -157,8 +220,67 @@
         
               <div>
                 
-  <div class="section" id="exercise-1">
-<h1>Exercise 1<a class="headerlink" href="#exercise-1" title="Permalink to this headline">¶</a></h1>
+  <div class="section" id="pbpl010-exercise-2">
+<h1>PBPL010: Exercise 2<a class="headerlink" href="#pbpl010-exercise-2" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="deadline">
+<h2>Deadline<a class="headerlink" href="#deadline" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Hand in your work on <a class="reference external" href="https://ilearn.ucr.edu">ilearn</a> by <strong>April 26 2 p.m.</strong></p></li>
+</ul>
+</div>
+<div class="section" id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Learn how to complete table joins to add attributes</p></li>
+<li><p>Creation of new attributes using expressions</p></li>
+<li><p>Filtering attributes</p></li>
+<li><p>Virtual layers for query presentations</p></li>
+</ul>
+</div>
+<div class="section" id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="setup">
+<h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>You will be using the same dataset from <a class="reference external" href="https://github.com/sjsrey/pbpl010s21/raw/main/docsrc/data/tract_boundary_scag_2010.zip">exercise 1</a></p></li>
+<li><p>Create a new project called <code class="docutils literal notranslate"><span class="pre">exer02</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="analysis">
+<h3>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="joins-and-attribute-creation">
+<h4>Joins and Attribute Creation<a class="headerlink" href="#joins-and-attribute-creation" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Using a table join, attach a new attribute with the name <code class="docutils literal notranslate"><span class="pre">CountyName</span></code> that uses the <code class="docutils literal notranslate"><span class="pre">COUNTY</span></code> as the field to match on.</p></li>
+<li><p>Create an attribute named <code class="docutils literal notranslate"><span class="pre">pctHISP</span></code> that reports the percentage of the tract’s total population that is Hispanic.</p></li>
+<li><p>Create an attribute named <code class="docutils literal notranslate"><span class="pre">pctNHBLK</span></code> that reports the percentage of the tract’s total population that is non-Hispanic Black.</p></li>
+<li><p>Create an attribute named <code class="docutils literal notranslate"><span class="pre">majHISP</span></code> that takes a value of 1 if the <code class="docutils literal notranslate"><span class="pre">pctHISP</span></code> is greater than 0.50.</p></li>
+<li><p>Create an attribute named <code class="docutils literal notranslate"><span class="pre">majNHBLK</span></code> that takes a value of 1 if the <code class="docutils literal notranslate"><span class="pre">pctNHBLK</span></code> is greater than 0.50.</p></li>
+</ol>
+</div>
+<div class="section" id="layer-creation">
+<h4>Layer creation<a class="headerlink" href="#layer-creation" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Create a layer that contains the tracts where <code class="docutils literal notranslate"><span class="pre">majHISP</span></code> takes a value of 1. Name this layer <code class="docutils literal notranslate"><span class="pre">majHISP</span></code></p></li>
+<li><p>Create a layer that contains the tracts where <code class="docutils literal notranslate"><span class="pre">majNHBLK</span></code> takes a value of 1. Name this layer <code class="docutils literal notranslate"><span class="pre">majNHBLK</span></code></p></li>
+<li><p>Upload a screen shot that shows the map canvas with the two new layers on top of the original project layer.</p></li>
+<li><p>Comment on the spatial distribution displayed in  the <code class="docutils literal notranslate"><span class="pre">majHISP</span></code> and <code class="docutils literal notranslate"><span class="pre">majNHBLK</span></code> layers.</p></li>
+</ol>
+</div>
+<div class="section" id="virtual-layers">
+<h4>Virtual Layers<a class="headerlink" href="#virtual-layers" title="Permalink to this headline">¶</a></h4>
+<p>The next steps require building  different virtual layers to generate  table reports:</p>
+<ol class="simple">
+<li><p>Report the number of tracts by county.</p></li>
+<li><p>Report the number of majority Hispanic tracts by county</p></li>
+<li><p>Report the percentage of majority Hispanic tracts by county</p></li>
+<li><p>Report the percentage of the total county population that is Hispanic by county.</p></li>
+<li><p>Compare the previous percentage to the average of the Hispanic population by tract in each county.</p></li>
+<li><p>Comment on the last report. Why do the two views of percentage Hispanic differ?</p></li>
+</ol>
+</div>
+</div>
+</div>
 </div>
 
 

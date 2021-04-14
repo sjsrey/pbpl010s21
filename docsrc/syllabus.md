@@ -150,7 +150,7 @@ also be required to complete the projects.
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/raster_data.html">Reading: Sutton, T. "Raster Data" </a>
   - [Rasters](lectures/05_rasters.md)
   - Exercise 1 Due
-  - Exercise 2 Out
+  - [Exercise 2 Out](lectures/e2.md)
 -----
   
 ### Week 4 April 19, 21

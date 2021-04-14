@@ -1,47 +1,28 @@
 
+
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vector Attributes and Tables</title>
-    
-  <link rel="stylesheet" href="../_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
-
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    
-      
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
-    
-  <link rel="preload" as="script" href="../_static/js/index.3da636dd464baa7582d2.js">
-
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
     <script src="../_static/language_data.js"></script>
-    <script src="../_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="prev" title="Data Models" href="02_datamodels.html" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
 
 
 
@@ -62,89 +43,52 @@
   
 </a>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="00_introtogis.html">
+   Introduction to GIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_opensource.html">
+   Introduction to QGIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_datamodels.html">
+   Data Models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_datamodels.html#id4">
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Vector Data
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
 </div>
-<script>$('#searchbox').show(0);</script>
-<h3><a href="../index.html">Table of Contents</a></h3>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../syllabus.html">Syllabus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="00_introtogis.html">Introduction to GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_opensource.html">Introduction to QGIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_datamodels.html">Data Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_datamodels.html#id4"></a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Vector Data</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#last-time">Last Time</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#today">Today</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#vector-data-model">Vector Data Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#recap-vector-data-model">Recap: Vector Data Model</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#features-and-attributes">Features and Attributes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#example-data">Example Data</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#voting-precincts-riverside-county-2016">Voting Precincts: Riverside County 2016</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#attribute-table">Attribute Table</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#table-joins">Table Joins</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#loading-csv-layer">Loading csv layer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id1"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sort-two-tables-by-their-precinct-attribute">Sort two tables by their precinct attribute</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id2"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#table-join">Table Join</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#creating-new-attributes">Creating New Attributes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-an-interim-field">Create an Interim Field</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-the-final-new-field">Create the Final New Field</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#new-field-in-attribute-table">New Field in Attribute Table</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">Table Join</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">Table Join</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#save-our-layer-as-a-new-name">Save our layer as a new name</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id10"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#munged-field-names">Munged Field Names</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id11"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#fixing-field-names">Fixing Field Names</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id12"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#turn-on-field-editing-by-clicking-the-pencil-icon">Turn on field editing by clicking the pencil icon</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id13"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#turn-editing-off-by-clicking-the-pencil">Turn editing off by clicking the pencil</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id14"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id15"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#creating-more-attributes">Creating More Attributes</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-a-new-variable-that-is-the-total-of-clinton-trump">Create a new variable that is the total of Clinton + Trump</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#new-total">New Total</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-a-pctclinton-attribute">Create a pctClinton Attribute</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#new-pctclinton-attribute">New pctClinton Attribute</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-a-winner-attribute-string">Create a Winner Attribute (String)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#new-winner-attribute-string">New Winner Attribute (String)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#symbology">Symbology</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#symbology-default">Symbology Default</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#sybmology-changing-fill-colors">Sybmology Changing Fill Colors</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#virtual-layers">Virtual Layers</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#virtual-layer-menu">Virtual Layer Menu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#getting-the-path">Getting the path</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#path-set">Path set</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#query">Query</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#test-query">Test Query</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#accessing-virtual-layer-attribute-tables">Accessing Virtual Layer Attribute Tables</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#query-result">Query Result</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#rename-virtual-layer">Rename Virtual Layer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#duplicate-layer">Duplicate Layer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#rename-duplicate-layer">Rename Duplicate Layer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#edit-new-virtual-layer">Edit New Virtual Layer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#query-for-tracts-won-by-candidate">Query for Tracts Won by Candidate</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#warning">Warning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#result-tracts-won-by-candidate">Result: Tracts Won by Candidate</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#next-up">Next Up</a></li>
-</ul>
-</li>
-</ul>
 
 </div>
 
@@ -169,11 +113,11 @@
             <i class="fas fa-arrow-up"></i>
         </button>
         
-        
-<div class="dropdown-buttons-trigger">
+        <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
+    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -185,15 +129,14 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
+    
 </div>
-
         <!-- Source interaction buttons -->
 
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
@@ -202,7 +145,6 @@
 
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-        
         <div class="tocsection onthispage pt-5 pb-3">
             <i class="fas fa-list"></i> Contents
         </div>
@@ -508,7 +450,6 @@
 </ul>
 
         </nav>
-        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -838,10 +779,7 @@
       </div>
     </div>
 
-    
-  <script src="../_static/js/index.3da636dd464baa7582d2.js"></script>
-
-
+    <script src="../_static/js/index.js"></script>
     
   </body>
 </html>

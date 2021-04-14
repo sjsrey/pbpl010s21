@@ -1,48 +1,29 @@
 
+
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PBPL010 Introduction to Geographic Information Systems</title>
-    
-  <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
-
-    
-  <link rel="stylesheet"
-    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    
-      
-  <link rel="stylesheet"
-    href="_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="_static/vendor/lato_latin-ext/1.44.1/index.css">
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="_static/sphinx-book-theme.css" type="text/css" />
     <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="_static/sphinx-book-theme.40e2e510f6b7d1648584402491bb10fe.css" type="text/css" />
-    
-  <link rel="preload" as="script" href="_static/js/index.3da636dd464baa7582d2.js">
-
     <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
     <script src="_static/jquery.js"></script>
     <script src="_static/underscore.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/language_data.js"></script>
-    <script src="_static/sphinx-book-theme.d31b09fe5c1d09cb49b26a786de4a05d.js"></script>
+    <script src="_static/sphinx-book-theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Introduction to GIS" href="lectures/00_introtogis.html" />
     <link rel="prev" title="PBPL010 Introduction to Geographic Information Systems" href="index.html" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
 
 
 
@@ -63,97 +44,52 @@
   
 </a>
 </div>
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
+
+<form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="current nav sidenav_l1">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lectures/00_introtogis.html">
+   Introduction to GIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lectures/01_opensource.html">
+   Introduction to QGIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lectures/02_datamodels.html">
+   Data Models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lectures/02_datamodels.html#id4">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="lectures/04_vector_attributes.html">
+   Vector Data
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
 </div>
-<script>$('#searchbox').show(0);</script>
-<h3><a href="index.html">Table of Contents</a></h3>
-<ul class="current">
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Syllabus</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#description">Description</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#course-objectives">Course Objectives</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#computational-learning">Computational Learning</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#course-structure">Course Structure</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#grading">Grading</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#exercises">Exercises</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#exam">Exam</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#collaboration">Collaboration</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#review-questions">Review Questions</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#project">Project</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#schedule-planned">Schedule (Planned)</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#week-1-march-29-31">Week 1 March 29, 31</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#march-29-course-introduction">March 29: Course Introduction</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#march-31-introduction-to-gis">March 31: Introduction to GIS</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#week-2-april-5-7">Week 2: April 5, 7</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#april-5-introduction-to-qgis">April 5: Introduction to QGIS</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#april-7-data-models">April 7: Data Models</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#week-3-april-12-14">Week 3 April 12, 14</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#april-12-attributes-and-attribute-tables">April 12: Attributes and Attribute Tables</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#april-14-rasters">April 14: Rasters</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#week-4-april-19-21">Week 4 April 19, 21</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#april-19-coordinate-reference-systems">April 19: Coordinate Reference Systems</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#april-21-qgis-studio">April 21: QGIS Studio</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#week-5-april-26-28">Week 5 April 26, 28</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#april-26-review">April 26: Review</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#april-28-midterm">April 28: Midterm</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#week-6-may-3-5">Week 6 May 3, 5</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#may-3-creating-maps">May 3: Creating Maps</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#may-5-creating-and-fixing-vector-data">May 5: Creating and Fixing Vector Data</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#week-7-may-10-12">Week 7 May 10, 12</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#may-10-vector-analysis-buffering">May 10: Vector Analysis: Buffering</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#may-12-clipping-dissolve-spatial-joins">May 12: Clipping, Dissolve, Spatial Joins</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#week-8-may-17-19">Week 8 May 17, 19</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#may-17-crowd-sourcing-and-vgi">May 17: Crowd-sourcing and VGI</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#may-19-openstreetmap">May 19: OpenStreetMap</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#week-9-may-24-26">Week 9 May 24, 26</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#march-2-introduction-to-scripting-qgis">March 2: Introduction to scripting QGIS</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#march-4-qgis-scripting-part-ii">March 4: QGIS Scripting Part II</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#week-10-may-31-june-2">Week 10 May 31, June 2</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#may-31-memorial-day-no-class">May 31 Memorial Day (No Class)</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#june-2">June 2</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#final-exam-week">Final Exam Week</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#readings">Readings</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#academic-integrity">Academic Integrity</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#disability-accommodations">Disability accommodations</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#code-of-conduct">Code of Conduct</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/00_introtogis.html">Introduction to GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/01_opensource.html">Introduction to QGIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/02_datamodels.html">Data Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/02_datamodels.html#id4"></a></li>
-<li class="toctree-l1"><a class="reference internal" href="lectures/04_vector_attributes.html">Vector Data</a></li>
-</ul>
 
 </div>
 
@@ -178,11 +114,11 @@
             <i class="fas fa-arrow-up"></i>
         </button>
         
-        
-<div class="dropdown-buttons-trigger">
+        <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
+    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -194,15 +130,14 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
+    
 </div>
-
         <!-- Source interaction buttons -->
 
 
         <!-- Full screen (wrap in <a> to have style consistency -->
         <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                title="Fullscreen mode"><i
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
                     class="fas fa-expand"></i></button></a>
 
         <!-- Launch buttons -->
@@ -211,7 +146,6 @@
 
     <!-- Table of contents -->
     <div class="d-none d-md-block col-md-2 bd-toc show">
-        
         <div class="tocsection onthispage pt-5 pb-3">
             <i class="fas fa-list"></i> Contents
         </div>
@@ -474,7 +408,6 @@
 </ul>
 
         </nav>
-        
     </div>
 </div>
     <div id="main-content" class="row">
@@ -668,6 +601,7 @@ also be required to complete the projects.</p>
 <h4>April 14: Rasters<a class="headerlink" href="#april-14-rasters" title="Permalink to this headline">¶</a></h4>
 <ul class="simple">
 <li><p><a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/raster_data.html">Reading: Sutton, T. “Raster Data” </a></p></li>
+<li><p><a class="reference internal" href="lectures/05_rasters.html"><span class="doc std std-doc">Rasters</span></a></p></li>
 <li><p>Exercise 1 Due</p></li>
 <li><p>Exercise 2 Out</p></li>
 </ul>
@@ -870,10 +804,7 @@ Conduct</a>.</p>
       </div>
     </div>
 
-    
-  <script src="_static/js/index.3da636dd464baa7582d2.js"></script>
-
-
+    <script src="_static/js/index.js"></script>
     
   </body>
 </html>

@@ -1,0 +1,404 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>Last Time</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="00_introtogis.html">
+   Introduction to GIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_opensource.html">
+   Introduction to QGIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_datamodels.html">
+   Data Models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_datamodels.html#id4">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_vector_attributes.html">
+   Vector Data
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/lectures/lecture_05_new.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="last-time">
+<h1>Last Time<a class="headerlink" href="#last-time" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Vector Attributes</p></li>
+<li><p>Table Joins</p></li>
+<li><p>Virtual Layers</p></li>
+</ul>
+</div>
+<div class="section" id="today">
+<h1>Today<a class="headerlink" href="#today" title="Permalink to this headline">¶</a></h1>
+<ul class="simple">
+<li><p>Raster Data Model</p></li>
+<li><p>Conversions</p></li>
+<li><p>Rasters in Public Policy/Social Sciences</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h1><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="raster-data-model">
+<h2>Raster Data Model<a class="headerlink" href="#raster-data-model" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Rasters composed of a matrix of pixels (cells)</p></li>
+<li><p>Each pixel contains a value representing the conditions for the area covered by that pixel</p></li>
+</ul>
+<p><img alt="100_raster" src="../_images/100_raster.png" /></p>
+</div>
+<div class="section" id="id2">
+<h2><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p><img alt="101_raster_neon" src="../_images/101_raster_neon.png" /></p>
+</div>
+<div class="section" id="advantages-of-rasters">
+<h2>Advantages of Rasters<a class="headerlink" href="#advantages-of-rasters" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Representing <em>continuous</em> spatial variation</p></li>
+<li><p>More efficient than small polygons (in the vector model)
+<img alt="110_raster_representation" src="../_images/110_raster_representation.png" /></p></li>
+</ul>
+</div>
+<div class="section" id="georeferencing-rasters">
+<h2>Georeferencing Rasters<a class="headerlink" href="#georeferencing-rasters" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Defines the correspondence between each pixel and location on the earth’s surface</p></li>
+<li><p>Coordinates of top left pixel in the images</p></li>
+<li><p>Size of each pixel in X and Y direction</p></li>
+<li><p>Rotation angle</p></li>
+</ul>
+</div>
+<div class="section" id="raster-in-qgis">
+<h2>Raster in QGIS<a class="headerlink" href="#raster-in-qgis" title="Permalink to this headline">¶</a></h2>
+<p><img alt="120_raster_qgis" src="../_images/120_raster_qgis.png" /></p>
+</div>
+<div class="section" id="id3">
+<h2>Raster in QGIS<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><img alt="121_raster_info" src="../_images/121_raster_info.png" /></p>
+</div>
+<div class="section" id="sources-of-raster-data">
+<h2>Sources of raster data<a class="headerlink" href="#sources-of-raster-data" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="remote-sensing-satellites">
+<h2>Remote Sensing Satellites<a class="headerlink" href="#remote-sensing-satellites" title="Permalink to this headline">¶</a></h2>
+<p><img alt="211_rs" src="../_images/211_rs.png" /></p>
+</div>
+<div class="section" id="remote-sensors">
+<h2>Remote Sensors<a class="headerlink" href="#remote-sensors" title="Permalink to this headline">¶</a></h2>
+<p><img alt="201_rs_sensors" src="../_images/201_rs_sensors.png" /></p>
+</div>
+<div class="section" id="planet">
+<h2>Planet<a class="headerlink" href="#planet" title="Permalink to this headline">¶</a></h2>
+<p><img alt="213_planet" src="../_images/213_planet.png" /></p>
+</div>
+<div class="section" id="earth-engine-timelapse">
+<h2>Earth Engine Timelapse<a class="headerlink" href="#earth-engine-timelapse" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id4">
+<h2><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
+<p><img alt="212_earth_engine" src="../_images/212_earth_engine.png" /></p>
+<p><a class="reference external" href="https://earthengine.google.com/timelapse/">‘url’</a></p>
+</div>
+<div class="section" id="remote-sensing-imagery-resolution">
+<h2>Remote Sensing Imagery Resolution<a class="headerlink" href="#remote-sensing-imagery-resolution" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Spatial Resolution</p></li>
+<li><p>Spectral Resolution</p></li>
+<li><p>Temporal Resultion</p></li>
+</ul>
+</div>
+<div class="section" id="spatial-resolution">
+<h2>Spatial Resolution<a class="headerlink" href="#spatial-resolution" title="Permalink to this headline">¶</a></h2>
+<p>How much area is represented in each pixel</p>
+<ul>
+<li class="fragment">MODIS 500m x 500m  </li>
+<li class="fragment">SPOT5 satellites: 10m x 10m </li>
+<li class="fragment">Areal Photography, drones: 50cm x 50cm  </li>
+</ul>
+<div class="fragment">
+__Remember__: images with pixel size covering a _small area_ are called _high resolution_ images.
+</div>
+</div>
+<div class="section" id="spatial-resolution-and-scale">
+<h2>Spatial Resolution and Scale<a class="headerlink" href="#spatial-resolution-and-scale" title="Permalink to this headline">¶</a></h2>
+<table>
+<col width="50%">
+<col width="50%">
+<tr>
+<td>
+<img src="../content/lectures/images/05/220_raster_small_scale.png" style="height:250px">
+</td>
+<td>
+<img src="../content/lectures/images/05/221_raster_large_scale.png" style="height:250px">
+</td>
+</tr>
+</table>
+</div>
+<div class="section" id="spectral-resolution">
+<h2>Spectral Resolution<a class="headerlink" href="#spectral-resolution" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>The number of spectral bands in which a sensor can collect reflected radiance</p></li>
+<li><p>Choice depends upon application of use</p></li>
+<li><p>Different types of ground targets have different spectral signatures</p></li>
+</ul>
+<p><img alt="230_spectral_resolution" src="../_images/230_spectral_resolution.png" /></p>
+</div>
+<div class="section" id="temporal-resolution">
+<h2>Temporal Resolution<a class="headerlink" href="#temporal-resolution" title="Permalink to this headline">¶</a></h2>
+<p>Revisit Periods for Satellites</p>
+<ul>
+<li class="fragment">SPOT5 - 3 days  </li>
+<li class="fragment"> Modis - daily </li>
+<li class="fragment"> Airborne - as needed </li>
+</ul>
+</div>
+</div>
+<div class="section" id="id5">
+<h1><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="conversions">
+<h2>Conversions<a class="headerlink" href="#conversions" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="which-model">
+<h2>Which Model?<a class="headerlink" href="#which-model" title="Permalink to this headline">¶</a></h2>
+<p><img alt="vector_vs_raster" src="../_images/vector_vs_raster.jpg" /></p>
+</div>
+<div class="section" id="vector-to-raster-conversion">
+<h2>Vector to raster conversion<a class="headerlink" href="#vector-to-raster-conversion" title="Permalink to this headline">¶</a></h2>
+<p><img alt="240_vec2ras" src="../_images/240_vec2ras.png" /></p>
+</div>
+<div class="section" id="raster-to-vector-conversion">
+<h2>Raster to vector conversion<a class="headerlink" href="#raster-to-vector-conversion" title="Permalink to this headline">¶</a></h2>
+<p><img alt="241_ras2vec" src="../_images/241_ras2vec.png" /></p>
+</div>
+</div>
+<div class="section" id="id6">
+<h1><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="rasters-in-gis-for-public-policy">
+<h2>Rasters in GIS for Public Policy<a class="headerlink" href="#rasters-in-gis-for-public-policy" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Measures of environmental variables</p></li>
+<li><p>Risk surfaces</p></li>
+<li><p>Dasymetric mapping and areal interpolation</p></li>
+</ul>
+</div>
+<div class="section" id="environmental-variables">
+<h2>Environmental variables<a class="headerlink" href="#environmental-variables" title="Permalink to this headline">¶</a></h2>
+<p><a class="reference external" href="https://scholar.harvard.edu/files/freeman/files/willngess_to_pay_for_clean_air_in_china_ms-for-dash_freeman-laing-song-timmins_dec2017.pdf">Freeman et al. (2017)</a> “Willingness to pay for clean air in China”</p>
+<p><img alt="303_willingness" src="../_images/303_willingness.png" /></p>
+</div>
+<div class="section" id="fema-risk-surface">
+<h2>FEMA: Risk Surface<a class="headerlink" href="#fema-risk-surface" title="Permalink to this headline">¶</a></h2>
+<p><img alt="307_risk_flooding_raster" src="../_images/307_risk_flooding_raster.png" /></p>
+</div>
+<div class="section" id="dasymetric-mapping">
+<h2>Dasymetric Mapping<a class="headerlink" href="#dasymetric-mapping" title="Permalink to this headline">¶</a></h2>
+<p><img alt="301_dasymetric" src="../_images/301_dasymetric.png" /></p>
+</div>
+<div class="section" id="nsf-neighborhoods">
+<h2>NSF-Neighborhoods<a class="headerlink" href="#nsf-neighborhoods" title="Permalink to this headline">¶</a></h2>
+<p><img alt="309_nsf_neighborhoods" src="../_images/309_nsf_neighborhoods.png" /></p>
+</div>
+<div class="section" id="id7">
+<h2><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p><img alt="312_geosnap" src="../_images/312_geosnap.png" /></p>
+</div>
+<div class="section" id="interpolation-and-harmonization">
+<h2>Interpolation and Harmonization<a class="headerlink" href="#interpolation-and-harmonization" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="id8">
+<h2><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p><img alt="300_toy_census_tracts_example" src="../_images/300_toy_census_tracts_example.png" /></p>
+</div>
+<div class="section" id="tobler">
+<h2>Tobler<a class="headerlink" href="#tobler" title="Permalink to this headline">¶</a></h2>
+<p><img alt="304_areal_interpolation" src="../_images/304_areal_interpolation.png" /></p>
+</div>
+<div class="section" id="tobler-voting-precincts">
+<h2>Tobler: Voting Precincts<a class="headerlink" href="#tobler-voting-precincts" title="Permalink to this headline">¶</a></h2>
+<p><img alt="305_voting_precincts" src="../_images/305_voting_precincts.png" /></p>
+</div>
+<div class="section" id="tobler-dasymetric">
+<h2>Tobler: Dasymetric<a class="headerlink" href="#tobler-dasymetric" title="Permalink to this headline">¶</a></h2>
+<p><img alt="311_tobler_nlcd" src="../_images/311_tobler_nlcd.png" /></p>
+</div>
+<div class="section" id="national-land-cover-database">
+<h2>National Land Cover Database<a class="headerlink" href="#national-land-cover-database" title="Permalink to this headline">¶</a></h2>
+<p><img alt="111_nlcd_video" src="../_images/111_nlcd_video.png" /></p>
+</div>
+<div class="section" id="next-up">
+<h2>Next Up<a class="headerlink" href="#next-up" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Coordinate Reference Systems</p></li>
+</ul>
+</div>
+</div>
+<div class="section" id="id9">
+<h1><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h1>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GIS for Public Policy’20</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://sergerey.org" property="cc:attributionName" rel="cc:attributionURL">Sergio Rey</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2021, Sergio Rey.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>

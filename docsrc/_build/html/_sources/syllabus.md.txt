@@ -157,6 +157,7 @@ also be required to complete the projects.
 
 #### April 19: Coordinate Reference Systems
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/coordinate_reference_systems.html">Reading: Sutton, T. "Coordinate Reference Systems" </a>
+  - [Coordinate Reference Systems](lectures/06_crs.md)
  
 #### April 21: QGIS Studio
   

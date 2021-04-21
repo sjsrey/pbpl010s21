@@ -61,9 +61,8 @@ At the end of this course students will:
 | Component       |   Points |
 | :-------------- | -------: |
 | Exercises       |       40 |
-| Midterm         |       25 |
+| Quizzes         |       30 |
 | Project         |       30 |
-| Collaboration   |        5 |
 
 
 ### Exercises
@@ -74,30 +73,9 @@ the understanding that you alone are responsible for mastering the
 material. Collaboration is not allowed on the exam, and material
 from the exercises will form the bases of some examination questions.
 
-### Exam
+### Quizzes
 
--   There will be one mid-term exam given will be given in-class which will be closed-book
--   Reviews will be held during the meeting prior to the exam
--   Makeups for the exam will be given in cases of unforeseen emergencies
--   Makeups will consist of a 1-hour oral examination
-
-### Collaboration
-
-You have the opportunity to earn a total of 5 collaboration points.
-Collaboration here means you make a contribution that improves the
-course experience for all.
-
-Points can be earned for the following contributions:
-
--   An approved review question (1 pt)
--   An approved answer to a review question (1 pt)
--   Presenting a topic during the review (3 pt)
-### Review Questions
-
--   Can be submitted anytime up to 1 week before the midterm
--   Must be submitted through ilearn
--   Have to be approved by the professor for credit
-
+Beginning week 5 of the quarter, each week there will be a short on-line timed quiz on the material (readings, lecture, discussion). These are to be completed before the following Monday and can only be done in a single sitting.
 
 ### Project
 
@@ -165,34 +143,37 @@ also be required to complete the projects.
  
 ### Week 5 April 26, 28
 
-#### April 26: Review
+#### April 26: Project Introduction
   - Exercise 2 Due
-#### April 28: Midterm
+
+#### April 28: Creating Maps
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
+
 
 -----
   
 ### Week 6 May 3, 5
 
-#### May 3: Creating Maps
+#### May 3: Creating and Fixing Vector Data
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
   - Exercise 3 Uut
  
 
-#### May 5: Creating and Fixing Vector Data
-  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
- 
+#### May 5:  Vector Analysis: Buffering
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html">Reading: Sutton, T. "Vector Spatial Analysis (Buffers)" </a>
+
 -----
 
 ### Week 7 May 10, 12
 
-#### May 10: Vector Analysis: Buffering
-
-  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html">Reading: Sutton, T. "Vector Spatial Analysis (Buffers)" </a>
-
-#### May 12: Clipping, Dissolve, Spatial Joins
+#### May 10: Clipping, Dissolve, Spatial Joins
 
   - [Data](https://stacks.stanford.edu/file/druid:xc453kn9742/data.zip?download=true)
   - <a href="https://www.e-education.psu.edu/geog585/node/693">Reading: PSU. Walkthrough: Clipping and projecting vector data with QGIS and OGR</a>
+
+
+#### May 12: Crowd-sourcing and VGI
+  - <a href="https://www.e-education.psu.edu/geog585/node/737">Reading: PSU. VGI and crowdsourced data collection</a>
   - Exercise 3 Due
   - Exercise 4 Out
 -----
@@ -200,9 +181,7 @@ also be required to complete the projects.
 
 ### Week 8 May 17, 19
 
-#### May 17: Crowd-sourcing and VGI
-  - <a href="https://www.e-education.psu.edu/geog585/node/737">Reading: PSU. VGI and crowdsourced data collection</a>
-  
+#### May 17: Project Studio   
 #### May 19: OpenStreetMap
 
  - [Reading: OpenStreetMap](https://www.openstreetmap.org/about)

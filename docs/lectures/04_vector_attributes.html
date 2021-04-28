@@ -4,11 +4,11 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17: http://docutils.sourceforge.net/" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vector Attributes and Tables</title>
     
-  <link rel="stylesheet" href="../_static/css/index.f658d18f9b420779cfdf24aa0a7e2d77.css">
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
 
     
   <link rel="stylesheet"
@@ -20,34 +20,30 @@
 
     
       
-  <link rel="stylesheet"
-    href="../_static/vendor/open-sans_all/1.44.1/index.css">
-  <link rel="stylesheet"
-    href="../_static/vendor/lato_latin-ext/1.44.1/index.css">
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e7340bb3dbd8dde6db86f25597f54a1b.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
     
-  <link rel="preload" as="script" href="../_static/js/index.d3f166471bb80abb5163.js">
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
 
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx-book-theme.7d483ff0a819d6edff12ce0b1ead3928.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Raster Data Models" href="05_rasters.html" />
     <link rel="prev" title="Data Models" href="02_datamodels.html" />
-
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
-
-
-
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -55,14 +51,7 @@
           
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
-        <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/logo.png" class="logo" alt="logo">
-  
-  
-</a>
-</div>
+        
 <div id="searchbox" style="display: none" role="search">
   <h3 id="searchlabel">Quick search</h3>
     <div class="searchformwrapper">
@@ -197,12 +186,12 @@
 
             <!-- Source interaction buttons -->
 
-
             <!-- Full screen (wrap in <a> to have style consistency -->
-            <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                    data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-                    title="Fullscreen mode"><i
-                        class="fas fa-expand"></i></button></a>
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
             <!-- Launch buttons -->
 
@@ -211,12 +200,11 @@
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i>
-            Contents
-        </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#last-time">
    Last Time
@@ -516,8 +504,7 @@
  </li>
 </ul>
 
-        </nav>
-        
+            </nav>
         </div>
     </div>
 </div>
@@ -526,27 +513,27 @@
         
               <div>
                 
-  <section id="vector-attributes-and-tables">
+  <div class="section" id="vector-attributes-and-tables">
 <h1>Vector Attributes and Tables<a class="headerlink" href="#vector-attributes-and-tables" title="Permalink to this headline">¶</a></h1>
-<section id="last-time">
+<div class="section" id="last-time">
 <h2>Last Time<a class="headerlink" href="#last-time" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>GIS Data Models</p></li>
 <li><p>Vector Data Model</p></li>
 </ul>
-</section>
-<section id="today">
+</div>
+<div class="section" id="today">
 <h2>Today<a class="headerlink" href="#today" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Vector Attributes</p></li>
 <li><p>Table Joins</p></li>
 <li><p>Virtual Layers</p></li>
 </ul>
-</section>
-<section id="vector-data-model">
+</div>
+<div class="section" id="vector-data-model">
 <h2>Vector Data Model<a class="headerlink" href="#vector-data-model" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="recap-vector-data-model">
+</div>
+<div class="section" id="recap-vector-data-model">
 <h2>Recap: Vector Data Model<a class="headerlink" href="#recap-vector-data-model" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Each discrete object is considered to be a <strong>feature</strong></p></li>
@@ -554,58 +541,58 @@
 <li><p>A vector feature has its shape represented using <strong>geometry</strong></p></li>
 <li><p>The geometry is made up of one or more interconnected <strong>vertices</strong></p></li>
 </ul>
-</section>
-<section id="features-and-attributes">
+</div>
+<div class="section" id="features-and-attributes">
 <h2>Features and Attributes<a class="headerlink" href="#features-and-attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Each <code class="docutils literal notranslate"><span class="pre">Feature</span></code> has a corresponding <code class="docutils literal notranslate"><span class="pre">Record</span></code> or <code class="docutils literal notranslate"><span class="pre">Row</span></code> in the <code class="docutils literal notranslate"><span class="pre">Attribute</span> <span class="pre">Table</span></code></p></li>
 <li><p>The ordering of these rows has no intrinsic meaning</p></li>
 <li><p>Each <code class="docutils literal notranslate"><span class="pre">Feature</span></code> has a unique <code class="docutils literal notranslate"><span class="pre">ID</span></code> this is relied upon to link the row to the feature</p></li>
 </ul>
-</section>
-<section id="example-data">
+</div>
+<div class="section" id="example-data">
 <h2>Example Data<a class="headerlink" href="#example-data" title="Permalink to this headline">¶</a></h2>
 <p>Voting Precincts: Riverside County 2016 Presidential Election</p>
 <ul class="simple">
 <li><p><a class="reference external" href="https://github.com/sjsrey/pbpl010s21/raw/main/docsrc/data/voting.zip">Download</a></p></li>
 <li><p><a class="reference external" href="https://github.com/datadesk/california-2016-election-precinct-maps">Source</a></p></li>
 </ul>
-</section>
-<section id="voting-precincts-riverside-county-2016">
+</div>
+<div class="section" id="voting-precincts-riverside-county-2016">
 <h2>Voting Precincts: Riverside County 2016<a class="headerlink" href="#voting-precincts-riverside-county-2016" title="Permalink to this headline">¶</a></h2>
 <p><img alt="precincts" src="../_images/precincts.png" /></p>
-</section>
-<section id="attribute-table">
+</div>
+<div class="section" id="attribute-table">
 <h2>Attribute Table<a class="headerlink" href="#attribute-table" title="Permalink to this headline">¶</a></h2>
 <p><img alt="attribute_table" src="../_images/attribute_table1.png" /></p>
-</section>
-<section id="table-joins">
+</div>
+<div class="section" id="table-joins">
 <h2>Table Joins<a class="headerlink" href="#table-joins" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="loading-csv-layer">
+</div>
+<div class="section" id="loading-csv-layer">
 <h2>Loading csv layer<a class="headerlink" href="#loading-csv-layer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="delimited_text" src="../_images/delimited_text.png" /></p>
-</section>
-<section id="id1">
+</div>
+<div class="section" id="id1">
 <h2><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h2>
 <p><img alt="loaded_delimited" src="../_images/loaded_delimited.png" /></p>
-</section>
-<section id="sort-two-tables-by-their-precinct-attribute">
+</div>
+<div class="section" id="sort-two-tables-by-their-precinct-attribute">
 <h2>Sort two tables by their precinct attribute<a class="headerlink" href="#sort-two-tables-by-their-precinct-attribute" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="id2">
+</div>
+<div class="section" id="id2">
 <h2><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p><img alt="sorted_by_precinct" src="../_images/sorted_by_precinct.png" /></p>
-</section>
-<section id="table-join">
+</div>
+<div class="section" id="table-join">
 <h2>Table Join<a class="headerlink" href="#table-join" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We want to attach the data from the csv table into the shapefile layer</p></li>
 <li><p>While the two precinct attributes are aligned, they have different values pointing to the same precinct</p></li>
 <li><p>We need to fix this prior to doing a table join</p></li>
 </ul>
-</section>
-<section id="creating-new-attributes">
+</div>
+<div class="section" id="creating-new-attributes">
 <h2>Creating New Attributes<a class="headerlink" href="#creating-new-attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We will first create a new attribute in the csv layer that has values matching those in the relevant field in the shapefile layer.</p></li>
@@ -613,214 +600,214 @@
 <li><p>We are going to proceed in several steps</p></li>
 <li><p>Ultimately we want to create a new field that changes <code class="docutils literal notranslate"><span class="pre">065-11103</span></code> into <code class="docutils literal notranslate"><span class="pre">11-103</span></code></p></li>
 </ul>
-</section>
-<section id="create-an-interim-field">
+</div>
+<div class="section" id="create-an-interim-field">
 <h2>Create an Interim Field<a class="headerlink" href="#create-an-interim-field" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="id3">
+</div>
+<div class="section" id="id3">
 <h2><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
 <p><img alt="220_next_field" src="../_images/220_next_field.png" /></p>
-</section>
-<section id="create-the-final-new-field">
+</div>
+<div class="section" id="create-the-final-new-field">
 <h2>Create the Final New Field<a class="headerlink" href="#create-the-final-new-field" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="id4">
+</div>
+<div class="section" id="id4">
 <h2><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <p><img alt="230_final_new_join_field" src="../_images/230_final_new_join_field.png" /></p>
-</section>
-<section id="new-field-in-attribute-table">
+</div>
+<div class="section" id="new-field-in-attribute-table">
 <h2>New Field in Attribute Table<a class="headerlink" href="#new-field-in-attribute-table" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="id5">
+</div>
+<div class="section" id="id5">
 <h2><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p><img alt="231_new_field_in_table" src="../_images/231_new_field_in_table.png" /></p>
-</section>
-<section id="id6">
+</div>
+<div class="section" id="id6">
 <h2>Table Join<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Now were in a position to do a table join</p></li>
 <li><p>In the shapefile layer, open its properties dialog and select <code class="docutils literal notranslate"><span class="pre">Joins</span></code></p></li>
 </ul>
-</section>
-<section id="id7">
+</div>
+<div class="section" id="id7">
 <h2><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p><img alt="240_join_dialog" src="../_images/240_join_dialog.png" /></p>
-</section>
-<section id="id8">
+</div>
+<div class="section" id="id8">
 <h2>Table Join<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Ensure your dialog has the values as in the previous image</p></li>
 <li><p>Then click <code class="docutils literal notranslate"><span class="pre">apply</span></code></p></li>
 <li><p>Open up the attribute table for the layer</p></li>
 </ul>
-</section>
-<section id="id9">
+</div>
+<div class="section" id="id9">
 <h2><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <p><img alt="250_join_result" src="../_images/250_join_result.png" /></p>
-</section>
-<section id="save-our-layer-as-a-new-name">
+</div>
+<div class="section" id="save-our-layer-as-a-new-name">
 <h2>Save our layer as a new name<a class="headerlink" href="#save-our-layer-as-a-new-name" title="Permalink to this headline">¶</a></h2>
 <p>It is good practice to save layers that have changed to a new layer.</p>
 <p>This ensures the values for the fields are updated.</p>
 <p>Save your layer as <code class="docutils literal notranslate"><span class="pre">voting</span> <span class="pre">joined</span></code></p>
-</section>
-<section id="id10">
+</div>
+<div class="section" id="id10">
 <h2><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p><img alt="260_save_as_layer" src="../_images/260_save_as_layer.png" /></p>
-</section>
-<section id="munged-field-names">
+</div>
+<div class="section" id="munged-field-names">
 <h2>Munged Field Names<a class="headerlink" href="#munged-field-names" title="Permalink to this headline">¶</a></h2>
 <p>One issue is our field names got changed when we saved to a new layers</p>
-</section>
-<section id="id11">
+</div>
+<div class="section" id="id11">
 <h2><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p><img alt="270_fields_names_borked_on_save" src="../_images/270_fields_names_borked_on_save.png" /></p>
-</section>
-<section id="fixing-field-names">
+</div>
+<div class="section" id="fixing-field-names">
 <h2>Fixing Field Names<a class="headerlink" href="#fixing-field-names" title="Permalink to this headline">¶</a></h2>
 <p>We can fix this:</p>
 <ul class="simple">
 <li><p>open the layer properties dialog and select <code class="docutils literal notranslate"><span class="pre">Source</span> <span class="pre">Fields</span></code></p></li>
 </ul>
-</section>
-<section id="id12">
+</div>
+<div class="section" id="id12">
 <h2><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
 <p><img alt="280_edit_fields" src="../_images/280_edit_fields.png" /></p>
-</section>
-<section id="turn-on-field-editing-by-clicking-the-pencil-icon">
+</div>
+<div class="section" id="turn-on-field-editing-by-clicking-the-pencil-icon">
 <h2>Turn on field editing by clicking the pencil icon<a class="headerlink" href="#turn-on-field-editing-by-clicking-the-pencil-icon" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Edit the name for the relevant field</p></li>
 </ul>
-</section>
-<section id="id13">
+</div>
+<div class="section" id="id13">
 <h2><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 <p><img alt="290_editing_on" src="../_images/290_editing_on.png" /></p>
-</section>
-<section id="turn-editing-off-by-clicking-the-pencil">
+</div>
+<div class="section" id="turn-editing-off-by-clicking-the-pencil">
 <h2>Turn editing off by clicking the pencil<a class="headerlink" href="#turn-editing-off-by-clicking-the-pencil" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="id14">
+</div>
+<div class="section" id="id14">
 <h2><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <p><img alt="291_edit_off" src="../_images/291_edit_off.png" /></p>
-</section>
-<section id="id15">
+</div>
+<div class="section" id="id15">
 <h2><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <p><img alt="299_renamed_fields" src="../_images/299_renamed_fields.png" /></p>
-</section>
-<section id="creating-more-attributes">
+</div>
+<div class="section" id="creating-more-attributes">
 <h2>Creating More Attributes<a class="headerlink" href="#creating-more-attributes" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>We will limit our attention to the 2016 presidential results</p></li>
 <li><p>Let’s create a few new attributes that help us study these results</p></li>
 </ul>
-</section>
-<section id="create-a-new-variable-that-is-the-total-of-clinton-trump">
+</div>
+<div class="section" id="create-a-new-variable-that-is-the-total-of-clinton-trump">
 <h2>Create a new variable that is the total of Clinton + Trump<a class="headerlink" href="#create-a-new-variable-that-is-the-total-of-clinton-trump" title="Permalink to this headline">¶</a></h2>
 <p><img alt="310_total_vote" src="../_images/310_total_vote.png" /></p>
-</section>
-<section id="new-total">
+</div>
+<div class="section" id="new-total">
 <h2>New Total<a class="headerlink" href="#new-total" title="Permalink to this headline">¶</a></h2>
 <p><img alt="311_updated_table" src="../_images/311_updated_table.png" /></p>
-</section>
-<section id="create-a-pctclinton-attribute">
+</div>
+<div class="section" id="create-a-pctclinton-attribute">
 <h2>Create a pctClinton Attribute<a class="headerlink" href="#create-a-pctclinton-attribute" title="Permalink to this headline">¶</a></h2>
 <p><img alt="320_pct_clinton" src="../_images/320_pct_clinton.png" /></p>
-</section>
-<section id="new-pctclinton-attribute">
+</div>
+<div class="section" id="new-pctclinton-attribute">
 <h2>New pctClinton Attribute<a class="headerlink" href="#new-pctclinton-attribute" title="Permalink to this headline">¶</a></h2>
 <p><img alt="321_pct_clinton_result" src="../_images/321_pct_clinton_result.png" /></p>
-</section>
-<section id="create-a-winner-attribute-string">
+</div>
+<div class="section" id="create-a-winner-attribute-string">
 <h2>Create a Winner Attribute (String)<a class="headerlink" href="#create-a-winner-attribute-string" title="Permalink to this headline">¶</a></h2>
 <p><img alt="340_winner" src="../_images/340_winner.png" /></p>
-</section>
-<section id="new-winner-attribute-string">
+</div>
+<div class="section" id="new-winner-attribute-string">
 <h2>New Winner Attribute (String)<a class="headerlink" href="#new-winner-attribute-string" title="Permalink to this headline">¶</a></h2>
 <p><img alt="341_winner_result" src="../_images/341_winner_result.png" /></p>
-</section>
-<section id="symbology">
+</div>
+<div class="section" id="symbology">
 <h2>Symbology<a class="headerlink" href="#symbology" title="Permalink to this headline">¶</a></h2>
 <p><img alt="350_winner_symbology" src="../_images/350_winner_symbology.png" /></p>
-</section>
-<section id="symbology-default">
+</div>
+<div class="section" id="symbology-default">
 <h2>Symbology Default<a class="headerlink" href="#symbology-default" title="Permalink to this headline">¶</a></h2>
 <p><img alt="351_winner_map" src="../_images/351_winner_map.png" /></p>
-</section>
-<section id="sybmology-changing-fill-colors">
+</div>
+<div class="section" id="sybmology-changing-fill-colors">
 <h2>Sybmology Changing Fill Colors<a class="headerlink" href="#sybmology-changing-fill-colors" title="Permalink to this headline">¶</a></h2>
 <p><img alt="352_winner_red_blue" src="../_images/352_winner_red_blue.png" /></p>
-</section>
-<section id="virtual-layers">
+</div>
+<div class="section" id="virtual-layers">
 <h2>Virtual Layers<a class="headerlink" href="#virtual-layers" title="Permalink to this headline">¶</a></h2>
-</section>
-<section id="virtual-layer-menu">
+</div>
+<div class="section" id="virtual-layer-menu">
 <h2>Virtual Layer Menu<a class="headerlink" href="#virtual-layer-menu" title="Permalink to this headline">¶</a></h2>
 <p><img alt="360_virtual_layer_menu" src="../_images/360_virtual_layer_menu.png" /></p>
-</section>
-<section id="getting-the-path">
+</div>
+<div class="section" id="getting-the-path">
 <h2>Getting the path<a class="headerlink" href="#getting-the-path" title="Permalink to this headline">¶</a></h2>
 <p><img alt="361_get_shp_path" src="../_images/361_get_shp_path.png" /></p>
-</section>
-<section id="path-set">
+</div>
+<div class="section" id="path-set">
 <h2>Path set<a class="headerlink" href="#path-set" title="Permalink to this headline">¶</a></h2>
 <p><img alt="362_shape_path" src="../_images/362_shape_path.png" /></p>
-</section>
-<section id="query">
+</div>
+<div class="section" id="query">
 <h2>Query<a class="headerlink" href="#query" title="Permalink to this headline">¶</a></h2>
 <p><img alt="363_query_clinton_trump_total" src="../_images/363_query_clinton_trump_total.png" /></p>
-</section>
-<section id="test-query">
+</div>
+<div class="section" id="test-query">
 <h2>Test Query<a class="headerlink" href="#test-query" title="Permalink to this headline">¶</a></h2>
 <p><img alt="364_query_ok" src="../_images/364_query_ok.png" /></p>
-</section>
-<section id="accessing-virtual-layer-attribute-tables">
+</div>
+<div class="section" id="accessing-virtual-layer-attribute-tables">
 <h2>Accessing Virtual Layer Attribute Tables<a class="headerlink" href="#accessing-virtual-layer-attribute-tables" title="Permalink to this headline">¶</a></h2>
 <p><img alt="365_virtual_layer_attribute_menu" src="../_images/365_virtual_layer_attribute_menu.png" /></p>
-</section>
-<section id="query-result">
+</div>
+<div class="section" id="query-result">
 <h2>Query Result<a class="headerlink" href="#query-result" title="Permalink to this headline">¶</a></h2>
 <p><img alt="366_query_result" src="../_images/366_query_result.png" /></p>
-</section>
-<section id="rename-virtual-layer">
+</div>
+<div class="section" id="rename-virtual-layer">
 <h2>Rename Virtual Layer<a class="headerlink" href="#rename-virtual-layer" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>right click on the virtual layer</p></li>
 <li><p>click rename</p></li>
 <li><p>rename to <code class="docutils literal notranslate"><span class="pre">clinton_trump_total</span></code></p></li>
 </ul>
-</section>
-<section id="duplicate-layer">
+</div>
+<div class="section" id="duplicate-layer">
 <h2>Duplicate Layer<a class="headerlink" href="#duplicate-layer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="400_duplicate_layer" src="../_images/400_duplicate_layer.png" /></p>
-</section>
-<section id="rename-duplicate-layer">
+</div>
+<div class="section" id="rename-duplicate-layer">
 <h2>Rename Duplicate Layer<a class="headerlink" href="#rename-duplicate-layer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="401_rename_layer" src="../_images/401_rename_layer.png" /></p>
-</section>
-<section id="edit-new-virtual-layer">
+</div>
+<div class="section" id="edit-new-virtual-layer">
 <h2>Edit New Virtual Layer<a class="headerlink" href="#edit-new-virtual-layer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="402_edit_virtual_layer" src="../_images/402_edit_virtual_layer.png" /></p>
-</section>
-<section id="query-for-tracts-won-by-candidate">
+</div>
+<div class="section" id="query-for-tracts-won-by-candidate">
 <h2>Query for Tracts Won by Candidate<a class="headerlink" href="#query-for-tracts-won-by-candidate" title="Permalink to this headline">¶</a></h2>
 <p><img alt="410_query_tract_count" src="../_images/410_query_tract_count.png" /></p>
-</section>
-<section id="warning">
+</div>
+<div class="section" id="warning">
 <h2>Warning<a class="headerlink" href="#warning" title="Permalink to this headline">¶</a></h2>
 <p><img alt="412_query_tract_warning" src="../_images/412_query_tract_warning.png" /></p>
-</section>
-<section id="result-tracts-won-by-candidate">
+</div>
+<div class="section" id="result-tracts-won-by-candidate">
 <h2>Result: Tracts Won by Candidate<a class="headerlink" href="#result-tracts-won-by-candidate" title="Permalink to this headline">¶</a></h2>
 <p><img alt="413_query_tract_count_result" src="../_images/413_query_tract_count_result.png" /></p>
-</section>
-<section id="next-up">
+</div>
+<div class="section" id="next-up">
 <h2>Next Up<a class="headerlink" href="#next-up" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Raster Data</p></li>
 </ul>
-</section>
-</section>
+</div>
+</div>
 
 
               </div>
@@ -848,11 +835,9 @@
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    
-  <script src="../_static/js/index.d3f166471bb80abb5163.js"></script>
-
-
-    
+  None
   </body>
 </html>

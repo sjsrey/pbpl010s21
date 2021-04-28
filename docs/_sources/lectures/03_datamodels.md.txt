@@ -134,7 +134,6 @@ Two key views of geospatial reality are the:
 
 
 
-
 ## Issues with Vector Data
 
 - slivers

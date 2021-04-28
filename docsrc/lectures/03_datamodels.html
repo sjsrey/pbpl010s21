@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>03_datamodels.html</title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+
+</head>
+
+<body>
+
+<h1>Data Models</h1>
+
+<h2>Last Time</h2>
+
+<ul>
+<li>Open Source/Science/Education</li>
+<li>Introduction to QGIS</li>
+</ul>
+
+<h2>Today</h2>
+
+<ul>
+<li>(Spatial) Data</li>
+<li>GIS Data Models</li>
+<li>Vector Model</li>
+</ul>
+
+<h2>(Spatial) Data</h2>
+
+<h2>What is Data?</h2>
+
+<p><a href="./images/02/DIKW_Pyramid.svg">!DIKW_Pyramid</a>
+[<a href="https://commons.wikimedia.org/w/index.php?curid=37705247">Source</a>]</p>
+
+<h2>Spatial Data</h2>
+
+<ul>
+<li>Also known as geospatial data</li>
+<li>Observation that identify the geographic locations of
+<ul>
+<li>features on the Earth</li>
+<li>boundaries on the Earth</li>
+</ul></li>
+<li>Stored as coordinates and topology</li>
+<li>80-100% of all data have a geographical component (Cressie 1993)</li>
+</ul>
+
+<h2>Types of Spatial Data</h2>
+
+<ul>
+<li>Point Pattern Data</li>
+<li>Geostatistical Data</li>
+<li>Lattice (Polygon) Data</li>
+<li>Network Data</li>
+<li>Spatial Interaction Data</li>
+</ul>
+
+<h2>Digital Data</h2>
+
+<p>In order to encode spatial data, we need
+ a conceptual view that can form the basis for a data model.</p>
+
+<p>By encode, we mean turn data as observations into digital data that can be used in a GISystem </p>
+
+<h2>Representation</h2>
+
+<p>Two key views of geospatial reality are the:</p>
+
+<ul>
+<li>object view</li>
+<li>field views</li>
+</ul>
+
+<h2>Object View</h2>
+
+<ul>
+<li>the world is viewed as a set of discrete spatial objects (entities)</li>
+<li>can take different forms
+<ul>
+<li>points: location of a traffic accident</li>
+<li>lines: stream segment/river segment</li>
+<li>areas/polygons: Riverside County</li>
+</ul></li>
+</ul>
+
+<h2>Object View</h2>
+
+<p><a href="./images/02/object_view.png">!object_view</a></p>
+
+<h2>Field View</h2>
+
+<ul>
+<li>geography seen as a collection of continuous variables</li>
+<li>phenomena could be measured everywhere (at any point in space)</li>
+<li>ex: air pollution, elevation, precipitation</li>
+</ul>
+
+<h2>Field View</h2>
+
+<p><a href="./images/02/laAir.png">!laAir</a></p>
+
+<p>#</p>
+
+<h2>GIS Data Models</h2>
+
+<h2>GIS Data Models</h2>
+
+<ul>
+<li>Vector Data Model (Today)</li>
+<li>Raster Data Model (Future)</li>
+</ul>
+
+<h2>Vector Data Model</h2>
+
+<ul>
+<li>Each discrete object is considered to be a <strong>feature</strong></li>
+<li>Vector features have <strong>attributes</strong>, which consist of text or numerical information that describe the features</li>
+<li>A vector feature has its shape represented using <strong>geometry</strong></li>
+<li>The geometry is made up of one or more interconnected <strong>vertices</strong></li>
+</ul>
+
+<h2>Vector Geometry</h2>
+
+<ul>
+<li>The geometry is made up of one or more interconnected <strong>vertices</strong></li>
+<li>A vertex describes a position in space using an X, Y and optionally Z axis. </li>
+<li>Geometries which have vertices with a Z axis are often referred to as 2.5D since they describe height or depth at each vertex, but not both.</li>
+</ul>
+
+<h1>#</h1>
+
+<p><a href="./images/02/point_feature.png">!point_feature</a></p>
+
+<h1>#</h1>
+
+<p><a href="./images/02/polyline_feature.png">!polyline_feature</a></p>
+
+<h2> </h2>
+
+<p><a href="./images/02/polygon_feature.png">!polygon_feature</a></p>
+
+<h2>Scale and Representation</h2>
+
+<p><a href="./images/02/riverside_point.png">!riverside_point</a></p>
+
+<h2>Scale and Representation</h2>
+
+<p><a href="./images/02/riverside_network.png">!riverside_network</a></p>
+
+<h2>Vector Attributes</h2>
+
+<p><a href="./images/02/attribute_table.png">!attribute_table</a></p>
+
+<h2>Attribute Properties</h2>
+
+<p><a href="./images/02/attribute_properties.png">!attribute_properties</a></p>
+
+<h2>Issues with Vector Data</h2>
+
+<ul>
+<li>slivers</li>
+<li>under and overshoots</li>
+<li>topological errors</li>
+</ul>
+
+<h2>Slivers</h2>
+
+<p><a href="./images/02/vector_slivers.png">!vector_slivers</a></p>
+
+<h2>Under and overshoots</h2>
+
+<p><a href="./images/02/vector_overshoots.png">!vector_overshoots</a></p>
+
+<h2>Next Up</h2>
+
+<ul>
+<li>Vector Tables</li>
+<li>Queries</li>
+</ul>
+
+<h1>Open Source GIS</h1>
+
+<h2>GIS Software</h2>
+
+<p><img src="./images/01/gissoftware.png" alt="gis software" title="GIS Software" /></p>
+
+<h2>Open Source, Open Science Open Education</h2>
+
+<h3>Origins</h3>
+
+<ul>
+<li>Free Software</li>
+<li>Open Source Software</li>
+</ul>
+
+<p><a href="https://dzone.com/articles/free-software-vs-open-source-vs-freeware-whats-the">They are not the same</a></p>
+
+<h3>Freedom</h3>
+
+<ol>
+<li>Free as in Beer</li>
+<li>Free as in Speech</li>
+</ol>
+
+<h3>Why Open Source GIS?</h3>
+
+<p><a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/preamble.html#a-word-from-the-editor">A word from the editor</a></p>
+
+<h3>Open Science (Why?)</h3>
+
+<p><img src="./images/01/reprocrisis.png" alt="repro" title="Reproducibility Crisis" /></p>
+
+<h3>Open Science (What?)</h3>
+
+<p><img src="./images/01/openscience.png" alt="open science" title="open science" />
+<a href="https://www.fosteropenscience.eu/content/what-open-science-introduction">(FOSTER)</a> </p>
+
+<h3>Open Education</h3>
+
+<ul>
+<li>access to quality education is everyone's birthright</li></li>
+<li>human knowledge is a <a href="https://en.wikipedia.org/wiki/Public_good_(economics">public good</a>) that should be available to all</li>
+<li>human knowledge is a public good that we all can contribute to</li></li>
+</ul>
+
+<h2>QGIS</h2>
+
+<p><img src="./images/01/qgis1.png" alt="qgis" title="QGIS" /></p>
+
+<h3>QGIS Community</h3>
+
+<p><img src="./images/01/qgisteam.png" alt="team" title="QGIS Team" /></p>
+
+<h3>Data</h3>
+
+<p>For this lecture, download our <a href="https://github.com/sjsrey/pbpl010s21/raw/main/docsrc/data/QGIS-Training-Data-2.0.zip">example data</a></p>
+
+<h3>Open QGIS</h3>
+
+<p><img src="./images/01/qgisopen.png" alt="Opening QGIS" title="Opening QGIS" /></p>
+
+<h3>Load a Vector Layer</h3>
+
+<p><img src="./images/01/addvector.png" alt="Load Vector" title="Load Vector Layer" /></p>
+
+<h3>Vector Layer Loaded</h3>
+
+<p><img src="./images/01/vectoraddresult.png" alt="added" title="Vector Added" /></p>
+
+<h3>Interface Components</h3>
+
+<h4>Menu Bar</h4>
+
+<p><img src="./images/01/menubar.png" alt="menu bar" title="Menu bar" /></p>
+
+<h4>Tool Bar</h4>
+
+<p><img src="./images/01/toolbar.png" alt="tool bar" title="Tool bar" /></p>
+
+<h4>Canvas</h4>
+
+<p><img src="./images/01/canvas.png" alt="Canvas" title="Canvas" /></p>
+
+<h4>Browser Panel</h4>
+
+<p><img src="./images/01/browserpanel.png" alt="Browser Panel" title="Browser Panel" /></p>
+
+<h4>Layer Panel</h4>
+
+<p><img src="./images/01/layerpanel.png" alt="Layer Panel" title="Layer Panel" /></p>
+
+<h4>Locator Bar</h4>
+
+<p><img src="./images/01/locatorbar.png" alt="Locator Bar" title="Locator Bar" /></p>
+
+<h4>Status Bar</h4>
+
+<p><img src="./images/01/statusbar.png" alt="Status Bar" title="status bar" /></p>
+
+<h3>Working with Projects, Files, and Directories</h3>
+
+<p>Load two new layers</p>
+
+<p><img src="./images/01/riversload.png" alt="rivers load" title="rivers load" />
+<img src="./images/01/riversloaded.png" alt="rivers loaded" title="rivers loaded" /></p>
+
+<p><img src="./images/01/placesloaded.png" alt="places loaded" title="places loaded" /></p>
+
+<h4>Projects</h4>
+
+<h4>What is a QGIS Project?</h4>
+
+<ul>
+<li>A <code>meta-file</code> that defines the files associated with an analysis</li>
+<li>A <code>project file</code> records locations of files related to a <code>project</code> </li>
+<li>Extension: <code>gqz</code> </li>
+</ul>
+
+<p><img src="./images/01/untitledproject.png" alt="Untitled Project" title="Untitled Project" /></p>
+
+<h3>Saving a project</h3>
+
+<p><img src="./images/01/projectsave.png" alt="Save Project" title="Save Project" /></p>
+
+<h3>Project Save Dialog</h3>
+
+<p><img src="./images/01/projectsavedialog.png" alt="Dialog Save Project" title="Dialog Save Project" /></p>
+
+<h3>Project Saved</h3>
+
+<p><img src="./images/01/projectsaved.png" alt="Saved Project" title=" Saved Project" /></p>
+
+<h3>Project File</h3>
+
+<p><img src="./images/01/projectfile.png" alt="Project File" title="Project File" /></p>
+
+<h3>Quit QGIS</h3>
+
+<p><img src="./images/01/qgisquit.png" alt="Quit QGIS" title="Quit QGIS" /></p>
+
+<h3>Opening Project on a different computer (and operating system)</h3>
+
+<h3>Linux File Browser</h3>
+
+<p><img src="./images/01/linuxfile.png" alt="linuxbrowser" title="" /></p>
+
+<h3>QGIS on Linux</h3>
+
+<p><img src="./images/01/qgislinux.png" alt="qgislinux" title="" /></p>
+
+<h3>Open Project on Linux</h3>
+
+<p><img src="./images/01/linuxprojectopen.png" alt="linuxopen" title="" /></p>
+
+<h3>Our Project on Linux</h3>
+
+<p><img src="./images/01/linuxprojectopened.png" alt="linuxopen" title="" /></p>
+
+</body>
+</html>

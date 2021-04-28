@@ -143,37 +143,35 @@ also be required to complete the projects.
  
 ### Week 5 April 26, 28
 
-#### April 26: Project Introduction
+#### April 26: No Class
+
+#### April 28: Project Introduction
+  - [Project Introduction](project.md)
   - Exercise 2 Due
-
-#### April 28: Creating Maps
-  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
-
 
 -----
   
 ### Week 6 May 3, 5
 
-#### May 3: Creating and Fixing Vector Data
+#### May 3: Creating Maps
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
-  - Exercise 3 Uut
- 
 
-#### May 5:  Vector Analysis: Buffering
-  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html">Reading: Sutton, T. "Vector Spatial Analysis (Buffers)" </a>
+
+#### May 5: Creating and Fixing Vector Data
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
+  - Exercise 3 Out
 
 -----
 
 ### Week 7 May 10, 12
 
-#### May 10: Clipping, Dissolve, Spatial Joins
+#### May 10:  Vector Analysis: Buffering
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html">Reading: Sutton, T. "Vector Spatial Analysis (Buffers)" </a>
+
+#### May 12: Clipping, Dissolve, Spatial Joins
 
   - [Data](https://stacks.stanford.edu/file/druid:xc453kn9742/data.zip?download=true)
   - <a href="https://www.e-education.psu.edu/geog585/node/693">Reading: PSU. Walkthrough: Clipping and projecting vector data with QGIS and OGR</a>
-
-
-#### May 12: Crowd-sourcing and VGI
-  - <a href="https://www.e-education.psu.edu/geog585/node/737">Reading: PSU. VGI and crowdsourced data collection</a>
   - Exercise 3 Due
   - Exercise 4 Out
 -----
@@ -182,9 +180,12 @@ also be required to complete the projects.
 ### Week 8 May 17, 19
 
 #### May 17: Project Studio   
-#### May 19: OpenStreetMap
 
+#### May 19: Crowd-sourcing, OpenStreetMap and VGI
+  - <a href="https://www.e-education.psu.edu/geog585/node/737">Reading: PSU. VGI and crowdsourced data collection</a>
  - [Reading: OpenStreetMap](https://www.openstreetmap.org/about)
+
+
 -----
 
 ### Week 9 May 24, 26

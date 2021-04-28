@@ -1,0 +1,236 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PBPL010 Project</title>
+    
+  <link href="_static/css/theme.css" rel="stylesheet" />
+  <link href="_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="./" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/00_introtogis.html">Introduction to GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/01_opensource.html">Introduction to QGIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/02_datamodels.html">Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/02_datamodels.html#id4"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/04_vector_attributes.html">Vector Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/05_rasters.html">Raster Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/05_rasters.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/05_rasters.html#id5"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/05_rasters.html#id6"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/06_crs.html">Coordinate Reference Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/06_crs.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/06_crs.html#id13"></a></li>
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="_sources/project.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#description">
+   Description
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#tasks">
+   Tasks
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data">
+   Data
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="pbpl010-project">
+<h1>PBPL010 Project<a class="headerlink" href="#pbpl010-project" title="Permalink to this headline">¶</a></h1>
+<p><img alt="img" src="_images/latimes1.png" /></p>
+<div class="section" id="description">
+<h2>Description<a class="headerlink" href="#description" title="Permalink to this headline">¶</a></h2>
+<p>This quarter we will work on a collaborative course project that applies the methods we have been covering in lecture sessions. During the
+second half of the quarter, we will dedicate the discussion sessions for in-class
+collaboration on the projects. Collaboration outside regular class time will
+also be required to complete the projects.</p>
+<p>We will be replicating, and extending, the <a class="reference external" href="https://www.latimes.com/projects/la-me-freeway-pollution/">LA Times</a>
+investigation of environmental disparities in Los Angeles. Although the original article makes reference to “Southern California”, the data provided with the original article is only for the City of Los Angeles. As such we will extend this analysis to consider all the counties belonging to  the Southern California Association of Governments, and the San Diego Association of Governments.</p>
+<p>We will be focusing on data for the 2010 Census year.</p>
+</div>
+<div class="section" id="tasks">
+<h2>Tasks<a class="headerlink" href="#tasks" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Using the data provided in the LA Times Article, determine the population living within 500 and 1000 feet of a freeway.</p></li>
+<li><p>Using tract data from the US Census (3 below) and the California Highway System (5 below), repeat this exercise for the same extent as in task 1.</p></li>
+<li><p>Using block data from the US Census (4 below) and the California Highway System (5 below), repeat this exercise for the same extent as in task 1.</p></li>
+<li><p>Compare the estimates for the two sets of analyses (Task 1-Original Article and Task 3-block data)</p></li>
+<li><p>Compare the estimates for the two sets of analyses (Task 2-tract data and Task 3-block data)</p></li>
+<li><p>For each county in the combined SCAG and SANDAG regions repeat task 2.</p></li>
+<li><p>Discuss the relative highway pollution burden for populations in each of the counties.</p></li>
+<li><p>Create a new variable at the tract level that represents the population for people of color.</p></li>
+<li><p>Carry out an equity analysis to explore whether there are disparities in the exposure to freeway pollution between this group and the white population in each of the counties.</p></li>
+</ol>
+</div>
+<div class="section" id="data">
+<h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p><a class="reference external" href="https://latimes-graphics-media.s3.amazonaws.com/assets/data/freeway-pollution/freeway_files.zip">LA Times Freeway Data</a></p></li>
+<li><p><a class="reference external" href="https://www.census.gov/geographies/mapping-files/2010/geo/tiger-data.html">California Census Tract Data</a></p></li>
+<li><p><a class="reference external" href="ftp://ftp2.census.gov/geo/tiger/TIGER2010BLKPOPHU/tabblock2010_06_pophu.zip">California Census Block Data</a></p></li>
+<li><p><a class="reference external" href="https://stacks.stanford.edu/file/druid:xc453kn9742/data.zip?download=true">California Highway Network Data</a></p></li>
+<li><p><a class="reference external" href="https://www.census.gov/programs-surveys/geography/technical-documentation/records-layout/tiger-line-demo-record-layouts.html">Documentation for Census Data</a></p></li>
+</ol>
+</div>
+</div>
+
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2021, Sergio Rey.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  None
+  </body>
+</html>

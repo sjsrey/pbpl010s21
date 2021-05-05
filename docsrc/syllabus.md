@@ -132,7 +132,6 @@ also be required to complete the projects.
 -----
   
 ### Week 4 April 19, 21
-
 #### April 19: Coordinate Reference Systems
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/coordinate_reference_systems.html">Reading: Sutton, T. "Coordinate Reference Systems" </a>
   - [Coordinate Reference Systems](lectures/06_crs.md)
@@ -153,38 +152,34 @@ also be required to complete the projects.
   
 ### Week 6 May 3, 5
 
-#### May 3: Creating Maps
+#### May 3: [Day of Refusal](https://www.dailycal.org/2021/05/02/imagining-a-different-future-uc-cops-off-campus-to-hold-day-of-refusal/)
+
+#### May 5: Creating Maps
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
-
-
-#### May 5: Creating and Fixing Vector Data
-  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
-  - Exercise 3 Out
-
+  - [Exercise 3 Out](lectures/e3.md)
 -----
 
 ### Week 7 May 10, 12
 
-#### May 10:  Vector Analysis: Buffering
+#### May 10: Creating and Fixing Vector Data
+  - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
+
+
+#### May 12:  Vector Analysis: Buffering, Clipping, Dissolve, and  Spatial Joins
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html">Reading: Sutton, T. "Vector Spatial Analysis (Buffers)" </a>
-
-#### May 12: Clipping, Dissolve, Spatial Joins
-
   - [Data](https://stacks.stanford.edu/file/druid:xc453kn9742/data.zip?download=true)
   - <a href="https://www.e-education.psu.edu/geog585/node/693">Reading: PSU. Walkthrough: Clipping and projecting vector data with QGIS and OGR</a>
-  - Exercise 3 Due
-  - Exercise 4 Out
 -----
 
 
 ### Week 8 May 17, 19
 
 #### May 17: Project Studio   
-
+  - Exercise 3 Due
+  - Exercise 4 Out
 #### May 19: Crowd-sourcing, OpenStreetMap and VGI
   - <a href="https://www.e-education.psu.edu/geog585/node/737">Reading: PSU. VGI and crowdsourced data collection</a>
  - [Reading: OpenStreetMap](https://www.openstreetmap.org/about)
-
 
 -----
 

@@ -4,7 +4,8 @@
 <html>
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>PBPL010 Introduction to Geographic Information Systems</title>
     
   <link href="_static/css/theme.css" rel="stylesheet" />
@@ -76,6 +77,12 @@
 <li class="toctree-l1"><a class="reference internal" href="lectures/06_crs.html">Coordinate Reference Systems</a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/06_crs.html#id1"></a></li>
 <li class="toctree-l1"><a class="reference internal" href="lectures/06_crs.html#id13"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html">Making Maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html#id4"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html#id9"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html#id27"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html#id29"></a></li>
 </ul>
 
 </div>
@@ -143,7 +150,7 @@
         
               <div>
                 
-  <div class="section" id="pbpl010-introduction-to-geographic-information-systems">
+  <section id="pbpl010-introduction-to-geographic-information-systems">
 <h1>PBPL010 Introduction to Geographic Information Systems<a class="headerlink" href="#pbpl010-introduction-to-geographic-information-systems" title="Permalink to this headline">¶</a></h1>
 <p><img alt="img" src="_images/qgispysal.png" /></p>
 <div class="toctree-wrapper compound">
@@ -186,13 +193,13 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="syllabus.html#week-6-may-3-5">Week 6 May 3, 5</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="syllabus.html#may-3-creating-maps">May 3: Creating Maps</a></li>
-<li class="toctree-l4"><a class="reference internal" href="syllabus.html#may-5-creating-and-fixing-vector-data">May 5: Creating and Fixing Vector Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="syllabus.html#may-3-day-of-refusal">May 3: Day of Refusal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="syllabus.html#may-5-creating-maps">May 5: Creating Maps</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="syllabus.html#week-7-may-10-12">Week 7 May 10, 12</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="syllabus.html#may-10-vector-analysis-buffering">May 10:  Vector Analysis: Buffering</a></li>
-<li class="toctree-l4"><a class="reference internal" href="syllabus.html#may-12-clipping-dissolve-spatial-joins">May 12: Clipping, Dissolve, Spatial Joins</a></li>
+<li class="toctree-l4"><a class="reference internal" href="syllabus.html#may-10-creating-and-fixing-vector-data">May 10: Creating and Fixing Vector Data</a></li>
+<li class="toctree-l4"><a class="reference internal" href="syllabus.html#may-12-vector-analysis-buffering-clipping-dissolve-and-spatial-joins">May 12:  Vector Analysis: Buffering, Clipping, Dissolve, and  Spatial Joins</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="syllabus.html#week-8-may-17-19">Week 8 May 17, 19</a><ul>
@@ -501,9 +508,95 @@
 <li class="toctree-l2"><a class="reference internal" href="lectures/06_crs.html#next-up">Next Up</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html">Making Maps</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#last-time">Last Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#today">Today</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html#id1"></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#working-with-vector-data">Working with Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#shapefile">Shapefile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#geopackage">Geopackage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id2">Geopackage</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#geopackage-roads">Geopackage: Roads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#sqlite">SQLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id3">SQLite</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#sqlite-connection">SQLite Connection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#sqlite-land-use">SQLite Land Use</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html#id4"></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#symbology">Symbology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#color">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#fill-color">Fill color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#symbol-structure">Symbol Structure</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#stroke">Stroke</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#no-pen">No pen</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#scale-based-visibility">Scale-based visibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#buildings">Buildings</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id5">Scale-based visibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id6">Scale-based visibility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#adding-symbol-layers-and-ordering-symbol-levels">Adding Symbol Layers and Ordering Symbol Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#roads">Roads</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#add-symbol-layer">Add Symbol Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#order-symbol-levels">Order Symbol Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id7"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#ordered-symbol-levels">Ordered Symbol Levels</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#geometry-generator-symbology">Geometry generator symbology</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#water-single-symbol">Water: Single Symbol</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#water-to-centroid">Water: To Centroid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id8">Water: To Centroid</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#water-2-symbol-layers">Water: 2 symbol layers</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html#id9"></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#classifying-vector-data">Classifying Vector Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#why-classification">Why Classification?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#measurement-scales">Measurement Scales</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#classifying-nominal-data">Classifying Nominal Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#scag-data-county">SCAG Data: COUNTY</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id10"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id11"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#ratio-interval-classification">Ratio/Interval Classification</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#totpop">TOTPOP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id12"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id13"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#acres">ACRES</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id14"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id15"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#extensive-and-intensive-variables">Extensive and Intensive Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#intensive-variables">Intensive Variables</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#pcthisp-equal-interval">pctHISP (Equal Interval)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id16"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id17"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#pcthisp-la-equal-interval">pctHISP (LA Equal Interval)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id18"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#pcthisp-la-quantiles-5">pctHISP (LA Quantiles: 5)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id19"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id20"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#pcthisp-la-jenks-5">pctHISP (LA Jenks: 5)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id21"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id22"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#pcthisp-la-standard-deviation">pctHISP (LA Standard Deviation)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id23"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id24"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#pcthisp-la-pretty-breaks">pctHISP (LA Pretty Breaks)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id25"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id26"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#mapclassify">mapclassify</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html#id27"></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#id28">Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#colorbrewer">ColorBrewer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#colorbrewer-in-qgis">ColorBrewer in QGIS</a></li>
+<li class="toctree-l2"><a class="reference internal" href="lectures/08_maps.html#next-up">Next Up</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="lectures/08_maps.html#id29"></a></li>
 </ul>
 </div>
-</div>
+</section>
 
 
               </div>

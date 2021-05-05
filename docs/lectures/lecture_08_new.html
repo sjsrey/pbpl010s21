@@ -1,0 +1,860 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Last Time</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_introtogis.html">Introduction to GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_opensource.html">Introduction to QGIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_datamodels.html">Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_datamodels.html#id4"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_vector_attributes.html">Vector Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html">Raster Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id5"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id6"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_crs.html">Coordinate Reference Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_crs.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_crs.html#id13"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html">Making Maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id4"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id9"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id27"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id29"></a></li>
+</ul>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/lectures/lecture_08_new.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Last Time
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#today">
+   Today
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#working-with-vector-data">
+     Working with Vector Data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#shapefile">
+     Shapefile
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geopackage">
+     Geopackage
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+     Geopackage
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geopackage-roads">
+     Geopackage: Roads
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sqlite">
+     SQLite
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id3">
+     SQLite
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sqlite-connection">
+     SQLite Connection
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#sqlite-land-use">
+     SQLite Land Use
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id4">
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#symbology">
+     Symbology
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#color">
+     Color
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fill-color">
+     Fill color
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#symbol-structure">
+     Symbol Structure
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#stroke">
+     Stroke
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#no-pen">
+     No pen
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scale-based-visibility">
+     Scale-based visibility
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#buildings">
+     Buildings
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+     Scale-based visibility
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+     Scale-based visibility
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#adding-symbol-layers-and-ordering-symbol-levels">
+     Adding Symbol Layers and Ordering Symbol Levels
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#roads">
+     Roads
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#add-symbol-layer">
+     Add Symbol Layer
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#order-symbol-levels">
+     Order Symbol Levels
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ordered-symbol-levels">
+     Ordered Symbol Levels
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#geometry-generator-symbology">
+     Geometry generator symbology
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#water-single-symbol">
+     Water: Single Symbol
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#water-to-centroid">
+     Water: To Centroid
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+     Water: To Centroid
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#water-2-symbol-layers">
+     Water: 2 symbol layers
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id9">
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#classifying-vector-data">
+     Classifying Vector Data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#why-classification">
+     Why Classification?
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#measurement-scales">
+     Measurement Scales
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#classifying-nominal-data">
+     Classifying Nominal Data
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scag-data-county">
+     SCAG Data: COUNTY
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#ratio-interval-classification">
+     Ratio/Interval Classification
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#totpop">
+     TOTPOP
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id12">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#acres">
+     ACRES
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#extensive-and-intensive-variables">
+     Extensive and Intensive Variables
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#intensive-variables">
+     Intensive Variables
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pcthisp-equal-interval">
+     pctHISP (Equal Interval)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pcthisp-la-equal-interval">
+     pctHISP (LA Equal Interval)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id18">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pcthisp-la-quantiles-5">
+     pctHISP (LA Quantiles: 5)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id19">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id20">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pcthisp-la-jenks-5">
+     pctHISP (LA Jenks: 5)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id21">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id22">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pcthisp-la-standard-deviation">
+     pctHISP (LA Standard Deviation)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id23">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id24">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#pcthisp-la-pretty-breaks">
+     pctHISP (LA Pretty Breaks)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id25">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id26">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#mapclassify">
+     mapclassify
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id27">
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id28">
+     Color
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#colorbrewer">
+     ColorBrewer
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#colorbrewer-in-qgis">
+     ColorBrewer in QGIS
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#next-up">
+     Next Up
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id29">
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <section id="last-time">
+<h1>Last Time<a class="headerlink" href="#last-time" title="Permalink to this headline">¶</a></h1>
+<p><img alt="100-globe" src="../_images/100-globe.jpg" /></p>
+<ul class="simple">
+<li><p>Midterm Exam</p></li>
+</ul>
+</section>
+<section id="today">
+<h1>Today<a class="headerlink" href="#today" title="Permalink to this headline">¶</a></h1>
+<p><img alt="100-globe" src="../_images/100-globe.jpg" /></p>
+<ul>
+<li class="fragment"> Working with Vector Data </li>
+<li class="fragment"> Symbology</li>
+<li class="fragment"> Classifying Vector Data</li>
+<li class="fragment"> Color</li>
+</ul>
+</section>
+<section id="id1">
+<h1><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
+<section id="working-with-vector-data">
+<h2>Working with Vector Data<a class="headerlink" href="#working-with-vector-data" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="shapefile">
+<h2>Shapefile<a class="headerlink" href="#shapefile" title="Permalink to this headline">¶</a></h2>
+<p><img alt="800_rivers" src="../_images/800_rivers.png" /></p>
+</section>
+<section id="geopackage">
+<h2>Geopackage<a class="headerlink" href="#geopackage" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li class="fragment"> open format </li>
+<li class="fragment"> multiple layers </li>
+<li class="fragment"> different geometries </li>
+<li class="fragment"> can contain vector and raster layers </li>
+<li class="fragment"> different coordinate systems </li>
+</ul>
+</section>
+<section id="id2">
+<h2>Geopackage<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
+<p><img alt="810_geopackage" src="../_images/810_geopackage.png" /></p>
+</section>
+<section id="geopackage-roads">
+<h2>Geopackage: Roads<a class="headerlink" href="#geopackage-roads" title="Permalink to this headline">¶</a></h2>
+<p><img alt="815_geopackage_roads" src="../_images/815_geopackage_roads.png" /></p>
+</section>
+<section id="sqlite">
+<h2>SQLite<a class="headerlink" href="#sqlite" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id3">
+<h2>SQLite<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h2>
+<p><img alt="830_sqlite" src="../_images/830_sqlite.png" /></p>
+</section>
+<section id="sqlite-connection">
+<h2>SQLite Connection<a class="headerlink" href="#sqlite-connection" title="Permalink to this headline">¶</a></h2>
+<p><img alt="831_sqlite" src="../_images/831_sqlite.png" /></p>
+</section>
+<section id="sqlite-land-use">
+<h2>SQLite Land Use<a class="headerlink" href="#sqlite-land-use" title="Permalink to this headline">¶</a></h2>
+<p><img alt="832_sqlite" src="../_images/832_sqlite.png" /></p>
+</section>
+</section>
+<section id="id4">
+<h1><a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h1>
+<section id="symbology">
+<h2>Symbology<a class="headerlink" href="#symbology" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="color">
+<h2>Color<a class="headerlink" href="#color" title="Permalink to this headline">¶</a></h2>
+<p><img alt="832101_color" src="../_images/832101_color.png" /></p>
+</section>
+<section id="fill-color">
+<h2>Fill color<a class="headerlink" href="#fill-color" title="Permalink to this headline">¶</a></h2>
+<p><img alt="842102_color" src="../_images/842102_color.png" /></p>
+</section>
+<section id="symbol-structure">
+<h2>Symbol Structure<a class="headerlink" href="#symbol-structure" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="stroke">
+<h2>Stroke<a class="headerlink" href="#stroke" title="Permalink to this headline">¶</a></h2>
+<p><img alt="832300_stroke" src="../_images/832300_stroke.png" /></p>
+</section>
+<section id="no-pen">
+<h2>No pen<a class="headerlink" href="#no-pen" title="Permalink to this headline">¶</a></h2>
+<p><img alt="832301_nonpen" src="../_images/832301_nonpen.png" /></p>
+</section>
+<section id="scale-based-visibility">
+<h2>Scale-based visibility<a class="headerlink" href="#scale-based-visibility" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="buildings">
+<h2>Buildings<a class="headerlink" href="#buildings" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83251_scale" src="../_images/83251_scale.png" /></p>
+</section>
+<section id="id5">
+<h2>Scale-based visibility<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83252_scale" src="../_images/83252_scale.png" /></p>
+</section>
+<section id="id6">
+<h2>Scale-based visibility<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83253_scale" src="../_images/83253_scale.png" /></p>
+</section>
+<section id="adding-symbol-layers-and-ordering-symbol-levels">
+<h2>Adding Symbol Layers and Ordering Symbol Levels<a class="headerlink" href="#adding-symbol-layers-and-ordering-symbol-levels" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="roads">
+<h2>Roads<a class="headerlink" href="#roads" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83280_roads_0" src="../_images/83280_roads_0.png" /></p>
+</section>
+<section id="add-symbol-layer">
+<h2>Add Symbol Layer<a class="headerlink" href="#add-symbol-layer" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83281_roads" src="../_images/83281_roads.png" /></p>
+</section>
+<section id="order-symbol-levels">
+<h2>Order Symbol Levels<a class="headerlink" href="#order-symbol-levels" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id7">
+<h2><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83282_roads" src="../_images/83282_roads.png" /></p>
+</section>
+<section id="ordered-symbol-levels">
+<h2>Ordered Symbol Levels<a class="headerlink" href="#ordered-symbol-levels" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83283_roads" src="../_images/83283_roads.png" /></p>
+</section>
+<section id="geometry-generator-symbology">
+<h2>Geometry generator symbology<a class="headerlink" href="#geometry-generator-symbology" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="water-single-symbol">
+<h2>Water: Single Symbol<a class="headerlink" href="#water-single-symbol" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83212_generator" src="../_images/83212_generator.png" /></p>
+</section>
+<section id="water-to-centroid">
+<h2>Water: To Centroid<a class="headerlink" href="#water-to-centroid" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83212_generator_0" src="../_images/83212_generator_0.png" /></p>
+</section>
+<section id="id8">
+<h2>Water: To Centroid<a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83212_generator_1" src="../_images/83212_generator_1.png" /></p>
+</section>
+<section id="water-2-symbol-layers">
+<h2>Water: 2 symbol layers<a class="headerlink" href="#water-2-symbol-layers" title="Permalink to this headline">¶</a></h2>
+<p><img alt="83213_generator_2" src="../_images/83213_generator_2.png" /></p>
+</section>
+</section>
+<section id="id9">
+<h1><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h1>
+<section id="classifying-vector-data">
+<h2>Classifying Vector Data<a class="headerlink" href="#classifying-vector-data" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="why-classification">
+<h2>Why Classification?<a class="headerlink" href="#why-classification" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li class="fragment"> Summarizing the attribute value distribution </li>
+<li class="fragment"> Representing the spatial distribution of attribute values </li>
+</ul>
+</section>
+<section id="measurement-scales">
+<h2>Measurement Scales<a class="headerlink" href="#measurement-scales" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li class="fragment"> Nominal: name-based, no order </li>
+<li class="fragment"> Ordinal: arranged in order (ranks) </li>
+<li class="fragment"> Interval: pos, neg, zero values (height above/below sea level)</li>
+<li class="fragment"> Ratio: positive, zero values (distances, degrees Kelvin) </li>
+</ul>
+</section>
+<section id="classifying-nominal-data">
+<h2>Classifying Nominal Data<a class="headerlink" href="#classifying-nominal-data" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="scag-data-county">
+<h2>SCAG Data: COUNTY<a class="headerlink" href="#scag-data-county" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id10">
+<h2><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_000_nominal" src="../_images/8_000_nominal.png" /></p>
+</section>
+<section id="id11">
+<h2><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_001_nominal" src="../_images/8_001_nominal.png" /></p>
+</section>
+<section id="ratio-interval-classification">
+<h2>Ratio/Interval Classification<a class="headerlink" href="#ratio-interval-classification" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="totpop">
+<h2>TOTPOP<a class="headerlink" href="#totpop" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id12">
+<h2><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_010_graduated" src="../_images/8_010_graduated.png" /></p>
+</section>
+<section id="id13">
+<h2><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_011_graduated" src="../_images/8_011_graduated.png" /></p>
+</section>
+<section id="acres">
+<h2>ACRES<a class="headerlink" href="#acres" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id14">
+<h2><a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_020_ei" src="../_images/8_020_ei.png" /></p>
+</section>
+<section id="id15">
+<h2><a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_021_ei" src="../_images/8_021_ei.png" /></p>
+</section>
+<section id="extensive-and-intensive-variables">
+<h2>Extensive and Intensive Variables<a class="headerlink" href="#extensive-and-intensive-variables" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li class="fragment"> AREA and TOTPOP are counts </li>
+<li class="fragment"> Extensive variables </li>
+<li class="fragment"> Geometry size correlated with values </li>
+<li class="fragment"> Choropleths generally not appropriate for extensive variables </li>
+</ul>
+</section>
+<section id="intensive-variables">
+<h2>Intensive Variables<a class="headerlink" href="#intensive-variables" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li class="fragment"> Percentages, ratios, densities </li>
+<li class="fragment"> Standardized by area (in some sense)</li>
+<li class="fragment"> Geometry size not correlated with values </li>
+<li class="fragment"> Choropleths appropriate for intensive variables </li>
+</ul>
+</section>
+<section id="pcthisp-equal-interval">
+<h2>pctHISP (Equal Interval)<a class="headerlink" href="#pcthisp-equal-interval" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id16">
+<h2><a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_030_pcthispei" src="../_images/8_030_pcthispei.png" /></p>
+</section>
+<section id="id17">
+<h2><a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_031_pcthispei" src="../_images/8_031_pcthispei.png" /></p>
+</section>
+<section id="pcthisp-la-equal-interval">
+<h2>pctHISP (LA Equal Interval)<a class="headerlink" href="#pcthisp-la-equal-interval" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id18">
+<h2><a class="headerlink" href="#id18" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_032_pcthisei_zoom" src="../_images/8_032_pcthisei_zoom.png" /></p>
+</section>
+<section id="pcthisp-la-quantiles-5">
+<h2>pctHISP (LA Quantiles: 5)<a class="headerlink" href="#pcthisp-la-quantiles-5" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id19">
+<h2><a class="headerlink" href="#id19" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_040_pcthispq5la" src="../_images/8_040_pcthispq5la.png" /></p>
+</section>
+<section id="id20">
+<h2><a class="headerlink" href="#id20" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_041_pcthispq5la" src="../_images/8_041_pcthispq5la.png" /></p>
+</section>
+<section id="pcthisp-la-jenks-5">
+<h2>pctHISP (LA Jenks: 5)<a class="headerlink" href="#pcthisp-la-jenks-5" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id21">
+<h2><a class="headerlink" href="#id21" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_050_j" src="../_images/8_050_j.png" /></p>
+</section>
+<section id="id22">
+<h2><a class="headerlink" href="#id22" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_051_j" src="../_images/8_051_j.png" /></p>
+</section>
+<section id="pcthisp-la-standard-deviation">
+<h2>pctHISP (LA Standard Deviation)<a class="headerlink" href="#pcthisp-la-standard-deviation" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id23">
+<h2><a class="headerlink" href="#id23" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_060_std" src="../_images/8_060_std.png" /></p>
+</section>
+<section id="id24">
+<h2><a class="headerlink" href="#id24" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_061_std" src="../_images/8_061_std.png" /></p>
+</section>
+<section id="pcthisp-la-pretty-breaks">
+<h2>pctHISP (LA Pretty Breaks)<a class="headerlink" href="#pcthisp-la-pretty-breaks" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="id25">
+<h2><a class="headerlink" href="#id25" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_070_pb" src="../_images/8_070_pb.png" /></p>
+</section>
+<section id="id26">
+<h2><a class="headerlink" href="#id26" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8_071_pb" src="../_images/8_071_pb.png" /></p>
+</section>
+<section id="mapclassify">
+<h2><a class="reference external" href="https://github.com/pysal/mapclassify">mapclassify</a><a class="headerlink" href="#mapclassify" title="Permalink to this headline">¶</a></h2>
+<p><img alt="08_080_mapclassify" src="../_images/08_080_mapclassify.png" /></p>
+</section>
+</section>
+<section id="id27">
+<h1><a class="headerlink" href="#id27" title="Permalink to this headline">¶</a></h1>
+<section id="id28">
+<h2>Color<a class="headerlink" href="#id28" title="Permalink to this headline">¶</a></h2>
+</section>
+<section id="colorbrewer">
+<h2>ColorBrewer<a class="headerlink" href="#colorbrewer" title="Permalink to this headline">¶</a></h2>
+<p><img alt="08_090_cb" src="../_images/08_090_cb.png" /></p>
+</section>
+<section id="colorbrewer-in-qgis">
+<h2>ColorBrewer in QGIS<a class="headerlink" href="#colorbrewer-in-qgis" title="Permalink to this headline">¶</a></h2>
+<p><img alt="8700_cb_ramp" src="../_images/8700_cb_ramp.png" /></p>
+</section>
+<section id="next-up">
+<h2>Next Up<a class="headerlink" href="#next-up" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Creating Vector Data</p></li>
+</ul>
+</section>
+</section>
+<section id="id29">
+<h1><a class="headerlink" href="#id29" title="Permalink to this headline">¶</a></h1>
+<p><a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">GIS for Public Policy’20</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://sergerey.org" property="cc:attributionName" rel="cc:attributionURL">Sergio Rey</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>.</p>
+</section>
+
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2021, Sergio Rey.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  None
+  </body>
+</html>

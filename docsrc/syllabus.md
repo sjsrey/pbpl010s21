@@ -165,10 +165,9 @@ also be required to complete the projects.
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_attribute_data.html">Reading: Sutton, T. "Vector Attribute Data" </a>
 
 
-#### May 12:  Vector Analysis: Buffering, Clipping, Dissolve, and  Spatial Joins
+#### May 12:  Vector Analysis I
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html">Reading: Sutton, T. "Vector Spatial Analysis (Buffers)" </a>
   - [Data](https://stacks.stanford.edu/file/druid:xc453kn9742/data.zip?download=true)
-  - <a href="https://www.e-education.psu.edu/geog585/node/693">Reading: PSU. Walkthrough: Clipping and projecting vector data with QGIS and OGR</a>
 -----
 
 
@@ -177,10 +176,9 @@ also be required to complete the projects.
 #### May 17: Project Studio   
   - Exercise 3 Due
   - Exercise 4 Out
-#### May 19: Crowd-sourcing, OpenStreetMap and VGI
-  - <a href="https://www.e-education.psu.edu/geog585/node/737">Reading: PSU. VGI and crowdsourced data collection</a>
- - [Reading: OpenStreetMap](https://www.openstreetmap.org/about)
 
+#### May 19: Vector Analysis II
+  - <a href="https://www.e-education.psu.edu/geog585/node/693">Reading: PSU. Walkthrough: Clipping and projecting vector data with QGIS and OGR</a>
 -----
 
 ### Week 9 May 24, 26

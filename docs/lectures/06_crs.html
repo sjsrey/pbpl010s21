@@ -1,48 +1,34 @@
 
+
 <!DOCTYPE html>
 
-<html>
+<html xmlns="http://www.w3.org/1999/xhtml">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Coordinate Reference Systems</title>
-    
-  <link href="../_static/css/theme.css" rel="stylesheet" />
-  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
-
-    
-  <link rel="stylesheet"
-    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
-  <link rel="preload" as="font" type="font/woff2" crossorigin
-    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
-
-    
-      
-
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
-    
-  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
-
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Making Maps" href="08_maps.html" />
     <link rel="prev" title="Raster Data Models" href="05_rasters.html" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="docsearch:language" content="en" />
-    
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
-    
-    <div class="container-fluid" id="banner"></div>
-
     
 
     <div class="container-xl">
@@ -50,77 +36,153 @@
           
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
-        
-<div id="searchbox" style="display: none" role="search">
-  <h3 id="searchlabel">Quick search</h3>
-    <div class="searchformwrapper">
-    <form class="search" action="../search.html" method="get">
-      <input type="text" name="q" aria-labelledby="searchlabel" />
-      <input type="submit" value="Go" />
-    </form>
-    </div>
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+</a>
 </div>
-<script>$('#searchbox').show(0);</script>
-<h3><a href="../index.html">Table of Contents</a></h3>
-<ul class="current">
-<li class="toctree-l1"><a class="reference internal" href="../syllabus.html">Syllabus</a></li>
-<li class="toctree-l1"><a class="reference internal" href="00_introtogis.html">Introduction to GIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="01_opensource.html">Introduction to QGIS</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_datamodels.html">Data Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="02_datamodels.html#id4"></a></li>
-<li class="toctree-l1"><a class="reference internal" href="04_vector_attributes.html">Vector Data</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_rasters.html">Raster Data Models</a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id1"></a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id5"></a></li>
-<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id6"></a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Coordinate Reference Systems</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#last-time">Last Time</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#today">Today</a></li>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="current nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="00_introtogis.html">
+   Introduction to GIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_opensource.html">
+   Introduction to QGIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_datamodels.html">
+   Data Models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_datamodels.html#id4">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_vector_attributes.html">
+   Vector Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html">
+   Raster Data Models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html#id5">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html#id6">
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Coordinate Reference Systems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="#id13">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html">
+   Making Maps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html#id4">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html#id9">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html#id27">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html#id29">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_geom.html">
+   Detecting and Fixing Geometry Problems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_geom.html#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_geom.html#id3">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_geom.html#id12">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_va.html">
+   Vector Analysis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_va.html#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_va.html#id7">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_va.html#id8">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_va.html#id9">
+  </a>
+ </li>
 </ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#id1"></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#id2">Coordinate Reference Systems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#earth">Earth</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id3">Earth</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id4"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id5"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id6">Coordinate Reference Systems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#geographic-coordinate-system">Geographic Coordinate System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id7"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id8">Geographic Coordinate System</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#why-math-in-gis">Why Math in GIS?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#projected-coordinate-systems">Projected Coordinate Systems</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id9"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#universal-transverse-mercator-utm">Universal Transverse Mercator (UTM)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id10"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id11"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id12"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#utm">UTM</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#coordinates-for-point-of-interest">Coordinates for Point of interest</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#utm-northing-y">UTM: northing (Y)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#utm-easting-x">UTM: easting (X)</a></li>
-</ul>
-</li>
-<li class="toctree-l1"><a class="reference internal" href="#id13"></a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#map-projections">Map Projections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id14"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#map-projection-characteristics">Map Projection Characteristics</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#class">Class</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#case">Case</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#aspect-projection-s-center">Aspect: Projection’s Center</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#accuracy-of-map-projections">Accuracy of Map Projections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#angular-conformity-mercator">Angular Conformity: Mercator</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id15"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#equal-distance-plate-carree-equidistant-cylindrical">Equal Distance: Plate Carree Equidistant Cylindrical</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id16"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#equal-area-mollweide-equal-area-cylindrical">Equal Area: Mollweide Equal Area Cylindrical</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id17"></a></li>
-<li class="toctree-l2"><a class="reference internal" href="#id18">Map Projections</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#on-the-fly-projection">On-The-Fly Projection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#next-up">Next Up</a></li>
-</ul>
-</li>
-</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
 
 </div>
 
@@ -131,25 +193,25 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="topbar container-xl fixed-top">
-    <div class="topbar-contents row">
-        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
-        <div class="col pl-md-4 topbar-main">
-            
-            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-                <i class="fas fa-bars"></i>
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-            
-            
-<div class="dropdown-buttons-trigger">
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
+    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -161,231 +223,40 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
+    
 </div>
+        <!-- Source interaction buttons -->
 
-            <!-- Source interaction buttons -->
 
-            <!-- Full screen (wrap in <a> to have style consistency -->
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
 
-<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
-        title="Fullscreen mode"><i
-            class="fas fa-expand"></i></button></a>
+        <!-- Launch buttons -->
 
-            <!-- Launch buttons -->
+    </div>
 
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
         </div>
-
-        <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
-            
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   Coordinate Reference Systems
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#last-time">
+   Last Time
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#last-time">
-     Last Time
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#today">
-     Today
-    </a>
-   </li>
-  </ul>
  </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#today">
+   Today
   </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id2">
-     Coordinate Reference Systems
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#earth">
-     Earth
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id3">
-     Earth
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id4">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id5">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id6">
-     Coordinate Reference Systems
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#geographic-coordinate-system">
-     Geographic Coordinate System
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id7">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id8">
-     Geographic Coordinate System
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#why-math-in-gis">
-     Why Math in GIS?
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#projected-coordinate-systems">
-     Projected Coordinate Systems
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id9">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#universal-transverse-mercator-utm">
-     Universal Transverse Mercator (UTM)
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id10">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id11">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id12">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#utm">
-     UTM
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#coordinates-for-point-of-interest">
-     Coordinates for Point of interest
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#utm-northing-y">
-     UTM: northing (Y)
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#utm-easting-x">
-     UTM: easting (X)
-    </a>
-   </li>
-  </ul>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id13">
-  </a>
-  <ul class="visible nav section-nav flex-column">
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#map-projections">
-     Map Projections
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id14">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#map-projection-characteristics">
-     Map Projection Characteristics
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#class">
-     Class
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#case">
-     Case
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#aspect-projection-s-center">
-     Aspect: Projection’s Center
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#accuracy-of-map-projections">
-     Accuracy of Map Projections
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#angular-conformity-mercator">
-     Angular Conformity: Mercator
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id15">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equal-distance-plate-carree-equidistant-cylindrical">
-     Equal Distance: Plate Carree Equidistant Cylindrical
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id16">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#equal-area-mollweide-equal-area-cylindrical">
-     Equal Area: Mollweide Equal Area Cylindrical
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id17">
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#id18">
-     Map Projections
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#on-the-fly-projection">
-     On-The-Fly Projection
-    </a>
-   </li>
-   <li class="toc-h2 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#next-up">
-     Next Up
-    </a>
-   </li>
-  </ul>
  </li>
 </ul>
 
-            </nav>
-        </div>
+        </nav>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -658,14 +529,15 @@
 
               </div>
               
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
         
-        <div class='prev-next-bottom'>
-            
     <a class='left-prev' id="prev-link" href="05_rasters.html" title="previous page">Raster Data Models</a>
+    <a class='right-next' id="next-link" href="08_maps.html" title="next page">Making Maps</a>
 
-        </div>
-        
-        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -680,9 +552,8 @@
 
       </div>
     </div>
-  
-  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-  None
+    <script src="../_static/js/index.js"></script>
+    
   </body>
 </html>

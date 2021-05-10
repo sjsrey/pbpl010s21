@@ -1,0 +1,400 @@
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta charset="utf-8" />
+    <title>PBPL010: Exercise 3</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
+    <link href="../_static/css/index.css" rel="stylesheet">
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/language_data.js"></script>
+    <script src="../_static/sphinx-book-theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="docsearch:language" content="en">
+
+
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+<a class="navbar-brand text-wrap" href="../index.html">
+  
+  <img src="../_static/logo.png" class="logo" alt="logo">
+  
+  
+</a>
+</div>
+
+<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
+</form>
+
+<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+  <ul class="nav sidenav_l1">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../syllabus.html">
+   Syllabus
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="00_introtogis.html">
+   Introduction to GIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="01_opensource.html">
+   Introduction to QGIS
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_datamodels.html">
+   Data Models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="02_datamodels.html#id4">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="04_vector_attributes.html">
+   Vector Data
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html">
+   Raster Data Models
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html#id5">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="05_rasters.html#id6">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_crs.html">
+   Coordinate Reference Systems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_crs.html#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="06_crs.html#id13">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html">
+   Making Maps
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html#id4">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html#id9">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html#id27">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="08_maps.html#id29">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_geom.html">
+   Detecting and Fixing Geometry Problems
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_geom.html#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_geom.html#id3">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="09_geom.html#id12">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_va.html">
+   Vector Analysis
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_va.html#id1">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_va.html#id7">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_va.html#id8">
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="10_va.html#id9">
+  </a>
+ </li>
+</ul>
+
+</nav>
+
+ <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="row topbar fixed-top container-xl">
+    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
+    </div>
+    <div class="col pl-2 topbar-main">
+        
+        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+            <i class="fas fa-bars"></i>
+            <i class="fas fa-arrow-left"></i>
+            <i class="fas fa-arrow-up"></i>
+        </button>
+        
+        <div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/lectures/e4.md.txt"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+    
+</div>
+        <!-- Source interaction buttons -->
+
+
+        <!-- Full screen (wrap in <a> to have style consistency -->
+        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
+                    class="fas fa-expand"></i></button></a>
+
+        <!-- Launch buttons -->
+
+    </div>
+
+    <!-- Table of contents -->
+    <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="tocsection onthispage pt-5 pb-3">
+            <i class="fas fa-list"></i> Contents
+        </div>
+        <nav id="bd-toc-nav">
+            <ul class="nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#deadline">
+   Deadline
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#objectives">
+   Objectives
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#instructions">
+   Instructions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#readings">
+     Readings
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#setup">
+     Setup
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#analysis">
+     Analysis
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#data-creation">
+       Data Creation
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#choropleth-maps">
+       Choropleth Maps
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#comparison-of-coastal-and-inland-distributions">
+       Comparison of Coastal and Inland Distributions
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+        </nav>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="pbpl010-exercise-3">
+<h1>PBPL010: Exercise 3<a class="headerlink" href="#pbpl010-exercise-3" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="deadline">
+<h2>Deadline<a class="headerlink" href="#deadline" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Hand in your work on <a class="reference external" href="https://ilearn.ucr.edu">ilearn</a> by <strong>May 17 2 p.m.</strong></p></li>
+</ul>
+</div>
+<div class="section" id="objectives">
+<h2>Objectives<a class="headerlink" href="#objectives" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Learn how to choose choropleth classification schemes for different attribute types</p></li>
+<li><p>Learn how to use the layout manager to create publication quality choropleth maps</p></li>
+<li><p>Use choropleth maps to compare demographic patterns across subregions of Southern California</p></li>
+</ul>
+</div>
+<div class="section" id="instructions">
+<h2>Instructions<a class="headerlink" href="#instructions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="readings">
+<h3>Readings<a class="headerlink" href="#readings" title="Permalink to this headline">¶</a></h3>
+<p>Read the chapter on <a class="reference external" href="https://docs.qgis.org/3.4/en/docs/user_manual/print_composer/index.html">Laying out the Map</a></p>
+<p>You will be handing in a single pdf that combines maps and text supporting your analysis below. All maps must be produced using the Layout manager and exported to pdf prior to compiling your single document.</p>
+</div>
+<div class="section" id="setup">
+<h3>Setup<a class="headerlink" href="#setup" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li><p>You will be using the dataset you produced in exercise 2.</p></li>
+<li><p>Create a new project called <code class="docutils literal notranslate"><span class="pre">exer03</span></code></p></li>
+</ul>
+</div>
+<div class="section" id="analysis">
+<h3>Analysis<a class="headerlink" href="#analysis" title="Permalink to this headline">¶</a></h3>
+<p>Read through the entire set of tasks below before carrying out any analysis.</p>
+<div class="section" id="data-creation">
+<h4>Data Creation<a class="headerlink" href="#data-creation" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>Using the SCAG layer create (or recreate) the following attributes:</p>
+<ul class="simple">
+<li><p><code class="docutils literal notranslate"><span class="pre">pctHISP</span></code> = 100 X <code class="docutils literal notranslate"><span class="pre">HISP/TOTPOP</span></code></p></li>
+<li><p><code class="docutils literal notranslate"><span class="pre">majHISP</span></code> = 1 if <code class="docutils literal notranslate"><span class="pre">pctHISP</span></code> &gt; 0.5, 0 otherwise</p></li>
+</ul>
+</li>
+<li><p>Create two new layers: one that contains the tracts for the inland counties, and a second for the coastal Counties.</p></li>
+<li><p>Provide a step by step description of how you used QGIS to create these new layers.</p></li>
+</ol>
+</div>
+<div class="section" id="choropleth-maps">
+<h4>Choropleth Maps<a class="headerlink" href="#choropleth-maps" title="Permalink to this headline">¶</a></h4>
+<ol class="simple">
+<li><p>For each of the two subregions (coastal, inland) create a choropleth map for the <code class="docutils literal notranslate"><span class="pre">pctHISP</span></code> variable.</p></li>
+<li><p>For each of the two subregions (coastal, inland) create a choropleth map for the <code class="docutils literal notranslate"><span class="pre">majHISP</span></code> variable.</p></li>
+<li><p>For the entire SCAG region, make a map for <code class="docutils literal notranslate"><span class="pre">pctHISP</span></code></p></li>
+<li><p>Explain your design choices regarding:</p>
+<ul class="simple">
+<li><p>classification scheme  and number of classes</p></li>
+<li><p>color scheme</p></li>
+</ul>
+</li>
+</ol>
+</div>
+<div class="section" id="comparison-of-coastal-and-inland-distributions">
+<h4>Comparison of Coastal and Inland Distributions<a class="headerlink" href="#comparison-of-coastal-and-inland-distributions" title="Permalink to this headline">¶</a></h4>
+<p>Using your maps from the previous steps, compare the <code class="docutils literal notranslate"><span class="pre">pctHISP</span></code> distributions between the inland and the coastal subregions. Be sure to comment on both the statistical distributions as well as the spatial distributions, and explain how the design of your maps supports your analysis.</p>
+</div>
+</div>
+</div>
+</div>
+
+
+              </div>
+              
+        </div>
+    </div>
+    
+    
+    <div class='prev-next-bottom'>
+        
+
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+            &copy; Copyright 2021, Sergio Rey.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+
+    <script src="../_static/js/index.js"></script>
+    
+  </body>
+</html>

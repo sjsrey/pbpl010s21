@@ -175,7 +175,7 @@ also be required to complete the projects.
 
 #### May 17: Project Studio   
   - Exercise 3 Due
-  - Exercise 4 Out
+  - [Exercise 4 Out](lectures/e4.md)
 
 #### May 19: Vector Analysis II
   - <a href="https://www.e-education.psu.edu/geog585/node/693">Reading: PSU. Walkthrough: Clipping and projecting vector data with QGIS and OGR</a>

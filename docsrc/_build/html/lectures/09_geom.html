@@ -1,34 +1,50 @@
 
-
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Detecting and Fixing Geometry Problems</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <link href="../_static/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/sphinx-book-theme.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
-    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Vector Analysis" href="10_va.html" />
     <link rel="prev" title="Making Maps" href="08_maps.html" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="docsearch:language" content="en">
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -36,153 +52,106 @@
           
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
-        <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/logo.png" class="logo" alt="logo">
-  
-  
-</a>
+        
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
 </div>
-
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form>
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../syllabus.html">
-   Syllabus
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="00_introtogis.html">
-   Introduction to GIS
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="01_opensource.html">
-   Introduction to QGIS
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="02_datamodels.html">
-   Data Models
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="02_datamodels.html#id4">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="04_vector_attributes.html">
-   Vector Data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_rasters.html">
-   Raster Data Models
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_rasters.html#id1">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_rasters.html#id5">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_rasters.html#id6">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="06_crs.html">
-   Coordinate Reference Systems
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="06_crs.html#id1">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="06_crs.html#id13">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html">
-   Making Maps
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html#id1">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html#id4">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html#id9">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html#id27">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html#id29">
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Detecting and Fixing Geometry Problems
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#id1">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#id3">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="#id12">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_va.html">
-   Vector Analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_va.html#id1">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_va.html#id7">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_va.html#id8">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_va.html#id9">
-  </a>
- </li>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1"><a class="reference internal" href="00_introtogis.html">Introduction to GIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="01_opensource.html">Introduction to QGIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_datamodels.html">Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_datamodels.html#id4"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_vector_attributes.html">Vector Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html">Raster Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id5"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id6"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_crs.html">Coordinate Reference Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_crs.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_crs.html#id13"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html">Making Maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id4"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id9"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id27"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id29"></a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Detecting and Fixing Geometry Problems</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#last-time">Last Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#today">Today</a></li>
 </ul>
-
-</nav>
-
- <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id1"></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#detecting-geometry-problems">Detecting Geometry Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scag-shapefile-exer-2">SCAG Shapefile (Exer 2)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id2"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#splitting-by-attribute">Splitting by Attribute</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#splitting-by-attribute-menu">Splitting by Attribute: Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#splitting-by-attribute-dialog">Splitting by Attribute: Dialog</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#splitting-by-attribute-error">Splitting by Attribute: Error</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#processing-toolbox">Processing Toolbox</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#processing-toolbox-menu">Processing Toolbox Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#processing-toolbox-search">Processing Toolbox Search</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-geometry-validity">Check Geometry Validity</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-geometry-results">Check Geometry Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-geometry-new-layers">Check Geometry New Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-geometry-canvas">Check Geometry Canvas</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#invalid-ouptut-layer-table">Invalid Ouptut Layer Table</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id3"></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#understanding-geometry-problems">Understanding Geometry Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#self-intersecting-ring">Self-intersecting Ring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id4">Self-intersecting Ring</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#polygon-area">Polygon Area</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id5"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id6"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id7"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id8"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id9"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id10"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id11"></a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="#id12"></a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fixing-geometry-problems">Fixing Geometry Problems</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#remove-other-layers">Remove Other Layers</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id13"></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-for-buffer">Search for Buffer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#buffer-dialog-set-distance-0">Buffer Dialog: Set Distance=0</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#buffer-log">Buffer Log</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-validity-of-buffered-layer">Check Validity of Buffered Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id14">Check Validity of Buffered Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-validity-of-invalid-output">Check Validity of Invalid Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id15">Check Validity of Invalid Output</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#split-by-attribute-revisited">Split by Attribute Revisited</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#back-to-original-tract-layer">Back to original tract layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#buffer-the-original-tract-layer">Buffer the original tract layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#new-buffered-layer">New Buffered Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#check-validity-of-buffered">Check Validity of Buffered</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id16">Check Validity of Buffered</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#make-layer-permanent">Make Layer Permanent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#split-vector-layer">Split Vector Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#split-vector-layer-set-output-directory">Split Vector Layer: Set Output Directory</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#split-vector-layer-results">Split Vector Layer Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id17">Split Vector Layer Results</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#next-up">Next Up</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="10_va.html">Vector Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_va.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_va.html#id7"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_va.html#id8"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_va.html#id9"></a></li>
+</ul>
 
 </div>
 
@@ -193,25 +162,25 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        <div class="dropdown-buttons-trigger">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -223,40 +192,299 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
-    
 </div>
-        <!-- Source interaction buttons -->
 
+            <!-- Source interaction buttons -->
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Launch buttons -->
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
-    </div>
+            <!-- Launch buttons -->
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#last-time">
-   Last Time
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#">
+   Detecting and Fixing Geometry Problems
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#last-time">
+     Last Time
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#today">
+     Today
+    </a>
+   </li>
+  </ul>
  </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#today">
-   Today
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id1">
   </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#detecting-geometry-problems">
+     Detecting Geometry Problems
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#scag-shapefile-exer-2">
+     SCAG Shapefile (Exer 2)
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id2">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#splitting-by-attribute">
+     Splitting by Attribute
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#splitting-by-attribute-menu">
+     Splitting by Attribute: Menu
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#splitting-by-attribute-dialog">
+     Splitting by Attribute: Dialog
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#splitting-by-attribute-error">
+     Splitting by Attribute: Error
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#processing-toolbox">
+     Processing Toolbox
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#processing-toolbox-menu">
+     Processing Toolbox Menu
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#processing-toolbox-search">
+     Processing Toolbox Search
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-geometry-validity">
+     Check Geometry Validity
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-geometry-results">
+     Check Geometry Results
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-geometry-new-layers">
+     Check Geometry New Layers
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-geometry-canvas">
+     Check Geometry Canvas
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#invalid-ouptut-layer-table">
+     Invalid Ouptut Layer Table
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id3">
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#understanding-geometry-problems">
+     Understanding Geometry Problems
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#self-intersecting-ring">
+     Self-intersecting Ring
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id4">
+     Self-intersecting Ring
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#polygon-area">
+     Polygon Area
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id5">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id6">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id7">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id8">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id9">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id10">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id11">
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#id12">
+  </a>
+  <ul class="visible nav section-nav flex-column">
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#fixing-geometry-problems">
+     Fixing Geometry Problems
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#remove-other-layers">
+     Remove Other Layers
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id13">
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#search-for-buffer">
+     Search for Buffer
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#buffer-dialog-set-distance-0">
+     Buffer Dialog: Set Distance=0
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#buffer-log">
+     Buffer Log
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-validity-of-buffered-layer">
+     Check Validity of Buffered Layer
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id14">
+     Check Validity of Buffered Layer
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-validity-of-invalid-output">
+     Check Validity of Invalid Output
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id15">
+     Check Validity of Invalid Output
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#split-by-attribute-revisited">
+     Split by Attribute Revisited
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#back-to-original-tract-layer">
+     Back to original tract layer
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#buffer-the-original-tract-layer">
+     Buffer the original tract layer
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#new-buffered-layer">
+     New Buffered Layer
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#check-validity-of-buffered">
+     Check Validity of Buffered
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id16">
+     Check Validity of Buffered
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#make-layer-permanent">
+     Make Layer Permanent
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#split-vector-layer">
+     Split Vector Layer
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#split-vector-layer-set-output-directory">
+     Split Vector Layer: Set Output Directory
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#split-vector-layer-results">
+     Split Vector Layer Results
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#id17">
+     Split Vector Layer Results
+    </a>
+   </li>
+   <li class="toc-h2 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#next-up">
+     Next Up
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
-        </nav>
+            </nav>
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -264,9 +492,9 @@
         
               <div>
                 
-  <div class="section" id="detecting-and-fixing-geometry-problems">
+  <section id="detecting-and-fixing-geometry-problems">
 <h1>Detecting and Fixing Geometry Problems<a class="headerlink" href="#detecting-and-fixing-geometry-problems" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="last-time">
+<section id="last-time">
 <h2>Last Time<a class="headerlink" href="#last-time" title="Permalink to this headline">¶</a></h2>
 <p><img alt="100-globe" src="../_images/100-globe.jpg" /></p>
 <ul class="simple">
@@ -275,8 +503,8 @@
 <li><p>Classifying Vector Data</p></li>
 <li><p>Color</p></li>
 </ul>
-</div>
-<div class="section" id="today">
+</section>
+<section id="today">
 <h2>Today<a class="headerlink" href="#today" title="Permalink to this headline">¶</a></h2>
 <p><img alt="100-globe" src="../_images/100-globe.jpg" /></p>
 <ul>
@@ -284,224 +512,224 @@
 <li class="fragment"> Understanding Geometry Problems</li>
 <li class="fragment"> Fixing Geometry Problems</li>
 </ul>
-</div>
-</div>
-<div class="section" id="id1">
+</section>
+</section>
+<section id="id1">
 <h1><a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="detecting-geometry-problems">
+<section id="detecting-geometry-problems">
 <h2>Detecting Geometry Problems<a class="headerlink" href="#detecting-geometry-problems" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="scag-shapefile-exer-2">
+</section>
+<section id="scag-shapefile-exer-2">
 <h2>SCAG Shapefile (Exer 2)<a class="headerlink" href="#scag-shapefile-exer-2" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="id2">
+</section>
+<section id="id2">
 <h2><a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h2>
 <p><img alt="900_scag" src="../_images/900_scag.png" /></p>
-</div>
-<div class="section" id="splitting-by-attribute">
+</section>
+<section id="splitting-by-attribute">
 <h2>Splitting by Attribute<a class="headerlink" href="#splitting-by-attribute" title="Permalink to this headline">¶</a></h2>
 <p><img alt="910_unique_county_values" src="../_images/910_unique_county_values.png" /></p>
-</div>
-<div class="section" id="splitting-by-attribute-menu">
+</section>
+<section id="splitting-by-attribute-menu">
 <h2>Splitting by Attribute: Menu<a class="headerlink" href="#splitting-by-attribute-menu" title="Permalink to this headline">¶</a></h2>
 <p><img alt="911_split_menu" src="../_images/911_split_menu.png" /></p>
-</div>
-<div class="section" id="splitting-by-attribute-dialog">
+</section>
+<section id="splitting-by-attribute-dialog">
 <h2>Splitting by Attribute: Dialog<a class="headerlink" href="#splitting-by-attribute-dialog" title="Permalink to this headline">¶</a></h2>
 <p><img alt="912_split_dialog" src="../_images/912_split_dialog.png" /></p>
-</div>
-<div class="section" id="splitting-by-attribute-error">
+</section>
+<section id="splitting-by-attribute-error">
 <h2>Splitting by Attribute: Error<a class="headerlink" href="#splitting-by-attribute-error" title="Permalink to this headline">¶</a></h2>
 <p><img alt="913_split_error" src="../_images/913_split_error.png" /></p>
-</div>
-<div class="section" id="processing-toolbox">
+</section>
+<section id="processing-toolbox">
 <h2>Processing Toolbox<a class="headerlink" href="#processing-toolbox" title="Permalink to this headline">¶</a></h2>
 <ul>
 <li class="fragment"> GUI for Processing</li>
 <li class="fragment"> Native and 3rd Party GIS Algorithms</li>
 <li class="fragment"> Organized by Provider</li>
 </ul>
-</div>
-<div class="section" id="processing-toolbox-menu">
+</section>
+<section id="processing-toolbox-menu">
 <h2>Processing Toolbox Menu<a class="headerlink" href="#processing-toolbox-menu" title="Permalink to this headline">¶</a></h2>
 <p><img alt="920_processing_toolbox_menu" src="../_images/920_processing_toolbox_menu.png" /></p>
-</div>
-<div class="section" id="processing-toolbox-search">
+</section>
+<section id="processing-toolbox-search">
 <h2>Processing Toolbox Search<a class="headerlink" href="#processing-toolbox-search" title="Permalink to this headline">¶</a></h2>
 <p><img alt="921_check_search" src="../_images/921_check_search.png" /></p>
-</div>
-<div class="section" id="check-geometry-validity">
+</section>
+<section id="check-geometry-validity">
 <h2>Check Geometry Validity<a class="headerlink" href="#check-geometry-validity" title="Permalink to this headline">¶</a></h2>
 <p><img alt="922_check_validity_dialog" src="../_images/922_check_validity_dialog.png" /></p>
-</div>
-<div class="section" id="check-geometry-results">
+</section>
+<section id="check-geometry-results">
 <h2>Check Geometry Results<a class="headerlink" href="#check-geometry-results" title="Permalink to this headline">¶</a></h2>
 <p><img alt="923_check_validity_results" src="../_images/923_check_validity_results.png" /></p>
-</div>
-<div class="section" id="check-geometry-new-layers">
+</section>
+<section id="check-geometry-new-layers">
 <h2>Check Geometry New Layers<a class="headerlink" href="#check-geometry-new-layers" title="Permalink to this headline">¶</a></h2>
 <p><img alt="924_error_layer" src="../_images/924_error_layer.png" /></p>
-</div>
-<div class="section" id="check-geometry-canvas">
+</section>
+<section id="check-geometry-canvas">
 <h2>Check Geometry Canvas<a class="headerlink" href="#check-geometry-canvas" title="Permalink to this headline">¶</a></h2>
 <p><img alt="925_error_zoom" src="../_images/925_error_zoom.png" /></p>
-</div>
-<div class="section" id="invalid-ouptut-layer-table">
+</section>
+<section id="invalid-ouptut-layer-table">
 <h2>Invalid Ouptut Layer Table<a class="headerlink" href="#invalid-ouptut-layer-table" title="Permalink to this headline">¶</a></h2>
 <p><img alt="926_errors_attribute_table" src="../_images/926_errors_attribute_table.png" /></p>
-</div>
-</div>
-<div class="section" id="id3">
+</section>
+</section>
+<section id="id3">
 <h1><a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="understanding-geometry-problems">
+<section id="understanding-geometry-problems">
 <h2>Understanding Geometry Problems<a class="headerlink" href="#understanding-geometry-problems" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="self-intersecting-ring">
+</section>
+<section id="self-intersecting-ring">
 <h2>Self-intersecting Ring<a class="headerlink" href="#self-intersecting-ring" title="Permalink to this headline">¶</a></h2>
 <p><img alt="940_problem_geometry" src="../_images/940_problem_geometry.png" /></p>
-</div>
-<div class="section" id="id4">
+</section>
+<section id="id4">
 <h2>Self-intersecting Ring<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Problem with area calculations</p></li>
 <li><p>Other GIS operations</p></li>
 </ul>
-</div>
-<div class="section" id="polygon-area">
+</section>
+<section id="polygon-area">
 <h2>Polygon Area<a class="headerlink" href="#polygon-area" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="id5">
+</section>
+<section id="id5">
 <h2><a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h2>
 <p><img alt="941" src="../_images/941.png" /></p>
-</div>
-<div class="section" id="id6">
+</section>
+<section id="id6">
 <h2><a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h2>
 <p><img alt="942" src="../_images/942.png" /></p>
-</div>
-<div class="section" id="id7">
+</section>
+<section id="id7">
 <h2><a class="headerlink" href="#id7" title="Permalink to this headline">¶</a></h2>
 <p><img alt="943" src="../_images/943.png" /></p>
-</div>
-<div class="section" id="id8">
+</section>
+<section id="id8">
 <h2><a class="headerlink" href="#id8" title="Permalink to this headline">¶</a></h2>
 <p><img alt="944" src="../_images/944.png" /></p>
-</div>
-<div class="section" id="id9">
+</section>
+<section id="id9">
 <h2><a class="headerlink" href="#id9" title="Permalink to this headline">¶</a></h2>
 <p><img alt="945" src="../_images/945.png" /></p>
-</div>
-<div class="section" id="id10">
+</section>
+<section id="id10">
 <h2><a class="headerlink" href="#id10" title="Permalink to this headline">¶</a></h2>
 <p><img alt="946" src="../_images/946.png" /></p>
-</div>
-<div class="section" id="id11">
+</section>
+<section id="id11">
 <h2><a class="headerlink" href="#id11" title="Permalink to this headline">¶</a></h2>
 <p><img alt="947" src="../_images/947.png" /></p>
-</div>
-</div>
-<div class="section" id="id12">
+</section>
+</section>
+<section id="id12">
 <h1><a class="headerlink" href="#id12" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="fixing-geometry-problems">
+<section id="fixing-geometry-problems">
 <h2>Fixing Geometry Problems<a class="headerlink" href="#fixing-geometry-problems" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="remove-other-layers">
+</section>
+<section id="remove-other-layers">
 <h2>Remove Other Layers<a class="headerlink" href="#remove-other-layers" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="id13">
+</section>
+<section id="id13">
 <h2><a class="headerlink" href="#id13" title="Permalink to this headline">¶</a></h2>
 <p><img alt="950" src="../_images/950.png" /></p>
-</div>
-<div class="section" id="search-for-buffer">
+</section>
+<section id="search-for-buffer">
 <h2>Search for Buffer<a class="headerlink" href="#search-for-buffer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="951" src="../_images/951.png" /></p>
-</div>
-<div class="section" id="buffer-dialog-set-distance-0">
+</section>
+<section id="buffer-dialog-set-distance-0">
 <h2>Buffer Dialog: Set Distance=0<a class="headerlink" href="#buffer-dialog-set-distance-0" title="Permalink to this headline">¶</a></h2>
 <p><img alt="952" src="../_images/952.png" /></p>
-</div>
-<div class="section" id="buffer-log">
+</section>
+<section id="buffer-log">
 <h2>Buffer Log<a class="headerlink" href="#buffer-log" title="Permalink to this headline">¶</a></h2>
 <p><img alt="953" src="../_images/953.png" /></p>
-</div>
-<div class="section" id="check-validity-of-buffered-layer">
+</section>
+<section id="check-validity-of-buffered-layer">
 <h2>Check Validity of Buffered Layer<a class="headerlink" href="#check-validity-of-buffered-layer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="954" src="../_images/954.png" /></p>
-</div>
-<div class="section" id="id14">
+</section>
+<section id="id14">
 <h2>Check Validity of Buffered Layer<a class="headerlink" href="#id14" title="Permalink to this headline">¶</a></h2>
 <p><img alt="955" src="../_images/955.png" /></p>
-</div>
-<div class="section" id="check-validity-of-invalid-output">
+</section>
+<section id="check-validity-of-invalid-output">
 <h2>Check Validity of Invalid Output<a class="headerlink" href="#check-validity-of-invalid-output" title="Permalink to this headline">¶</a></h2>
 <p><img alt="956" src="../_images/956.png" /></p>
-</div>
-<div class="section" id="id15">
+</section>
+<section id="id15">
 <h2>Check Validity of Invalid Output<a class="headerlink" href="#id15" title="Permalink to this headline">¶</a></h2>
 <p><img alt="957" src="../_images/957.png" /></p>
-</div>
-<div class="section" id="split-by-attribute-revisited">
+</section>
+<section id="split-by-attribute-revisited">
 <h2>Split by Attribute Revisited<a class="headerlink" href="#split-by-attribute-revisited" title="Permalink to this headline">¶</a></h2>
-</div>
-<div class="section" id="back-to-original-tract-layer">
+</section>
+<section id="back-to-original-tract-layer">
 <h2>Back to original tract layer<a class="headerlink" href="#back-to-original-tract-layer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="960" src="../_images/960.png" /></p>
-</div>
-<div class="section" id="buffer-the-original-tract-layer">
+</section>
+<section id="buffer-the-original-tract-layer">
 <h2>Buffer the original tract layer<a class="headerlink" href="#buffer-the-original-tract-layer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="960" src="../_images/960.png" /></p>
-</div>
-<div class="section" id="new-buffered-layer">
+</section>
+<section id="new-buffered-layer">
 <h2>New Buffered Layer<a class="headerlink" href="#new-buffered-layer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="961" src="../_images/961.png" /></p>
-</div>
-<div class="section" id="check-validity-of-buffered">
+</section>
+<section id="check-validity-of-buffered">
 <h2>Check Validity of Buffered<a class="headerlink" href="#check-validity-of-buffered" title="Permalink to this headline">¶</a></h2>
 <p><img alt="962" src="../_images/962.png" /></p>
-</div>
-<div class="section" id="id16">
+</section>
+<section id="id16">
 <h2>Check Validity of Buffered<a class="headerlink" href="#id16" title="Permalink to this headline">¶</a></h2>
 <p><img alt="963" src="../_images/963.png" /></p>
-</div>
-<div class="section" id="make-layer-permanent">
+</section>
+<section id="make-layer-permanent">
 <h2>Make Layer Permanent<a class="headerlink" href="#make-layer-permanent" title="Permalink to this headline">¶</a></h2>
 <p><img alt="964" src="../_images/964.png" /></p>
-</div>
-<div class="section" id="split-vector-layer">
+</section>
+<section id="split-vector-layer">
 <h2>Split Vector Layer<a class="headerlink" href="#split-vector-layer" title="Permalink to this headline">¶</a></h2>
 <p><img alt="965" src="../_images/965.png" /></p>
-</div>
-<div class="section" id="split-vector-layer-set-output-directory">
+</section>
+<section id="split-vector-layer-set-output-directory">
 <h2>Split Vector Layer: Set Output Directory<a class="headerlink" href="#split-vector-layer-set-output-directory" title="Permalink to this headline">¶</a></h2>
 <p><img alt="966" src="../_images/966.png" /></p>
-</div>
-<div class="section" id="split-vector-layer-results">
+</section>
+<section id="split-vector-layer-results">
 <h2>Split Vector Layer Results<a class="headerlink" href="#split-vector-layer-results" title="Permalink to this headline">¶</a></h2>
 <p><img alt="977" src="../_images/977.png" /></p>
-</div>
-<div class="section" id="id17">
+</section>
+<section id="id17">
 <h2>Split Vector Layer Results<a class="headerlink" href="#id17" title="Permalink to this headline">¶</a></h2>
 <p><img alt="979_counties_geopkg" src="../_images/979_counties_geopkg.png" /></p>
-</div>
-<div class="section" id="next-up">
+</section>
+<section id="next-up">
 <h2>Next Up<a class="headerlink" href="#next-up" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
 <li><p>Vector Analysis</p></li>
 </ul>
-</div>
-</div>
+</section>
+</section>
 
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="08_maps.html" title="previous page">Making Maps</a>
     <a class='right-next' id="next-link" href="10_va.html" title="next page">Vector Analysis</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -516,8 +744,9 @@
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    <script src="../_static/js/index.js"></script>
-    
+  None
   </body>
 </html>

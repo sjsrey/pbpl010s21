@@ -1,34 +1,50 @@
 
-
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html>
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
     <title>Introduction to GIS</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha384-KA6wR/X5RY4zFAHpv/CnoG2UW1uogYfdnP67Uv7eULvTveboZJg0qUpmJZb5VqzN" crossorigin="anonymous">
-    <link href="../_static/css/index.css" rel="stylesheet">
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.css" type="text/css" />
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.acff12b8f9c144ce68a297486a2fa670.css" type="text/css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
     <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
-    <script src="../_static/sphinx-book-theme.js"></script>
     <script src="../_static/jquery.js"></script>
     <script src="../_static/underscore.js"></script>
     <script src="../_static/doctools.js"></script>
-    <script src="../_static/language_data.js"></script>
-    <script src="../_static/sphinx-book-theme.js"></script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Open Source GIS" href="01_opensource.html" />
     <link rel="prev" title="PBPL010 Introduction to Geographic Information Systems" href="../syllabus.html" />
-
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="docsearch:language" content="en">
-
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
   </head>
   <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
     
 
     <div class="container-xl">
@@ -36,153 +52,90 @@
           
 <div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
     
-        <div class="navbar-brand-box">
-<a class="navbar-brand text-wrap" href="../index.html">
-  
-  <img src="../_static/logo.png" class="logo" alt="logo">
-  
-  
-</a>
+        
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" />
+      <input type="submit" value="Go" />
+    </form>
+    </div>
 </div>
-
-<form class="bd-search d-flex align-items-center" action="../search.html" method="get">
-  <i class="icon fas fa-search"></i>
-  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search the docs ..." aria-label="Search the docs ..." autocomplete="off" >
-</form>
-
-<nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
-  <ul class="current nav sidenav_l1">
- <li class="toctree-l1">
-  <a class="reference internal" href="../syllabus.html">
-   Syllabus
-  </a>
- </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
-   Introduction to GIS
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="01_opensource.html">
-   Introduction to QGIS
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="02_datamodels.html">
-   Data Models
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="02_datamodels.html#id4">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="04_vector_attributes.html">
-   Vector Data
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_rasters.html">
-   Raster Data Models
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_rasters.html#id1">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_rasters.html#id5">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="05_rasters.html#id6">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="06_crs.html">
-   Coordinate Reference Systems
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="06_crs.html#id1">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="06_crs.html#id13">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html">
-   Making Maps
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html#id1">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html#id4">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html#id9">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html#id27">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="08_maps.html#id29">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="09_geom.html">
-   Detecting and Fixing Geometry Problems
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="09_geom.html#id1">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="09_geom.html#id3">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="09_geom.html#id12">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_va.html">
-   Vector Analysis
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_va.html#id1">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_va.html#id7">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_va.html#id8">
-  </a>
- </li>
- <li class="toctree-l1">
-  <a class="reference internal" href="10_va.html#id9">
-  </a>
- </li>
+<script>$('#searchbox').show(0);</script>
+<h3><a href="../index.html">Table of Contents</a></h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../syllabus.html">Syllabus</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Introduction to GIS</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#overview">Overview</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#spatial-thinking">Spatial Thinking</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#origins">Origins</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#early-spatial-analysis">Early Spatial Analysis</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modern-lack-of-spatial-thinking">Modern (lack of) Spatial Thinking</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#modern-spatial-thinking">Modern Spatial Thinking</a></li>
 </ul>
-
-</nav>
-
- <!-- To handle the deprecated key -->
-
-<div class="navbar_extra_footer">
-  Theme by the <a href="https://ebp.jupyterbook.org">Executable Book Project</a>
-</div>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#gis">GIS</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#geographic-information-systems">Geographic Information Systems</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geographic-information-services">Geographic Information Services</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#geographic-information-science">Geographic Information Science</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#gis-and-public-policy">GIS and Public Policy</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#why-gis-and-public-policy">Why GIS and Public Policy?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#positive-applications-of-gis-in-public-policy">Positive Applications of GIS in Public Policy</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#gis-based-policy-analysis">GIS based policy analysis</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#environmental-disparities-and-equity-analysis">Environmental Disparities and Equity Analysis</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#spatial-criminology">Spatial Criminology</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#neighborhood-change">Neighborhood Change</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#segregation">Segregation</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#gis-derived-measures">GIS derived measures</a><ul>
+<li class="toctree-l5"><a class="reference internal" href="#food-deserts">Food Deserts</a></li>
+<li class="toctree-l5"><a class="reference internal" href="#accessibility-to-parks">Accessibility to Parks</a></li>
+</ul>
+</li>
+<li class="toctree-l4"><a class="reference internal" href="#detecting-land-use-change">Detecting Land Use Change</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#normative-applications-of-gis">Normative Applications of GIS</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#school-redistricting">School Redistricting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transportation-planning">Transportation Planning</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#geographical-targeting">Geographical Targeting</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="01_opensource.html">Introduction to QGIS</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_datamodels.html">Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="02_datamodels.html#id4"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="04_vector_attributes.html">Vector Data</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html">Raster Data Models</a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id5"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="05_rasters.html#id6"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_crs.html">Coordinate Reference Systems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_crs.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="06_crs.html#id13"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html">Making Maps</a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id4"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id9"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id27"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="08_maps.html#id29"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_geom.html">Detecting and Fixing Geometry Problems</a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_geom.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_geom.html#id3"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="09_geom.html#id12"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_va.html">Vector Analysis</a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_va.html#id1"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_va.html#id7"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_va.html#id8"></a></li>
+<li class="toctree-l1"><a class="reference internal" href="10_va.html#id9"></a></li>
+</ul>
 
 </div>
 
@@ -193,25 +146,25 @@
           
 <main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
     
-    <div class="row topbar fixed-top container-xl">
-    <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show">
-    </div>
-    <div class="col pl-2 topbar-main">
-        
-        <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
-            data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
-            aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
-            title="Toggle navigation" data-toggle="tooltip" data-placement="left">
-            <i class="fas fa-bars"></i>
-            <i class="fas fa-arrow-left"></i>
-            <i class="fas fa-arrow-up"></i>
-        </button>
-        
-        <div class="dropdown-buttons-trigger">
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
     <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
             class="fas fa-download"></i></button>
 
-    
     <div class="dropdown-buttons">
         <!-- ipynb file if we had a myst markdown file -->
         
@@ -223,27 +176,29 @@
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
-    
 </div>
-        <!-- Source interaction buttons -->
 
+            <!-- Source interaction buttons -->
 
-        <!-- Full screen (wrap in <a> to have style consistency -->
-        <a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
-                data-placement="bottom" onclick="toggleFullScreen()" title="Fullscreen mode"><i
-                    class="fas fa-expand"></i></button></a>
+            <!-- Full screen (wrap in <a> to have style consistency -->
 
-        <!-- Launch buttons -->
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
 
-    </div>
+            <!-- Launch buttons -->
 
-    <!-- Table of contents -->
-    <div class="d-none d-md-block col-md-2 bd-toc show">
-        <div class="tocsection onthispage pt-5 pb-3">
-            <i class="fas fa-list"></i> Contents
         </div>
-        <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#overview">
    Overview
@@ -390,7 +345,8 @@
  </li>
 </ul>
 
-        </nav>
+            </nav>
+        </div>
     </div>
 </div>
     <div id="main-content" class="row">
@@ -398,9 +354,9 @@
         
               <div>
                 
-  <div class="section" id="introduction-to-gis">
+  <section id="introduction-to-gis">
 <h1>Introduction to GIS<a class="headerlink" href="#introduction-to-gis" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="overview">
+<section id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
 <p>In this lecture we provide the context for GIS in public policy. The objectives are:</p>
 <ul class="simple">
@@ -408,36 +364,36 @@
 <li><p>Define GIS</p></li>
 <li><p>Provide an overview of motivations for and applications of GIS in public policy</p></li>
 </ul>
-</div>
-<div class="section" id="spatial-thinking">
+</section>
+<section id="spatial-thinking">
 <h2>Spatial Thinking<a class="headerlink" href="#spatial-thinking" title="Permalink to this headline">¶</a></h2>
 <p>The focus of this course is on developing:</p>
 <ul class="simple">
 <li><p>spatial <em>thinking</em></p></li>
 <li><p>spatial <em>skills</em></p></li>
 </ul>
-<div class="section" id="origins">
+<section id="origins">
 <h3>Origins<a class="headerlink" href="#origins" title="Permalink to this headline">¶</a></h3>
 <p><img alt="heritage" src="../_images/heritage.png" /></p>
 <div class="admonition-earliest-human-writing admonition">
 <p class="admonition-title">Earliest human writing</p>
 <p>5,500 BP</p>
 </div>
-</div>
-<div class="section" id="early-spatial-analysis">
+</section>
+<section id="early-spatial-analysis">
 <h3>Early Spatial Analysis<a class="headerlink" href="#early-spatial-analysis" title="Permalink to this headline">¶</a></h3>
 <p><img alt="snow" src="../_images/snowmap.png" /></p>
-</div>
-<div class="section" id="modern-lack-of-spatial-thinking">
+</section>
+<section id="modern-lack-of-spatial-thinking">
 <h3>Modern (lack of) Spatial Thinking<a class="headerlink" href="#modern-lack-of-spatial-thinking" title="Permalink to this headline">¶</a></h3>
 <p><img alt="econ1" src="../_images/nkorea1.png" /></p>
-</div>
-<div class="section" id="modern-spatial-thinking">
+</section>
+<section id="modern-spatial-thinking">
 <h3>Modern Spatial Thinking<a class="headerlink" href="#modern-spatial-thinking" title="Permalink to this headline">¶</a></h3>
 <p><img alt="econ2" src="../_images/nkorea2.png" /></p>
-</div>
-</div>
-<div class="section" id="gis">
+</section>
+</section>
+<section id="gis">
 <h2>GIS<a class="headerlink" href="#gis" title="Permalink to this headline">¶</a></h2>
 <p>The acronym GIS can take on multiple meanings:</p>
 <ul class="simple">
@@ -445,15 +401,15 @@
 <li><p>Geographic Information <em>Services</em> or GIServices</p></li>
 <li><p>Geographic Information <em>Science</em> or GIScience</p></li>
 </ul>
-<div class="section" id="geographic-information-systems">
+<section id="geographic-information-systems">
 <h3>Geographic Information Systems<a class="headerlink" href="#geographic-information-systems" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><em>Geographic</em>: refers to a specific on or in relation to the Earth’s surface</p></li>
 <li><p><em>Information</em>: data to which some value or interpretation has been added</p></li>
 <li><p><em>Systems</em>: a system designed to perform a wide range of function on and with GI</p></li>
 </ul>
-</div>
-<div class="section" id="geographic-information-services">
+</section>
+<section id="geographic-information-services">
 <h3>Geographic Information Services<a class="headerlink" href="#geographic-information-services" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Provision of services</p></li>
@@ -461,8 +417,8 @@
 <li><p>Private and Government</p></li>
 </ul>
 <iframe class='fragment' width="560" height="315" src="https://rcitgis-countyofriverside.hub.arcgis.com" frameborder="0" allowfullscreen> </iframe>
-</div>
-<div class="section" id="geographic-information-science">
+</section>
+<section id="geographic-information-science">
 <h3>Geographic Information Science<a class="headerlink" href="#geographic-information-science" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>The <em>science</em> behind GISystems</p></li>
@@ -470,11 +426,11 @@
 <li><p>Acronym: <strong>GISCIENCE</strong></p></li>
 </ul>
 <iframe class='fragment' width="560" height="315" src="https://www.youtube.com/embed/tbZ_QB6wuZs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</div>
-</div>
-<div class="section" id="gis-and-public-policy">
+</section>
+</section>
+<section id="gis-and-public-policy">
 <h2>GIS and Public Policy<a class="headerlink" href="#gis-and-public-policy" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="why-gis-and-public-policy">
+<section id="why-gis-and-public-policy">
 <h3>Why GIS and Public Policy?<a class="headerlink" href="#why-gis-and-public-policy" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Everything we do takes place at some time and <em>some place</em></p></li>
@@ -482,8 +438,8 @@
 <li><p>Policy implementation should consider geographical dimensions</p></li>
 <li><p>Policy evaluation (analysis) from a spatial perspective</p></li>
 </ul>
-</div>
-<div class="section" id="positive-applications-of-gis-in-public-policy">
+</section>
+<section id="positive-applications-of-gis-in-public-policy">
 <h3>Positive Applications of GIS in Public Policy<a class="headerlink" href="#positive-applications-of-gis-in-public-policy" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p>Using GIS to do policy analysis</p></li>
@@ -492,82 +448,82 @@
 <li><p>Monitoring</p></li>
 </ul>
 <p>Using GIS to <em>describe the world</em></p>
-<div class="section" id="gis-based-policy-analysis">
+<section id="gis-based-policy-analysis">
 <h4>GIS based policy analysis<a class="headerlink" href="#gis-based-policy-analysis" title="Permalink to this headline">¶</a></h4>
-<div class="section" id="environmental-disparities-and-equity-analysis">
+<section id="environmental-disparities-and-equity-analysis">
 <h5>Environmental Disparities and Equity Analysis<a class="headerlink" href="#environmental-disparities-and-equity-analysis" title="Permalink to this headline">¶</a></h5>
 <p><img alt="envl" src="../_images/latimes.png" /></p>
-</div>
-<div class="section" id="spatial-criminology">
+</section>
+<section id="spatial-criminology">
 <h5>Spatial Criminology<a class="headerlink" href="#spatial-criminology" title="Permalink to this headline">¶</a></h5>
 <p><img alt="crim" src="../_images/castheat.png" /></p>
-</div>
-<div class="section" id="neighborhood-change">
+</section>
+<section id="neighborhood-change">
 <h5>Neighborhood Change<a class="headerlink" href="#neighborhood-change" title="Permalink to this headline">¶</a></h5>
 <p><img alt="geosnap" src="../_images/geosnap.gif" />
 <a class="reference external" href="https://github.com/spatialucr/geosnap">source</a></p>
-</div>
-<div class="section" id="segregation">
+</section>
+<section id="segregation">
 <h5>Segregation<a class="headerlink" href="#segregation" title="Permalink to this headline">¶</a></h5>
 <p><img alt="seg" src="../_images/segregation.png" />
 <a class="reference external" href="https://github.com/pysal/segregation">source</a></p>
-</div>
-</div>
-<div class="section" id="gis-derived-measures">
+</section>
+</section>
+<section id="gis-derived-measures">
 <h4>GIS derived measures<a class="headerlink" href="#gis-derived-measures" title="Permalink to this headline">¶</a></h4>
-<div class="section" id="food-deserts">
+<section id="food-deserts">
 <h5>Food Deserts<a class="headerlink" href="#food-deserts" title="Permalink to this headline">¶</a></h5>
 <p><img alt="fooddesert" src="../_images/fooddesert.png" /></p>
-</div>
-<div class="section" id="accessibility-to-parks">
+</section>
+<section id="accessibility-to-parks">
 <h5>Accessibility to Parks<a class="headerlink" href="#accessibility-to-parks" title="Permalink to this headline">¶</a></h5>
 <p><img alt="distancetoparks" src="https://2rct3i2488gxf9jvb1lqhek9-wpengine.netdna-ssl.com/wp-content/uploads/2014/08/image2.png" />
 <a class="reference external" href="https://www.azavea.com/blog/2014/09/04/creating-a-cost-distance-surface-to-measure-park-access/">Source</a></p>
-</div>
-</div>
-<div class="section" id="detecting-land-use-change">
+</section>
+</section>
+<section id="detecting-land-use-change">
 <h4>Detecting Land Use Change<a class="headerlink" href="#detecting-land-use-change" title="Permalink to this headline">¶</a></h4>
 <p><img alt="loudoun2012" src="../_images/loudoun2012.png" /></p>
 <p><img alt="loudoun2018" src="../_images/loudoun2018.png" /></p>
-</div>
-</div>
-<div class="section" id="normative-applications-of-gis">
+</section>
+</section>
+<section id="normative-applications-of-gis">
 <h3>Normative Applications of GIS<a class="headerlink" href="#normative-applications-of-gis" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li><p><em>Prescriptive</em></p></li>
 <li><p>Using GIS to <em>change the world</em></p></li>
 </ul>
-<div class="section" id="school-redistricting">
+<section id="school-redistricting">
 <h4>School Redistricting<a class="headerlink" href="#school-redistricting" title="Permalink to this headline">¶</a></h4>
 <p><img alt="school" src="../_images/schooldistricts.png" />
 <a class="reference external" href="http://riversideunified.org/departments/operations_division/planning___development/district_boundary_maps">source</a></p>
-</div>
-<div class="section" id="transportation-planning">
+</section>
+<section id="transportation-planning">
 <h4>Transportation Planning<a class="headerlink" href="#transportation-planning" title="Permalink to this headline">¶</a></h4>
 <p><img alt="caldot" src="../_images/caldot.png" />
 <a class="reference external" href="https://gisdata-caltrans.opendata.arcgis.com/datasets/8887c21dce1d45ad93cd78a10b24781b_0?geometry=-117.709%2C33.942%2C-117.056%2C34.042">source</a></p>
-</div>
-<div class="section" id="geographical-targeting">
+</section>
+<section id="geographical-targeting">
 <h4>Geographical Targeting<a class="headerlink" href="#geographical-targeting" title="Permalink to this headline">¶</a></h4>
 <p><img alt="predictivepolicing" src="../_images/predictivepolicing.png" />
 <a class="reference external" href="https://www.dhs.gov/sites/default/files/publications/GIS-Predictive-Policing-AppN_0813-508_0.pdf">source</a></p>
-</div>
-</div>
-</div>
-</div>
+</section>
+</section>
+</section>
+</section>
 
 
               </div>
               
-        </div>
-    </div>
-    
-    
-    <div class='prev-next-bottom'>
         
+        <div class='prev-next-bottom'>
+            
     <a class='left-prev' id="prev-link" href="../syllabus.html" title="previous page">PBPL010 Introduction to Geographic Information Systems</a>
     <a class='right-next' id="next-link" href="01_opensource.html" title="next page">Open Source GIS</a>
 
+        </div>
+        
+        </div>
     </div>
     <footer class="footer mt-5 mt-md-0">
     <div class="container">
@@ -582,8 +538,9 @@
 
       </div>
     </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
 
-    <script src="../_static/js/index.js"></script>
-    
+  None
   </body>
 </html>

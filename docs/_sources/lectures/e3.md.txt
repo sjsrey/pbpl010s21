@@ -14,7 +14,7 @@
 ## Instructions
 
 ### Readings
-Read the chapter on [Laying out the Map](https://docs.qgis.org/3.4/en/docs/user_manual/print_composer/index.html)
+Read the chapter on [Laying out the Map](https://docs.qgis.org/3.16/en/docs/user_manual/print_composer/index.html)
 
 You will be handing in a single pdf that combines maps and text supporting your analysis below. All maps must be produced using the Layout manager and exported to pdf prior to compiling your single document.
 

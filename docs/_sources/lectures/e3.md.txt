@@ -19,7 +19,6 @@ Read the chapter on [Laying out the Map](https://docs.qgis.org/3.16/en/docs/user
 You will be handing in a single pdf that combines maps and text supporting your analysis below. All maps must be produced using the Layout manager and exported to pdf prior to compiling your single document.
 
 
-
 ### Setup
 - You will be using the dataset you produced in exercise 2.
 - Create a new project called `exer03`

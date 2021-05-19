@@ -15,5 +15,6 @@ Raster Data <lectures/05_rasters>
 Coordinate Reference Systems <lectures/06_crs>
 Making Maps <lectures/08_maps>
 Geometry Errors <lectures/09_geom>
-Vector Analysis <lectures/10_va>
+Vector Analysis I <lectures/10_va>
+Vector Analysis II <lectures/11_va>
 ```

@@ -168,6 +168,7 @@ also be required to complete the projects.
 #### May 12:  Vector Analysis I
   - <a href="https://docs.qgis.org/3.16/en/docs/gentle_gis_introduction/vector_spatial_analysis_buffers.html">Reading: Sutton, T. "Vector Spatial Analysis (Buffers)" </a>
   - [Data](https://stacks.stanford.edu/file/druid:xc453kn9742/data.zip?download=true)
+  - [Vector Analysis I](lectures/10_va.md)
 -----
 
 
@@ -179,6 +180,7 @@ also be required to complete the projects.
 
 #### May 19: Vector Analysis II
   - <a href="https://www.e-education.psu.edu/geog585/node/693">Reading: PSU. Walkthrough: Clipping and projecting vector data with QGIS and OGR</a>
+  - [Vector Analysis II](lectures/11_va.md)
 -----
 
 ### Week 9 May 24, 26
